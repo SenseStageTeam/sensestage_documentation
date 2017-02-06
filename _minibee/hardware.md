@@ -9,7 +9,7 @@ category: hardware
 
 Sense/Stage has various hardware components, namely:
 
-{{ list_overview }}
+{{ category_list }}
 
 
 ![]({{ base_url }}/img/SenseStage_overview.png)
