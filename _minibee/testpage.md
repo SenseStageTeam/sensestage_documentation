@@ -3,16 +3,16 @@ title: Testpage
 subtitle: a more detailed description
 summary: a short description of what this documentation page is about
 layout: documentation
-type: [tutorial | guide | reference | overview]
+type: reference
 date: 2015-06-20
 tags: 
     - aTag
     - anotherTag
-category: [ introduction | hardware | software | meta ]
-subcategory: [minibee | expansion ]
+category: introduction
+subcategory: minibee
 related:
-  - anotherTitle
-  - yetAnotherTitle
+    - Another title
+    - Yet another title
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -23,3 +23,8 @@ cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
 ![](/img/SenseStage_overview.png)
+
+
+category: [ introduction | hardware | software | meta ]
+subcategory: [minibee | expansion ]
+type: [tutorial | guide | reference | overview]
