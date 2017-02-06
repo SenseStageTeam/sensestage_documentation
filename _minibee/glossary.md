@@ -1,7 +1,7 @@
 ---
 title: Glossary
 summary: a glossary of terms used around Sense/Stage
-layout: page
+layout: documentation
 type: reference
 date: 2017-02-06
 category: meta
