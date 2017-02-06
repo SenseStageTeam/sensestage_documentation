@@ -6,6 +6,8 @@ type: reference
 date: 2017-02-06
 category: hardware
 subcategory: minibee
+related: 
+    - Programming firmware with the arduino IDE
 ---
 
 The MiniBee revision F is the fourth version of the MiniBee, the second production version. It is manufactured and sold from 2017.

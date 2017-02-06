@@ -6,6 +6,8 @@ type: reference
 date: 2017-02-06
 category: hardware
 subcategory: minibee
+related: 
+    - Programming firmware with the arduino IDE
 ---
 
 

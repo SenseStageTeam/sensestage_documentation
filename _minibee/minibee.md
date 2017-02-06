@@ -29,3 +29,8 @@ Overview of the features:
 * Small footprint
 * Preprogrammed with firmware for wireless configuration for using many common sensors
 * Firmware communication with software data sharing network supported by many common interactive software environments (e.g. SuperCollider, Max/MSP, PureData, Processing).
+
+
+The different versions:
+
+{{ subcategory_list }}

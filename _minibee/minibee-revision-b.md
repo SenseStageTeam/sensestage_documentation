@@ -6,6 +6,8 @@ type: reference
 date: 2017-02-06
 category: hardware
 subcategory: minibee
+related: 
+    - Programming firmware with the arduino IDE
 ---
 
 The MiniBee revision B was the second version of the MiniBee, the beta version. It was manufactured during the research-creation project Sense/Stage at Concordia University and McGill University in 2010. It was only distributed to those who were somehow involved in the project. The overview of the board is given here for historical reference.
