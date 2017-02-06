@@ -10,9 +10,29 @@ subcategory: bugs
 
 The Sense/Stage software, firmware and hardware is not perfect - there is chance that there are bugs in the system. This page describes what to do when you have found one.
 
-#Forum
+Steps to take:
+
+* check if the issue is known in the issue tracker
+* start a discussion on the forum
+* file the issue on the issue tracker
 
 
+# [Forum](https://forum.sensestage.eu)
 
-#Github issue tracker
+The [forum](https://forum.sensestage.eu) is the main discussion platform for everything related to Sense/Stage.
 
+If you think you found an issue somewhere, you can start a discussion on the forum about it, so that others can react to it. It may be that the issue is already known, or other people have found ways to work around the issue. The developers are also on the forum. If out of the discussion follows that it is indeed an issue, an issue can be filed on Github.
+
+
+# Github issue trackers
+
+There are repositories for different parts of the project; each one of these has an issue tracker.
+
+* [hardware]
+* [firmware]
+* [software]
+* [documentation]
+
+# Fixing bugs
+
+If you have a fix for a bug, please read the [contributing](contributing-to-sense-stage) page.
