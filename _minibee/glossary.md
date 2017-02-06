@@ -1,20 +1,15 @@
 ---
 title: Glossary
-subtitle: a glossary of terms used around Sense/Stage
-summary: 
-layout: documentation
+summary: a glossary of terms used around Sense/Stage
+layout: page
 type: reference
 date: 2017-02-06
-tags: 
 category: meta
-related:
 ---
-
-type: reference
 
 ![]({{ base_url }}/img/SenseStage_overview.png)
 
-+ Configuration file:
++ Configuration file: a file containing the information on which pins are used for what on the MiniBee
 + Coordinator: USB board connected to the computer featuring an XBee and a miniUSB-B socket
 + Firmware: code that runs on the MiniBee
 + Hive: the software running on your computer that converts data coming in from and going out to the swarm into OSC
