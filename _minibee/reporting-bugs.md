@@ -28,10 +28,10 @@ If you think you found an issue somewhere, you can start a discussion on the for
 
 There are repositories for different parts of the project; each one of these has an issue tracker.
 
+* [documentation]
 * [hardware]
 * [firmware]
 * [software]
-* [documentation]
 
 # Fixing bugs
 
