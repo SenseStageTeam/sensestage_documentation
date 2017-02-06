@@ -24,7 +24,7 @@ github_username:
 
 
 collections:
-  MiniBee:
+  minibee:
     output: true
     layout: documentation
 
