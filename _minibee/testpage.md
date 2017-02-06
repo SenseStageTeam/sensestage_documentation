@@ -1,6 +1,18 @@
 ---
-layout: page
-title: testpage
+title: Testpage
+subtitle: a more detailed description
+summary: a short description of what this documentation page is about
+layout: documentation
+type: [tutorial | guide | reference | overview]
+date: 2015-06-20
+tags: 
+    - aTag
+    - anotherTag
+category: [ introduction | hardware | software | meta ]
+subcategory: [minibee | expansion ]
+related:
+  - anotherTitle
+  - yetAnotherTitle
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
