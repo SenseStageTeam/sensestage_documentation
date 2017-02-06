@@ -16,4 +16,4 @@ Furthermore there are different [Guides](guides) on various topics.
 
 If you did not find what you were looking for in the documentation, you can ask your question at the [Sense/Stage forum](https://forum.sensestage.eu).
 
-If you found a bug in anything related to Sense/Stage, you can [report it](bug-reporting).
+If you found a bug in anything related to Sense/Stage, you can [report it](reporting-bugs).
