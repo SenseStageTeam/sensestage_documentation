@@ -11,3 +11,6 @@ The coordinator board is the hardware that is connected to the user's computer v
 
 ![]({{ base_url }}/img/coordinatorboard.jpg)
 
+#TODO
+
+- add a picture of the other version
