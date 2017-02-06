@@ -1,0 +1,45 @@
+---
+layout: page
+---
+
+<hr>
+
+{% if page.subtitle %}
+Subtitle: {{ page.subtitle }}
+{% endif %}
+
+{% if page.summary %}
+Summary: {{ page.summary }}
+{% else %}
+<blockquote>No summary given</blockquote>
+{% endif %}
+
+category: {{ page.category }}
+{% if page.subcategory %}
+{{ page.subcategory }}
+{% endif %}
+
+
+
+{% if page.tags %}
+Tags:
+<ul>
+{% for tag in page.tags %}
+<li>{{ tag }}</li>
+{% endfor %}
+</ul>
+{% endif %}
+
+{% if page.related %}
+Related pages: 
+<ul>
+	{% for related in page.related %}
+	<li><a href="{{ related | slugify }}.html">{{ related }}</a></li>
+	{% endfor %}
+</ul>
+{% endif %}
+
+<hr>
+
+
+{{ content }}
