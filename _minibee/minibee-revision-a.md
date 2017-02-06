@@ -10,8 +10,7 @@ related:
     - Programming firmware with the arduino IDE
 ---
 
-
-The MiniBee revision A was the first version of the MiniBee, the alpha version. It was manufactured during the research-creation project Sense/Stage at Concordia University and McGill University in 2009. It was only distributed to those who were somehow involved in the project. The overview of the board is given here for historical reference.
+It was only distributed to those who were somehow involved in the project. The overview of the board is given here for historical reference.
     
 ![]({{ base_url }}/img/minibee_revA_annotated2.jpg)
 

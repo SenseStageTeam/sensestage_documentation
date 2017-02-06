@@ -1,6 +1,12 @@
 ---
-# You don't need to edit this file, it's empty on purpose.
-# Edit theme's home layout instead if you wanna make some changes
-# See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-layout: home
+layout: page
 ---
+{% assign sortedPosts = site.minibee | sort: 'title' %}
+
+
+## MiniBee Documentation
+
+
+{% for page in sortedPosts %}
+* <a href="{{page.url}}">{{ page.title }}</a> {% if page.summary %}: {{ page.summary }}  {% endif %}
+{% endfor %}

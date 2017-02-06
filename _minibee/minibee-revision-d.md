@@ -10,9 +10,7 @@ related:
     - Programming firmware with the arduino IDE
 ---
 
-The MiniBee revision D was the third version of the MiniBee, the production version. It was manufactured and sold between 2011 and 2016.
-
-![]({{ base_url }}/img/MiniBee_revD_XBee_header.jpg)
+![](/img/MiniBee_revD_XBee_header.jpg)
 
 
 Overview of the board:
@@ -26,7 +24,7 @@ Overview of the board:
 * Regulated power output: 3.3V, GND
 * green pcb
 
-# Pin out
+# Pins
 
 The pin outs on the header are from left to right:
 
@@ -34,8 +32,8 @@ The pin outs on the header are from left to right:
     3v3 - TX - D3 - D6 - D8 - D10 - A7 - SCL - A3 - A1
 
     
-![]({{ base_url }}/img/minibee_annotated-D-front.jpg)
-![]({{ base_url }}/img/minibee_annotated-D-back.jpg)
+![](/img/minibee_annotated-D-front.jpg)
+![](/img/minibee_annotated-D-back.jpg)
 
 # LEDs
 
@@ -66,4 +64,4 @@ For [programming the firmware]({{base_url}}/minibee/programming-firmware-with-th
 
 The first manufacturing run has the Atmega328 chip instead of the Atmega328p chip. This is a subtle difference that only affects the board if you want to program the bootloader onto the board, or program firmware without using the bootloader. The boards of this first batch can be recognized by a sticker on the bottom with a serial number, and the desoldered pin holes. In the hardware definitions within the Arduino IDE, this version is called "Sense/Stage MiniBee revD1 (3.3V, 12MHz) w/ Atmega328". You *only* need this for programming the bootloader, not for the regular uploading of firmware.
 
-![]({{ base_url }}/img/MiniBee_revD1.jpg)
+![](/img/MiniBee_revD1.jpg)

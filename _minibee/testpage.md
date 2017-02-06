@@ -1,7 +1,7 @@
 ---
 title: Testpage
 subtitle: a more detailed description
-summary: a short description of what this documentation page is about
+summary: "a short description of what this documentation page is about"
 layout: documentation
 type: reference
 date: 2015-06-20

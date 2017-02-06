@@ -4,42 +4,45 @@ layout: page
 
 <hr>
 
+<ul>
 {% if page.subtitle %}
-Subtitle: {{ page.subtitle }}
+<li>Subtitle: {{ page.subtitle }}</li>
 {% endif %}
 
-{% if page.summary %}
-Summary: {{ page.summary }}
-{% else %}
-<blockquote>No summary given</blockquote>
-{% endif %}
+<li>
+	{% if page.summary %}
+	Summary: {{ page.summary }}
+	{% else %}
+	<blockquote>No summary given</blockquote>
+	{% endif %}
+</li>
 
-category: {{ page.category }}
-{% if page.subcategory %}
-{{ page.subcategory }}
-{% endif %}
+<li>category: {{ page.category }}{% if page.subcategory %}{{ page.subcategory }}{% endif %}
 
 
 
 {% if page.tags %}
-Tags:
+<li>Tags:
 <ul>
 {% for tag in page.tags %}
 <li>{{ tag }}</li>
 {% endfor %}
 </ul>
+	</li>
 {% endif %}
 
 {% if page.related %}
-Related pages: 
+<li>Related pages: 
 <ul>
 	{% for related in page.related %}
 	<li><a href="{{ related | slugify }}.html">{{ related }}</a></li>
 	{% endfor %}
 </ul>
+</li>
 {% endif %}
-
+</ul>
 <hr>
 
+<em>{{page.summary}}</em>
 
 {{ content }}
