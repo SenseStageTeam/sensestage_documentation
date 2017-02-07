@@ -18,7 +18,7 @@ A light sensor is a variable resistor. In order to connect it to the MiniBee, yo
 ![](/img/voltagedivider.png)
 
 
-In this picture, RVAR (VARiable Resistor) is the light sensor, and R is another resistor with which you are creating the voltage divider. In this setup, the current will flow from Vcc to GND, and the voltage will be divided over RVAR and R. The voltage is measured by the MiniBee at A0. The voltage will vary, as RVAR will vary – in the case of our light sensor, it depends on the amount of light that is falling onto the sensor.
+In this picture, RVAR (VARiable Resistor) is the light sensor, and R is another resistor with which you are creating the voltage divider. In this setup, the current will flow from Vcc to GND, and the voltage will be *divided* over RVAR and R. The voltage is measured by the MiniBee at A0. The voltage will vary, as RVAR will vary – in the case of our light sensor, it depends on the amount of light that is falling onto the sensor.
 
 To calculate the best (i.e. the value that results in the widest range of voltage) value for the resistor R, you can do the following:
 
@@ -41,10 +41,108 @@ For this, we can make use of one of the expansion boards of the MiniBee, the [XP
 
 So we first need to solder a header to the expansion board, and then, with the XPree board, we can solder headers to the XPree board, to mount it on a breadboard, and then put it on a breadboard, and make the connections to the light sensor:
 
+![](/img/lightsensor_xpree_01.jpg)
+![](/img/lightsensor_xpree_02.jpg)
+![](/img/lightsensor_xpree_03.jpg)
+![](/img/lightsensor_xpree_04.jpg)
+![](/img/lightsensor_xpree_05.jpg)
+![](/img/lightsensor_xpree_06.jpg)
+![](/img/lightsensor_xpree_07.jpg)
+
 ## With the XPee board
 
 On the XPee board, it is easy to connect the resistor and the light sensor:
 
+![](/img/lightsensor_xpee_01.jpg)
+![](/img/lightsensor_xpee_02.jpg)
+![](/img/lightsensor_xpee_03.jpg)
+![](/img/lightsensor_xpee_04.jpg)
 
 # Configuration file
 
+Now that we have our electronics set up, we need to adapt the configuration file for our minibee. Let’s assume that we already have a configuration file that we used with our MiniBee, before we had attached any sensors to it.
+
+If you started from the `example_hiveconfig.xml` configuration file, it will look like this, when you open it in a text editor.
+
+
+    <xml>
+    <hive name="myprojectname">
+
+    <minibee id="1" revision="D" serial="0013A200403BF27B" libversion="6" caps="7" configuration="1">
+    </minibee>
+
+    <configuration id="1" name="accelero" message_interval="50" samples_per_message="1">
+    <pin config="TWIData" id="A4" />
+    <pin config="TWIClock" id="A5" />
+    <twi id="1" device="ADXL345" name="accelero" />
+    </configuration>
+
+    <configuration id="2" name="expee" message_interval="50" samples_per_message="1">
+    <pin config="TWIData" id="A4" />
+    <pin config="TWIClock" id="A5" />
+    <pin config="AnalogIn10bit" id="A0" name="analog0" />
+    <pin config="AnalogIn10bit" id="A1" name="analog1" />
+    <pin config="AnalogIn10bit" id="A2" name="analog2" />
+    <pin config="AnalogIn10bit" id="A3" name="analog3" />
+    <pin config="AnalogOut" id="D9" name="led0" />
+    <pin config="AnalogOut" id="D10" name="led1" />
+    <pin config="AnalogOut" id="D11" name="led2" />
+    <pin config="AnalogOut" id="D3" name="led3" />
+    <pin config="AnalogOut" id="D5" name="led4" />
+    <pin config="AnalogOut" id="D6" name="led5" />
+    <twi id="1" device="ADXL345" name="accelero" />
+    </configuration>
+
+    <configuration id="3" name="expree" message_interval="50" samples_per_message="1">
+    <pin config="TWIData" id="A4" />
+    <pin config="TWIClock" id="A5" />
+    <pin config="AnalogIn10bit" id="A0" name="analog0" />
+    <pin config="AnalogIn10bit" id="A1" name="analog1" />
+    <pin config="AnalogIn10bit" id="A2" name="analog2" />
+    <pin config="AnalogIn10bit" id="A3" name="analog3" />
+    <pin config="AnalogIn10bit" id="A6" name="analog4" />
+    <pin config="AnalogIn10bit" id="A7" name="analog5" />
+    <pin config="DigitalIn" id="D3" name="digitaal0" />
+    <pin config="DigitalIn" id="D5" name="digitaal1" />
+    <pin config="DigitalIn" id="D6" name="digitaal2" />
+    <pin config="DigitalIn" id="D7" name="digitaal3" />
+    <pin config="DigitalIn" id="D8" name="digitaal4" />
+    <pin config="DigitalIn" id="D9" name="digitaal5" />
+    <pin config="DigitalIn" id="D10" name="digitaal6" />
+    <pin config="DigitalIn" id="D11" name="digitaal7" />
+    <twi id="1" device="ADXL345" name="accelero" />
+    </configuration>
+
+    </hive>
+    </xml>
+
+We will add a new configuration element to it:
+
+
+    <configuration id="4" name="lightsensor" message_interval="50" samples_per_message="1" redundancy="3" rssi="True">
+    <pin config="AnalogIn10bit" id="A0" name="light" />
+    <twi id="1" device="ADXL345" name="accelero"/>
+    </configuration>
+
+This defines pin A0 to be read as an analog input with a 10 bit resolution. It also keeps the accelerometer active.
+
+Then we need to assign our MiniBee to use this configuration:
+
+
+    <minibee id="1" revision="D" serial="0013A200403BF27B" libversion="6" caps="7" configuration="4">
+    </minibee>
+
+Note that in the configuration setting we now point to configuration number 4.
+
+Now save the configuration file with a new filename (e.g. `lightsensor.xml`)
+
+Then we can start pydongui.py and use our new configuration file.
+
+Then if we turn on our MiniBee, it will be assigned the new configuration, and send out the data as follows:
+
+
+    "/minibee/data" id lightsensor acceleration-x acceleration-y acceleration-z rssi
+
+All are values between 0 and 1. Rssi stands for “received signal strength indication” and is a measure for the connection quality, bringing the minibee closer to or further from the receiver will change this value, as will obscuring the minibee with your body (blocking the signal).
+
+If you also configure digital pins, these values will come before the analog values.
