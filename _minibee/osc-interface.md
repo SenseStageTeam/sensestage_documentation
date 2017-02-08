@@ -1,10 +1,11 @@
 ---
 title: OSC interface
-summary: this page describes the OSC messages that the Sense/Stage software sends and understands
+summary: This page describes the OSC messages that the Sense/Stage software sends and understands
 layout: documentation
 type: reference
 date: 2017-02-06
 category: software
+subcategory: interfaces
 ---
 
 # How to read this description
@@ -97,24 +98,51 @@ You can load and save a configuration file via OSC:
 
 ## Controlling the behaviour of the MiniBee
 
---- pausing a minibee:
-/minibee/run - ii - id, and 0 (for pausing) or 1 (for running)
+There are some advanced options to control what a MiniBee is doing.
 
---- debugging a minibee:
-/minibee/loopback - ii - id, and 0 (for not sending messages back) or 1 (for sending each message back)
+*Pausing a minibee:*
 
---- resetting a minibee:
-/minibee/reset - i - id
--- all:
-/minihive/reset
+    /minibee/run - ii
+    
+* `i` - the minibee id
+* `i` - whether to pause (0) or run (1) the minibee
 
---- save id on xbee:
-/minibee/saveid - i - id
--- all:
-/minihive/ids/save
+Getting a *loopback* message sent back from the minibee, i.e. a copy of each message sent to the minibee. This is useful for debugging.
 
---- send announce message (re-init):
-/minibee/announce - i - id
+    /minibee/loopback - ii
+
+* `i` - the minibee id
+* `i` - 0 (for not sending messages back) or 1 (for sending each message back)
+
+*Re-initialize the MiniBee firmware*
+
+If you want to re-initialize the firmware (without resetting it), you can send a message to do so. This can be useful if a MiniBee was already on, when you started the software. 
+
+    /minibee/announce - i
+
+* `i` - the minibee id
+
+*Reset a MiniBee.*
+
+This will reset the Atmega328 chip, so effectively restart the firmware. This can be useful if for some reason the MiniBee got stuck.
+
+    /minibee/reset - i
+
+* `i` - the minibee id
+
+To reset all minibees:
+
+    /minihive/reset
+
+*Save the ID of the XBee*. By default the XBees have an ID of 0xFFFA. During the configuration process the ID is set to the number defined in the configuration file. If you want to save this ID to the MiniBee, this step will not be necessary in the configuration process, and the startup procedure may go a little bit faster.
+
+    /minibee/saveid - i
+
+* `i` - the minibee id
+
+To save the IDs on all minibees that are turned on:
+
+    /minihive/ids/save
 
 
 # Custom messages
