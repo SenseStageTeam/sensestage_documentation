@@ -1,0 +1,11 @@
+---
+title: Datanetwork interface
+summary: Using the SenseWorld DataNetwork to transfer the data to multiple clients using the DataNetwork framework.
+layout: documentation
+type: reference
+date: 2017-02-06
+category: software
+subcategory: interfaces
+---
+
+
