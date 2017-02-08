@@ -5,6 +5,8 @@ layout: documentation
 type: reference
 date: 2017-02-06
 category: introduction
+tags:
+    - todo
 ---
 
 ![]({{ base_url }}/img/SenseStage_overview.png)
@@ -46,3 +48,9 @@ This software handles the communication via USB to the coordinator node, which i
 The software is designed to interact with the firmware that runs on the MiniBees.
 
 The software communicates with other programs using the OpenSoundControl (OSC) protocol.
+
+
+# TODO
+
+- links to other pages
+

@@ -8,8 +8,13 @@ category: hardware
 subcategory: battery
 tags:
     - basics
+    - todo
 ---
 
 
 Basically a link to Sparkfun's [LiPo Battery tutorial](https://www.sparkfun.com/tutorials/241)
 https://docs.sensestage.eu/battery-maintenance
+
+# TODO
+
+- expand the page!

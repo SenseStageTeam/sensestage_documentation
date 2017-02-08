@@ -6,9 +6,11 @@ type: overview
 date: 2017-02-06
 category: hardware
 subcategory: expansion
+tags:
+    - todo
 ---
 
-There are various expansion boards for the MiniBee. This page gives an overview of which ones are available and for what they can be used.
 
-{{ subcategory_list }}
+# TODO
 
+- include overview of expansion boards

@@ -6,6 +6,9 @@ type: guide
 date: 2017-02-06
 category: meta
 subcategory: contributing
+tags:
+    - community
+    - todo
 ---
 
 There are many ways to contribute to the Sense/Stage project:
@@ -36,3 +39,7 @@ There are many ways to contribute to the Sense/Stage project:
 # Firmware {#firmware}
 
 - how to contribute to firmware
+
+# TODO
+
+- fill in this page!

@@ -10,10 +10,11 @@ tags:
 category: introduction
 subcategory: getting-started
 related:
+    - Using the Hive
     - Power supply
     - LED blinking codes
-    - Using the Hive
     - OSC interface
+    - Creating minibee configurations via osc
 ---
 
 
@@ -95,5 +96,7 @@ We can then save the configuration we made to file, so we can load it again late
 to save it to a file name `myoscconfig.xml`
 
 > [More details on the OSC interface](osc-interface)
+
+# See also
 
 > [Advanced guide on creating configurations via OSC](creating-minibee-configurations-via-osc)

@@ -6,6 +6,8 @@ type: reference
 date: 2017-02-06
 category: hardware
 subcategory: expansion
+tags:
+    - todo
 ---
 
 The Sense/Stage XPree is an expansion board for the MiniBee for experimentation on a breadboard or small custom circuitry to connect your sensors.
@@ -15,12 +17,12 @@ The Sense/Stage XPree is an expansion board for the MiniBee for experimentation 
 * Power lines at the edge
 
 
-![]({{ base_url }}/img/XPree.jpg)
-![]({{ base_url }}/img/XPree_layout.png)
+![](/img/XPree.jpg)
+![](/img/XPree_layout.png)
 
 # Technical documents
 
-![]({{ base_url }}/img/xpree_schematic.png)
+![](/img/xpree_schematic.png)
 
 
 [Design files for KiCad on github](https://github.com/sensestage/minibee_hardware/tree/master/minibee/revF)
@@ -29,5 +31,9 @@ The Sense/Stage XPree is an expansion board for the MiniBee for experimentation 
 
 The XPree board on a breadboard connected to a MiniBee, with an LED connected to D3:
 
-![]({{ base_url }}/img/XPree_breadboard.jpg)
+![](/img/XPree_breadboard.jpg)
 
+
+# TODO
+
+- update github link

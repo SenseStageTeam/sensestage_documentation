@@ -6,6 +6,8 @@ type: reference
 date: 2017-02-06
 category: hardware
 subcategory: expansion
+tags:
+    - todo
 ---
 
 
@@ -21,16 +23,19 @@ For the resistive sensors footprints on the board are available to solder a (fix
 
 For the LEDs there are also footprints available to solder the (fixed value) resistor to regulate the current to your LED.
 
-![]({{ base_url }}/img/XPee.png)
+![](/img/XPee.png)
 
 # Technical documents
 
-![]({{ base_url }}/img/xpee_schematic.png)
+![](/img/xpee_schematic.png)
 
 
 [Design files for KiCad on github](https://github.com/sensestage/minibee_hardware/tree/master/minibee/revF)
 
 # Examples
 
-![]({{ base_url }}/img/xpee_example_ldr_led.jpg)
+![](/img/xpee_example_ldr_led.jpg)
 
+# TODO
+
+- update github link

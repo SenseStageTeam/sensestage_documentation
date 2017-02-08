@@ -5,6 +5,8 @@ layout: documentation
 type: reference
 date: 2017-02-06
 category: hardware
+tags:
+    - todo
 ---
 
 If you do not have access to one of the SenseStage MiniBees, you can still use our firmware if you create your own Arduino and XBee combination.
@@ -63,3 +65,10 @@ The LilyPad XBee board already has a couple of pins connected in the right way. 
 *(tested succesfully)*
 
 Make the connections as described at the top.
+
+# TODO
+
+- check links
+- add note on firmware version to use
+- update picture for Fio
+

@@ -8,6 +8,8 @@ category: hardware
 subcategory: minibee
 related: 
     - Programming firmware with the arduino IDE
+tags:
+    - todo
 ---
 
 ![](/img/MiniBee_revD_XBee_header.jpg)
@@ -57,7 +59,7 @@ Revision D of the board has a few minor improvements on revision B:
 
 # Programming firmware and the bootloader
 
-For [programming the firmware]({{base_url}}/minibee/programming-firmware-with-the-arduino-ide), use the board definition: "Sense/Stage MiniBee revB/D (3.3V, 12MHz) w/ Atmega328p"
+For [programming the firmware](programming-firmware-with-the-arduino-ide), use the board definition: "Sense/Stage MiniBee revB/D (3.3V, 12MHz) w/ Atmega328p"
 
 
 # Subversions
@@ -65,3 +67,8 @@ For [programming the firmware]({{base_url}}/minibee/programming-firmware-with-th
 The first manufacturing run has the Atmega328 chip instead of the Atmega328p chip. This is a subtle difference that only affects the board if you want to program the bootloader onto the board, or program firmware without using the bootloader. The boards of this first batch can be recognized by a sticker on the bottom with a serial number, and the desoldered pin holes. In the hardware definitions within the Arduino IDE, this version is called "Sense/Stage MiniBee revD1 (3.3V, 12MHz) w/ Atmega328". You *only* need this for programming the bootloader, not for the regular uploading of firmware.
 
 ![](/img/MiniBee_revD1.jpg)
+
+
+# TODO
+
+- check links

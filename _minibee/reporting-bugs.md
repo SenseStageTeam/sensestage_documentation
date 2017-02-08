@@ -8,6 +8,7 @@ category: meta
 subcategory: bugs
 tags:
     - community
+    - todo
 ---
 
 The Sense/Stage software, firmware and hardware is not perfect - there is chance that there are bugs in the system. This page describes what to do when you have found one.
@@ -39,3 +40,9 @@ There are repositories for different parts of the project; each one of these has
 # Fixing bugs {#fixes}
 
 If you have a fix for a bug, please read the [contributing](contributing-to-sense-stage) page.
+
+
+# TODO
+
+- add more content on the trackers
+

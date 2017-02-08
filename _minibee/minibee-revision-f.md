@@ -8,6 +8,8 @@ category: hardware
 subcategory: minibee
 related: 
     - Programming firmware with the arduino IDE
+tags:
+    - todo
 ---
 
 The MiniBee revision F is the fourth version of the MiniBee, the second production version. It is manufactured and sold from 2017.
@@ -57,5 +59,9 @@ Also the design has been moved from the (closed source) Eagle software to the op
 
 # Programming firmware and the bootloader
 
-For [programming the firmware]({{base_url}}/minibee/programming-firmware-with-the-arduino-ide), use the board definition: "Sense/Stage MiniBee revB/D (3.3V, 12MHz) w/ Atmega328p"
+For [programming the firmware](programming-firmware-with-the-arduino-ide), use the board definition: "Sense/Stage MiniBee revB/D (3.3V, 12MHz) w/ Atmega328p"
 
+
+# TODO
+
+- check links

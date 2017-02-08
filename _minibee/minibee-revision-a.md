@@ -8,11 +8,13 @@ category: hardware
 subcategory: minibee
 related: 
     - Programming firmware with the arduino IDE
+tags:
+    - todo
 ---
 
 It was only distributed to those who were somehow involved in the project. The overview of the board is given here for historical reference.
     
-![]({{ base_url }}/img/minibee_revA_annotated2.jpg)
+![](/img/minibee_revA_annotated2.jpg)
 
 
 * 8 analog inputs (left side): A4 (SDA), A5 (SCL), A0, A1, A2, A3, A6, A7
@@ -65,3 +67,8 @@ Use the Arduino programming software:
 * Set the board type to "Sense/Stage MiniBee revA (3.3V, 8MHz) w/ Atmega168"
 * Choose “Program Bootloader” with “AVR ISP mkII”
 * On Ubuntu Linux you must run the Arduino software as root in order to do this
+
+# TODO
+
+- add pinout
+- add note about LEDs

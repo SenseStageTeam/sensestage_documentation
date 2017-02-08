@@ -8,6 +8,8 @@ category: software
 sub-category: configuration
 tags:
     - configuration
+related:
+    - Connecting a MiniBee for the first time
 ---
 
 The configuration files for PydonHive use the XML format.
@@ -56,19 +58,19 @@ Then for each pin:
 - *id* – this should be one of: A0, A1, A2, A3, (A4, A5,) A6, A7, D3, D5, D6, D7, D8, D9, D10, D11
 - *label* - The label is used to create a label for the DataSlot that this pin will be providing in the DataNode corresponding to the MiniBee (when using the DataNetwork mode to communicate)
 - *configuration* – Pins that are not mentioned are not configured. Possible pin configurations (use these exact names, it is case sensitive):
-    * DigitalIn — digital input (any pin but A4, A5)
-    * DigitalInPullup — digital input with pullup resistor enabled (any pin but A4, A5) since library version 6 (June 2013)
-    * DigitalOut — digital output on/off (any pin but A4, A5)
-    * AnalogIn — analog input (for pin A0, A1, A2, A3, A6, A7)
-    * AnalogIn10bit — analog input with 10bit result (for pin A0, A1, A2, A3, A6, A7)
-    * AnalogOut — PWM or analog out (pins D3, D5, D6, D9, D10, D11)
-    * Ping — Ultrasonic sensor (any pin but A4, A5)
-    * SHTClock — Clock signal for SHT15 sensor (temperature/humidity) (any pin but A4, A5)
-    * SHTData — Data signal for SHT15 sensor (temperature/humidity) (any pin but A4, A5)
-    * TWIClock — Use a TWI/I2C sensor, clock signal (pin A5), configured automatically, if a TWI device is present in the configuration.
-    * TWIData — Use a TWI/I2C sensor, data signal (pin A4), configured automatically, if a TWI device is present in the configuration.
+    * `DigitalIn` — digital input (any pin except for A4, A5)
+    * `DigitalInPullup` — digital input with pullup resistor enabled (any pin except for A4, A5) since library version 6 (June 2013)
+    * `DigitalOut` — digital output on/off (any pin except for A4, A5)
+    * `AnalogIn` — analog input (for pin A0, A1, A2, A3, A6, A7)
+    * `AnalogIn10bit` — analog input with 10bit result (for pin A0, A1, A2, A3, A6, A7)
+    * `AnalogOut` — PWM or analog out (pins D3, D5, D6, D9, D10, D11)
+    * `Ping` — Ultrasonic sensor (any pin except for A4, A5)
+    * `SHTClock` — Clock signal for SHT15 sensor (temperature/humidity) (any pin except for A4, A5)
+    * `SHTData` — Data signal for SHT15 sensor (temperature/humidity) (any pin except for A4, A5)
+    * `TWIClock` — Use a TWI/I2C sensor, clock signal (pin A5), configured automatically, if a TWI device is present in the configuration.
+    * `TWIData` — Use a TWI/I2C sensor, data signal (pin A4), configured automatically, if a TWI device is present in the configuration.
 
-- And if TWI is used: the devices which are used. Currently supported are ADXL345, LIS302DL, TMP102, BMP085, HMC58X3. Each twi entry needs a unique number, and the number will determine at which dataslot the data from the device will appear. Optionally, you can define your own labels for the device, rather than the default ones, e.g.
+- And if TWI is used: the devices which are used. Currently supported are `ADXL345`, `LIS302DL`, `TMP102`, `BMP085`, `HMC58X3`. Each twi entry needs a unique number, and the number will determine at which dataslot the data from the device will appear. Optionally, you can define your own labels for the device, rather than the default ones, e.g.
 
         <twi id="1" device="ADXL345" name="accelero" >
             <twislot id="0" name="x" />

@@ -7,6 +7,7 @@ date: 2017-02-06
 tags:
     - advanced
     - configuration
+    - todo
 category: software
 subcategory: advanced-guides
 related:
@@ -45,3 +46,7 @@ We can then save the configuration we made to file, so we can load it again late
 to save it to a file name `myoscconfig.xml`
 
 > [More details on the OSC interface](osc-interface)
+
+# TODO
+
+- rewrite this page

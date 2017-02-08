@@ -7,6 +7,7 @@ date: 2017-02-06
 tags:
     - basics
     - installation
+    - todo
 category: introduction
 related:
   - anotherTitle
@@ -165,6 +166,8 @@ Just doubleclick and follow instructions, select to add python.exe to the path, 
 
 ## Turn on the Minibee
 
+[Connecting a minibee](connecting-a-minibee-for-the-first-time)
+
 # 3. See Data Coming In {#step3}
 
 ## 3.1 {#step3.1}
@@ -173,3 +176,9 @@ Just doubleclick and follow instructions, select to add python.exe to the path, 
 
 
 # 4. Going Forward
+
+
+# TODO
+
+- clean up
+- use includes from other pages instead of duplicating information

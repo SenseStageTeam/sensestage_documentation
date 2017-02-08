@@ -6,6 +6,8 @@ type: reference
 date: 2017-02-06
 category: software
 subcategory: interfaces
+tags:
+    - todo
 ---
 
 # How to read this description
@@ -216,3 +218,7 @@ then M times:
   possible return messages:
     /minihive/configuration/error config id
     /minihive/configuration/delete/done config id
+
+# TODO
+
+- configuration section

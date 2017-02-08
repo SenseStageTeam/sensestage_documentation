@@ -6,6 +6,9 @@ type: guide
 date: 2017-02-06
 category: software
 subcategory: installation
+tags:
+    - basics
+    - todo
 ---
 
 # Installation
@@ -164,4 +167,10 @@ You can now start the program with:
 
     cd scripts
     C:\Python2-7\python.exe pydongui.py
+
+# TODO
+
+- update package contents
+- update pyserial bit
+- optionally include bits from common pages
 

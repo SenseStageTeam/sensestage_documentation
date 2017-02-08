@@ -5,6 +5,8 @@ layout: documentation
 type: reference
 date: 2017-02-06
 category: meta
+tags:
+    - todo
 ---
 
 ![]({{ base_url }}/img/SenseStage_overview.png)
@@ -21,3 +23,7 @@ category: meta
 + User software: the software you use to do something with the minibee data (e.g. Max/MSP, PureData, SuperCollider, etc..)
 + Xpee:  smaller breakout board for the MiniBee
 + Xpree: bigger breakout board for the MiniBee
+
+# TODO
+
+- add links to pages describing the different parts

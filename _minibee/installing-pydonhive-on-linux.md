@@ -6,6 +6,9 @@ type: guide
 date: 2017-02-06
 category: software
 subcategory: installation
+tags:
+    - basics
+    - todo
 ---
 
 # Installation
@@ -157,3 +160,9 @@ You can now start pydongui and pydoncli from anywhere on your system:
 or:
 
     $ pydoncli.py
+
+# TODO
+
+- update package contents
+- update pyserial bit
+- optionally include bits from common pages (w/ osx)

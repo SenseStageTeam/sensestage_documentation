@@ -7,6 +7,7 @@ date: 2017-02-06
 tags:
     - basics
     - configuration
+    - todo
 category: introduction
 subcategory: getting-started
 related:
@@ -117,3 +118,7 @@ Now, after a short time, the MiniBee will be detected again. The red light on th
 
 Once you see this message, the OSC data will be sent out to the IP-address and port that you defined in the startup settings.
 
+
+# TODO
+
+- insert pictures

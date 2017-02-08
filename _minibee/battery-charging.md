@@ -8,6 +8,7 @@ category: hardware
 subcategory: battery
 tags:
     - basics
+    - todo
 ---
 
 1. unplug the battery
@@ -17,3 +18,6 @@ tags:
 
 advanced: embed a charging circuit into your setup
 
+# TODO
+
+- expand the page!
