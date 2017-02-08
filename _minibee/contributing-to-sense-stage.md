@@ -5,33 +5,34 @@ layout: documentation
 type: guide
 date: 2017-02-06
 category: meta
+subcategory: contributing
 ---
 
 There are many ways to contribute to the Sense/Stage project:
 
-* inspiring others what can be done with Sense/Stage by sharing your project
-* help documenting the project
-* fix issues in the hardware
-* fix issues in the software
-* fix issues in the firmware
+* [inspiring others what can be done with Sense/Stage by sharing your project](#inspire)
+* [help documenting the project](#document)
+* [fix issues in the hardware](#hardware)
+* [fix issues in the software](#software)
+* [fix issues in the firmware](#firmware)
 
 
-# Inspiration
+# Inspiration {#inspire}
 
 - how to share projects made with sense/stage
 
-# Documentation
+# Documentation {#document}
 
 - how to contribute to documentation
 
-# Hardware 
+# Hardware {#hardware}
 
 - how to contribute to hardware
 
-# Software
+# Software {#software}
 
 - how to contribute to software
 
-# Firmware
+# Firmware {#firmware}
 
 - how to contribute to firmware
