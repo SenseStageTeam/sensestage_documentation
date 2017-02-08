@@ -8,6 +8,9 @@ category: introduction
 related:
     - XPee
     - XPree
+tags:
+    - basics
+    - sensors
 ---
 
 

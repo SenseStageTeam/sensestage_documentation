@@ -5,6 +5,9 @@ layout: documentation
 type: reference
 date: 2017-02-06
 category: software
+sub-category: configuration
+tags:
+    - configuration
 ---
 
 The configuration files for PydonHive use the XML format.
