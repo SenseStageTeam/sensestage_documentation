@@ -7,15 +7,13 @@ type: overview
 date: 2017-02-06
 category: hardware
 subcategory: minibee
-tags:
-    - todo
 ---
 
 The Sense/Stage MiniBee is a small microcontroller board based on the Arduino, integrated with a connection for an XBee wireless chip. It is small and comes with preloaded firmware to use it easily in your wireless projects for a lot of common sensing and actuating purposes. As a bonus there is a 3-axis accelerometer on board. Cross platform open source software sends the data from the boards to your interactive environment via OpenSoundControl (OSC).
 
 ![](/img/minibee_bare.jpg)
 
-Overview of the features:
+# Overview of the features:
 
 * 6 analog inputs: A0, A1, A2, A3, A6, A7
 * 8 digital inputs or outputs: D3, D5, D6, D7, D8, D9, D10, D11; or optional four more: A0, A1, A2, A3
@@ -32,10 +30,13 @@ Overview of the features:
 * Preprogrammed with firmware for wireless configuration for using many common sensors
 * Firmware communication with software data sharing network supported by many common interactive software environments (e.g. SuperCollider, Max/MSP, PureData, Processing).
 
+# The different versions:
 
-The different versions:
+{% assign minibeerevs = site.minibee | where: "category", "hardware" | where: "subcategory", "minibee" %}
 
+{% for rev in minibeerevs %}
+{% unless rev.type == "overview" %}
+* <a href="{{rev.url}}">{{ rev.title }}</a> {% if rev.summary %}: {{ rev.summary }}  {% endif %}
+{% endunless %}
+{%endfor%}
 
-# TODO
-
-- add list of different versions
