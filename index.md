@@ -4,20 +4,12 @@ layout: page
 
 # MiniBee Documentation
 
-{% assign cats = site.minibee | group_by: "category" | sort: "name" %}
-
-{% assign subcats = site.minibee | group_by: "subcategory" | sort: "name" %}
-
-{% for group in cats %}
-
-## {{ group.name | capitalize }}
-
-        {% for subgroup in subcats %}
-
-        {% assign thesepages = site.minibee | where: "category", group.name | where: "subcategory", subgroup.name %}
-
+  {% for cat in site.data.category_order.navigation %}
+    {% if cat.children != null %}
+## {{ cat.name | capitalize }}
+        {% for child in cat.children %}
+        {% assign thesepages = site.minibee | where: "category", cat.name | where: "subcategory", child.name %}
             {% if thesepages.size > 0 %}
-
                 {% assign hasOverview = 0 %}
                 {% for post in thesepages %}
                     {% if post.type == "overview" %}
@@ -27,7 +19,7 @@ layout: page
                     {% endif %}
                 {% endfor %}
                 {% if hasOverview == 0 %}
-### {{ subgroup.name | capitalize }}
+### {{ child.name | capitalize }}
                 {% endif %}
 
                 {% for post in thesepages %}
@@ -37,7 +29,7 @@ layout: page
                 {%endfor%}
 
             {% endif %}
-
-        {%endfor%}
-
-{%endfor%}
+        
+        {% endfor %}
+    {% endif %}
+  {% endfor %}

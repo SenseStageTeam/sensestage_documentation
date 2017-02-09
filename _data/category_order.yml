@@ -1,0 +1,26 @@
+navigation:
+    - name: introduction
+      children:
+        - name: getting-started
+
+    - name: hardware
+      children:
+        - name: minibee
+        - name: battery
+        - name: expansion boards
+        - name: xbee
+    - name: software
+      children:
+        - name: installation
+        - name: usage
+        - name: configuration
+        - name: examples
+        - name: communication-mode
+    - name: firmware
+      children:
+        - name: minibee
+        - name: arduino-ide
+    - name: meta
+      children:
+        - name: community
+        - name: nonsense
