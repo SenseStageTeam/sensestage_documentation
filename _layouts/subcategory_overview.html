@@ -1,0 +1,80 @@
+---
+layout: default
+---
+
+<article class="post">
+
+	<header class="post-header">
+		<h1 class="post-title">{{ page.title | escape }}</h1>
+	</header>
+
+	<div class="post-content">
+		{% if page.summary %}
+		<p>
+			<em>{{page.summary}}</em>
+		</p>
+		{% endif %}
+
+		{% comment %}Overview text{% endcomment %}
+		{% capture cat-subcat %}{{ page.category }}_{{ page.subcategory }}{% endcapture %}
+		{% assign catoverview = site.minibee_overviews | where:"name", cat-subcat | first %}
+		{% if catoverview %}
+		<div class="overview">
+			{{catoverview | markdownify }}
+		</div>
+		{% endif %}
+
+		{{ content }}
+		
+		{% assign subpages = site.minibee | where: "category", page.category | where: "subcategory", page.subcategory %}
+                <ul>
+                {% for spage in subpages %}
+                {% unless spage.type == "overview" %}
+                <li> <a href="{{spage.url}}">{{ spage.title }}</a> {% if spage.summary %}: {{ spage.summary }}  {% endif %}</li>
+                {% endunless %}
+                {%endfor%}
+                </ul>
+
+		{% comment %}all data for your convenience{% endcomment %}
+		<hr>
+		<ul>
+			{% if page.subtitle %}
+			<li>Subtitle: {{ page.subtitle }}</li>
+			{% endif %}
+
+			<li>
+				{% if page.summary %}
+				Summary: {{ page.summary }}
+				{% else %}
+				<blockquote>No summary given</blockquote>
+				{% endif %}
+			</li>
+
+			<li>category: {{ page.category }}{% if page.subcategory %}, {{ page.subcategory }}{% endif %}
+
+
+
+				{% if page.tags %}
+				<li>Tags:
+					<ul>
+						{% for tag in page.tags %}
+						<li>{{ tag }}</li>
+						{% endfor %}
+					</ul>
+				</li>
+				{% endif %}
+
+				{% if page.related %}
+				<li>Related pages: 
+					<ul>
+						{% for related in page.related %}
+						<li><a href="{{ related | slugify }}.html">{{ related }}</a></li>
+						{% endfor %}
+					</ul>
+				</li>
+				{% endif %}
+			</ul>
+			<hr>
+		</div>
+
+	</article>
