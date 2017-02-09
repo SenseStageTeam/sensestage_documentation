@@ -16,7 +16,8 @@ layout: default
 		{% endif %}
 
 		{% comment %}Overview text{% endcomment %}
-		{% assign catoverview = site.minibee_overviews | where:"name", page.subcategory | first %}
+		{% capture cat-subcat %}{{ page.category }}_{{ page.subcategory }}{% endcapture %}
+		{% assign catoverview = site.minibee_overviews | where:"name", cat-subcat | first %}
 		{% if catoverview %}
 		<div class="overview">
 			{{catoverview | markdownify }}
@@ -40,7 +41,7 @@ layout: default
 				{% endif %}
 			</li>
 
-			<li>category: {{ page.category }}{% if page.subcategory %}{{ page.subcategory }}{% endif %}
+			<li>category: {{ page.category }}{% if page.subcategory %}, {{ page.subcategory }}{% endif %}
 
 
 
