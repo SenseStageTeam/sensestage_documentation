@@ -45,4 +45,3 @@ If you have a fix for a bug, please read the [contributing](contributing-to-sens
 # TODO
 
 - add more content on the trackers
-
