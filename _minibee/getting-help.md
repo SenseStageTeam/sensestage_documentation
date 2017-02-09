@@ -5,9 +5,7 @@ layout: documentation
 type: reference
 date: 2017-02-06
 category: meta
-subcategory: help
-tags:
-    - community
+subcategory: community
 ---
 
 The [Getting Started](getting-started-with-sensestage) pages guide you through the process of getting set up to use the Sense/Stage MiniBees describing what is what and how to set up the software.

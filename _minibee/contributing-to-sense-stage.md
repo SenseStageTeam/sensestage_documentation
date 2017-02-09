@@ -5,9 +5,8 @@ layout: documentation
 type: guide
 date: 2017-02-06
 category: meta
-subcategory: contributing
+subcategory: community
 tags:
-    - community
     - todo
 ---
 
