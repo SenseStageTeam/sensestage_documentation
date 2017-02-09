@@ -1,12 +1,18 @@
 ---
 layout: page
 ---
-{% assign sortedPosts = site.minibee | sort: 'title' %}
-
 
 ## MiniBee Documentation
 
+{% assign minibeegroups = site.minibee | group_by: "category" | sort: "name" %}
 
-{% for page in sortedPosts %}
-* <a href="{{page.url}}">{{ page.title }}</a> {% if page.summary %}: {{ page.summary }}  {% endif %}
-{% endfor %}
+{% for group in minibeegroups %}
+# {{ group.name | capitalize }}
+
+{% for post in site.minibee %}
+{% if post.category == group.name %}
+* <a href="{{post.url}}">{{ post.title }}</a> {% if post.summary %}: {{ post.summary }}  {% endif %}
+{%endif%}
+{%endfor%}
+
+{%endfor%}
