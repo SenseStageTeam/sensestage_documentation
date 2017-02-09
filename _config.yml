@@ -27,10 +27,11 @@ collections:
   minibee:
     output: true
     layout: documentation
-
+  minibee_overviews:
+    output: false
 # Build settings
 markdown: kramdown
-theme: minima
+# theme: minima
 gems:
   - jekyll-feed
 exclude:

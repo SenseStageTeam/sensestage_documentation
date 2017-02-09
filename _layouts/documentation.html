@@ -1,48 +1,70 @@
 ---
-layout: page
+layout: default
 ---
 
-<hr>
+<article class="post">
 
-<ul>
-{% if page.subtitle %}
-<li>Subtitle: {{ page.subtitle }}</li>
-{% endif %}
+	<header class="post-header">
+		<h1 class="post-title">{{ page.title | escape }}</h1>
+	</header>
 
-<li>
-	{% if page.summary %}
-	Summary: {{ page.summary }}
-	{% else %}
-	<blockquote>No summary given</blockquote>
-	{% endif %}
-</li>
+	<div class="post-content">
+		{% if page.summary %}
+		<p>
+			<em>{{page.summary}}</em>
+		</p>
+		{% endif %}
 
-<li>category: {{ page.category }}{% if page.subcategory %}{{ page.subcategory }}{% endif %}
+		{% comment %}Overview text{% endcomment %}
+		{% assign catoverview = site.minibee_overviews | where:"name", page.subcategory | first %}
+		{% if catoverview %}
+		<div class="overview">
+			{{catoverview | markdownify }}
+		</div>
+		{% endif %}
+
+		{{ content }}
+
+		{% comment %}all data for your convenience{% endcomment %}
+		<hr>
+		<ul>
+			{% if page.subtitle %}
+			<li>Subtitle: {{ page.subtitle }}</li>
+			{% endif %}
+
+			<li>
+				{% if page.summary %}
+				Summary: {{ page.summary }}
+				{% else %}
+				<blockquote>No summary given</blockquote>
+				{% endif %}
+			</li>
+
+			<li>category: {{ page.category }}{% if page.subcategory %}{{ page.subcategory }}{% endif %}
 
 
 
-{% if page.tags %}
-<li>Tags:
-<ul>
-{% for tag in page.tags %}
-<li>{{ tag }}</li>
-{% endfor %}
-</ul>
-	</li>
-{% endif %}
+				{% if page.tags %}
+				<li>Tags:
+					<ul>
+						{% for tag in page.tags %}
+						<li>{{ tag }}</li>
+						{% endfor %}
+					</ul>
+				</li>
+				{% endif %}
 
-{% if page.related %}
-<li>Related pages: 
-<ul>
-	{% for related in page.related %}
-	<li><a href="{{ related | slugify }}.html">{{ related }}</a></li>
-	{% endfor %}
-</ul>
-</li>
-{% endif %}
-</ul>
-<hr>
+				{% if page.related %}
+				<li>Related pages: 
+					<ul>
+						{% for related in page.related %}
+						<li><a href="{{ related | slugify }}.html">{{ related }}</a></li>
+						{% endfor %}
+					</ul>
+				</li>
+				{% endif %}
+			</ul>
+			<hr>
+		</div>
 
-<em>{{page.summary}}</em>
-
-{{ content }}
+	</article>
