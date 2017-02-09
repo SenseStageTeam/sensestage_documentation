@@ -5,7 +5,7 @@ layout: documentation
 type: reference
 date: 2017-02-06
 category: software
-subcategory: configuration
+subcategory: usage
 related:
     - Using the Hive
 ---

@@ -9,7 +9,7 @@ tags:
     - configuration
     - todo
 category: software
-subcategory: advanced-guides
+subcategory: configuration
 related:
     - OSC interface
 ---
