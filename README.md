@@ -3,7 +3,7 @@ This repository contains the source files for the documentation website of [Sens
 
 # Format
 
-See [](_minibee/testpage.md) for an example of the frontmatter of a page
+See [_minibee/testpage.md]() for an example of the frontmatter of a page
 
 ## Overview pages
 
