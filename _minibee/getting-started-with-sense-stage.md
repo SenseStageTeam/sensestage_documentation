@@ -9,6 +9,7 @@ tags:
     - installation
     - todo
 category: introduction
+subcategory: getting-started
 related:
   - anotherTitle
   - yetAnotherTitle
