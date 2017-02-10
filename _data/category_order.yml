@@ -7,7 +7,8 @@ navigation:
       children:
         - name: minibee
         - name: battery
-        - name: expansion boards
+        - name: coordinator
+        - name: expansion
         - name: xbee
     - name: software
       children:
@@ -15,7 +16,7 @@ navigation:
         - name: usage
         - name: configuration
         - name: examples
-        - name: communication-mode
+        - name: interfaces
     - name: firmware
       children:
         - name: minibee
