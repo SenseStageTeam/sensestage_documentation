@@ -24,15 +24,15 @@ Once you have installed the software, you can connect a MiniBee for the first ti
 
 The software can be started in the following ways:
 
-- On Linux and OSX from the commandline with ```pydongui.py```
-- On Windows you can start it by double clicking on the file ```start_pydon.bat```
+- On Linux and OSX from the commandline with `pydongui.py`
+- On Windows you can start it by double clicking on the file `start_pydon.bat`
 
 In the window you have to configure a few settings:
 
 * select mode (OSC)
 * select usb port
-    * on Linux: something like: `/dev/ttySUB0` or /dev/ttyACM0`
-    * on OSX: something like: '/dev/tty-usb.serialAACC6789`
+    * on Linux: something like: `/dev/ttySUB0` or `/dev/ttyACM0`
+    * on OSX: something like: `/dev/tty-usb.serialAACC6789`
     * on Windows: something like: `COM1`
 * select a configuration file: from the folder `ssdn_python-master`: `examples/configuration/example_hiveconfig.xml`
 * select the IP address and port to send OSC to
