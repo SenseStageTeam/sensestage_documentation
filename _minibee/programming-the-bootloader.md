@@ -12,11 +12,9 @@ subcategory: minibee
 ---
 
 
-    https://docs.sensestage.eu/minibee-reva-programming-the-bootloader
+[Programming bootloader on old site](https://docs.sensestage.eu/minibee-reva-programming-the-bootloader)
 
-    category: firmware
 
-    type: guide
 
 
 

@@ -11,5 +11,8 @@ category: firmware
 subcategory: minibee
 ---
 
-https://docs.sensestage.eu/firmware-wireless-configuration-with-the-minibee-firmware-library
+# TODO
+
+- port [old documentation](https://docs.sensestage.eu/old/firmware-wireless-configuration-with-the-minibee-firmware-library)
+
 

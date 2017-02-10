@@ -14,13 +14,10 @@ related:
 ---
 
 
+# TODO
 
-* Changing the Pan ID and channel of your Xbees
+Port the old documtation
 
-    https://docs.sensestage.eu/changing-the-pan-id-and-channel-of-the-xbee
+* [Changing the Pan ID and channel of your Xbees](https://docs.sensestage.eu/old/changing-the-pan-id-and-channel-of-the-xbee)
 
-* Changing the transmission power (for XBee Pro)
-
-    https://docs.sensestage.eu/changing-the-power-level-of-the-xbee-pro
-
-
+* [Changing the transmission power (for XBee Pro)](https://docs.sensestage.eu/old/changing-the-power-level-of-the-xbee-pro)

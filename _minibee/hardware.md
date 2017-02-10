@@ -12,10 +12,6 @@ tags:
 Sense/Stage has various hardware components, namely:
 
 
-{% comment %}
-{{ category_list }}
-{% endcomment %}
-
 ![]({{ base_url }}/img/SenseStage_overview.png)
 
 

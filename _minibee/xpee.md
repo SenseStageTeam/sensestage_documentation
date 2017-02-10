@@ -30,7 +30,7 @@ For the LEDs there are also footprints available to solder the (fixed value) res
 ![](/img/xpee_schematic.png)
 
 
-[Design files for KiCad on github](https://github.com/sensestage/minibee_hardware/tree/master/minibee/revF)
+[Design files for KiCad on github]()
 
 # Examples
 

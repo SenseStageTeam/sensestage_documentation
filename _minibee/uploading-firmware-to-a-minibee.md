@@ -19,8 +19,9 @@ subcategory: minibee
 
 * uploading firmware (different revisions of boards!; will also have different revision of Arduino IDE)
 
-    https://docs.sensestage.eu/minibee-reva-uploading-the-firmware
+[old website - uplaoding firmware to revA](https://docs.sensestage.eu/minibee-reva-uploading-the-firmware)
 
-    https://docs.sensestage.eu/programming-new-firmware-onto-the-minibee
+[old website - uploading firmware](https://docs.sensestage.eu/programming-new-firmware-onto-the-minibee)
+
 
 

@@ -1,26 +1,29 @@
 <footer class="site-footer">
 
   <div class="wrapperfilled">
-
-    <h2 class="footer-heading">{{ site.title | escape }}</h2>
-
+    
     <div class="footer-col-wrapper">
       <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li>
-            {% if site.author %}
-              {{ site.author | escape }}
-            {% else %}
-              {{ site.title | escape }}
-            {% endif %}
-            </li>
-            {% if site.email %}
-            <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-            {% endif %}
-        </ul>
+      <h2 class="footer-heading"><a href="https://sensestage.eu">Sense/Stage</a></h2>
+      <p>A Low Cost, Open Source Wireless Sensor Infrastructure for Live Performance and Interactive, Real-Time Environments</p>
       </div>
 
       <div class="footer-col footer-col-2">
+        <h2 class="footer-heading">{{ site.title | escape }}</h2>
+        <p>{{ site.description | escape }}</p>
+      </div>
+
+      <div class="footer-col footer-col-3">
+        <h2 class="footer-heading">Contact</h2>
+        <ul class="contact-list">
+          <li>            
+            </li>
+            {% if site.email %}
+            <li><a href="mailto:{{ site.email }}">contact</a></li>
+            {% endif %}
+            <li>subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></li>
+            <li><a href="https://forum.sensestage.eu">forum</a>
+        </ul>
         <ul class="social-media-list">
           {% if site.github_username %}
           <li>
@@ -36,9 +39,6 @@
         </ul>
       </div>
 
-      <div class="footer-col footer-col-3">
-        <p>{{ site.description | escape }}</p>
-      </div>
     </div>
 
   </div>

@@ -2,7 +2,7 @@ navigation:
     - name: introduction
       children:
         - name: getting-started
-
+        - name: glossary
     - name: hardware
       children:
         - name: minibee

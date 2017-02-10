@@ -23,11 +23,13 @@ There are many ways to contribute to the Sense/Stage project:
 
 - how to share projects made with sense/stage
 
+[project submission page on old website](https://docs.sensestage.eu/old/project-submission-page)
+
 # Documentation {#document}
 
 These documentation pages are written in a flavour of markdown text called [kramdown](https://kramdown.gettalong.org/syntax.html). The pages are then rendered with [Jekyll](https://jekyllrb.com/docs/home/).
 
-The source files of the documentation are hosted [here]().
+The source files of the documentation are hosted [on github](https://github.com/SenseStageTeam/sensestage_documentation).
 
 If you want to contribute to the documentation, you can do so in different ways:
 
@@ -35,7 +37,7 @@ If you want to contribute to the documentation, you can do so in different ways:
 - suggest an improvement for a documentation page via the forum.
 - via github:
     - create a user account if you don't have one
-    - file an issue on github and suggest an improvement there.
+    - file an [issue on github](https://github.com/SenseStageTeam/sensestage_documentation/issues) and suggest an improvement there.
     - if you are familiar with `git`
         - create a clone of the repository
         - modify or add the file you want
@@ -58,4 +60,4 @@ For us, it is the most convenient if a contribution is supplied via git, as it w
 
 # TODO
 
-- fill in this page!
+- expand this page!

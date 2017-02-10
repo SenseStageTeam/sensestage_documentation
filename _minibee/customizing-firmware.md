@@ -12,7 +12,7 @@ subcategory: minibee
 ---
 
 
-Custom firmware examples
+[Custom firmware examples](https://docs.sensestage.eu/customizing-the-minibee-firmware)
 ------------------------
 
 * Custom I2C Sensor
@@ -22,7 +22,6 @@ Custom firmware examples
 * Custom OSC messages
 * Additional sensors
 
-    https://docs.sensestage.eu/customizing-the-minibee-firmware
 
 * Firmware with fixed configuration (configuration cannot be changed via Hive config file or OSC)
 * Communicating from MiniBee to MiniBee

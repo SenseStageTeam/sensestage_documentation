@@ -2,9 +2,10 @@
 title: Glossary
 summary: a glossary of terms used around Sense/Stage
 layout: documentation
-type: reference
+type: overview
 date: 2017-02-06
-category: meta
+category: introduction
+subcategory: glossary
 tags:
     - todo
 ---

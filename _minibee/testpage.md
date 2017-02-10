@@ -13,6 +13,7 @@ subcategory: nonsense
 related:
     - Another title
     - Yet another title
+output: false
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod

@@ -25,7 +25,7 @@ The Sense/Stage XPree is an expansion board for the MiniBee for experimentation 
 ![](/img/xpree_schematic.png)
 
 
-[Design files for KiCad on github](https://github.com/sensestage/minibee_hardware/tree/master/minibee/revF)
+[Design files for KiCad on github]()
 
 # Examples
 

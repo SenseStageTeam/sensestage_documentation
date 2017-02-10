@@ -12,8 +12,4 @@ subcategory: arduino-ide
 ---
 
 
-    * Using the Arduino IDE to program boards
-
-    https://docs.sensestage.eu/preparing-the-arduino-ide-for-use-with-sensestage
-
-
+* [Using the Arduino IDE to program boards](https://docs.sensestage.eu/old/preparing-the-arduino-ide-for-use-with-sensestage)

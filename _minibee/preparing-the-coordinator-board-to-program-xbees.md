@@ -8,12 +8,7 @@ tags:
     - todo
 category: hardware
 subcategory: xbee
-related:
-  - anotherTitle
-  - yetAnotherTitle
 ---
 
 
-* Using a coordinator board as xbee programmer
-
-    https://docs.sensestage.eu/preparing-the-coo
+* [Using a coordinator board as xbee programmer](https://docs.sensestage.eu/old/preparing-the-coordinator-board-to-reconfigure-xbees)

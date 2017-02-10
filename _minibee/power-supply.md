@@ -27,8 +27,8 @@ There is a fuse on the Sense/Stage MiniBee, which will shut it down if you short
 
 There is an obvious compromise to be made between battery size and battery capacity, and so we decided to consider two configurations:
 
-    for usage cases where size is not a concern, e.g. when the board is used for fixed environmental sensing, a large, high-capacity battery is best; and
-    for situations where size is important (mounted on a performer’s body or a handheld instrument, for example) and the battery should be as small as possible.
+* for usage cases where size is not a concern, e.g. when the board is used for fixed environmental sensing, a large, high-capacity battery is best; and
+* for situations where size is important (mounted on a performer’s body or a handheld instrument, for example) and the battery should be as small as possible.
 
 For logistical and ecological reasons, the battery should be rechargeable, and last at least as long as one rehearsal, i.e. approximately 5 to 6 hours. Our board draws about 70 mA of current, when used with a regular XBee, transmitting data every 50 ms, without activating a sleep mode.
 

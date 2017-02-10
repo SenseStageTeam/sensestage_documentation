@@ -25,7 +25,7 @@ Our firmware assumes that the connections between the Arduino and XBee are as fo
 
 * While programming the firmware onto the Arduino, you have to remove the XBee from the board, as otherwise the firmware upload will not work.
 * Arduino variants with the ATmega328 chip work best with the firmware, as it has more memory.
-* Use the [XBee series 1 chip](xbee-choice) (either the regular one or the Pro version; with any antenna type you like).
+* Use the [XBee series 1 chip](xbee-choice-and-configuration) (either the regular one or the Pro version; with any antenna type you like).
 
 # Arduino Fio
 
