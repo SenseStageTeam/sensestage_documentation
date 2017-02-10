@@ -16,7 +16,7 @@ Steps to take:
 
 * [check if the issue is known in the issue tracker](#issuetracker)
 * [start a discussion on the forum](#forum)
-* [file the issue on the issue tracker](#issuetrackker)
+* [file the issue on the issue tracker](#issuetracker)
 * and optionally, [provide a fix for the bug](#fixes)
 
 
@@ -29,9 +29,9 @@ If you think you found an issue somewhere, you can start a discussion on the for
 
 # Github issue trackers {#issuetracker}
 
-There are repositories for different parts of the project; each one of these has an issue tracker.
+There are repositories for different parts of the project; each one of these has an issue tracker. You need an account at Github to file issues.
 
-* [documentation]
+* [documentation](https://github.com/SenseStageTeam/sensestage_documentation/issues)
 * [hardware]
 * [firmware]
 * [software]
