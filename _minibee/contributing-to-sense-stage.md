@@ -34,7 +34,7 @@ The source files of the documentation are hosted [on github](https://github.com/
 If you want to contribute to the documentation, you can do so in different ways:
 
 - mail me with an updated page (the markdown file and the pictures you made that belong to the page)
-- suggest an improvement for a documentation page via the forum.
+- suggest an improvement for a documentation page via the [forum](https://forum.sensestage.eu).
 - via github:
     - create a user account if you don't have one
     - file an [issue on github](https://github.com/SenseStageTeam/sensestage_documentation/issues) and suggest an improvement there.
@@ -44,7 +44,7 @@ If you want to contribute to the documentation, you can do so in different ways:
         - commit it and push it to your clone
         - create a pull request
 
-For us, it is the most convenient if a contribution is supplied via git, as it will be the least work for us to keep files in sync. But if you are not familiar with `git` we more than welcome contributions via the forum or mail.
+For us, it is the most convenient if a contribution is supplied via `git`, as it will be the least work for us to keep files in sync. But if you are not familiar with `git` we more than welcome contributions via the forum or mail.
 
 # Hardware {#hardware}
 
