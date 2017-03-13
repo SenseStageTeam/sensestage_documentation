@@ -42,7 +42,7 @@ You may have also purchased a battery kit, which should include 2 or 5 LiPo batt
 
 # 3. [Connect a Minibee](connecting-a-minibee-for-the-first-time) {#step3}
 
-# 4. Next steps
+# 4. Next steps {#step4}
 
 [Examples of interfacing via OSC](examples-of-interfacing-via-osc)
 

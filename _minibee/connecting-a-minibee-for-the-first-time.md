@@ -30,7 +30,7 @@ In the window you have to configure a few settings:
 
 * select mode (OSC)
 * select usb port
-    * on Linux: something like: `/dev/ttySUB0` or `/dev/ttyACM0`
+    * on Linux: something like: `/dev/ttyUSB0` or `/dev/ttyACM0`
     * on OSX: something like: `/dev/tty-usb.serialAACC6789`
     * on Windows: something like: `COM1`
 * select a configuration file: from the folder `ssdn_python-master`: `examples/configuration/example_hiveconfig.xml`
@@ -50,7 +50,7 @@ The first step is to plug in the battery to the MiniBee. The battery is connecte
 
 Turn on the minibee, by moving the small switch which is next to the JST connector.
 
-A green LED, the middle one in the row of three next to the power switch will start burning. After a few seconds, an orange LED will start blinking, indicating that the radio is active. After a while a red LED will turn on momentarily, indicating that the MiniBee is receiving data from the coordinator node. The software sends a message to assign the MiniBee an ID. At the coordinator node, you will notice that the RX/TX LEDs start blinking as well.
+A green LED, the middle one in the row of three next to the power switch will light up. After a few seconds, an orange LED will start blinking, indicating that the radio is active. After a while a red LED will turn on momentarily, indicating that the MiniBee is receiving data from the coordinator node. The software sends a message to assign the MiniBee an ID. At the coordinator node, you will notice that the RX/TX LEDs start blinking as well.
 
 
 > *insert pictures here to show the blinking lights*
@@ -67,7 +67,11 @@ You will also see a message in the logging window of the software saying somethi
 
 # Configuring the minibee
 
-The software has created a new configuration file in the directory from which you started the software. In our example the file has the name `newconfig_2017_Jan_19_18-03-55.xml`. The filename is automatically generated from the date and time of the computer. If you open the file, it will look like this:
+The software has created a new configuration file in the directory from which you started the software. In our example the file has the name `newconfig_2017_Jan_19_18-03-55.xml`. The filename is automatically generated from the date and time of the computer. If you open the file with a plain text editor, it will look like this:
+
+> *give suggestions for programs to open the file with on different platforms!*
+
+> On Linux use a plain text editor like MousePad, gedit or kwrite for reading the file. 
 
 
 ```

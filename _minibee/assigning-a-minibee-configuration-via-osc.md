@@ -1,6 +1,6 @@
 ---
 title: Assigning a MiniBee Configuration via OSC
-summary: A guide on how to assign a configuration to a MiniBee via OSC
+summary: A guide on how to assign a configuration to a MiniBee by sending an OSC message
 layout: documentation
 type: guide
 date: 2017-02-06
@@ -27,11 +27,11 @@ The software can be started in the following ways:
 - On Linux and OSX from the commandline with `pydongui.py`
 - On Windows you can start it by double clicking on the file `start_pydon.bat`
 
-In the window you have to configure a few settings:
+In the user interface you have to configure a few settings:
 
 * select mode (OSC)
 * select usb port
-    * on Linux: something like: `/dev/ttySUB0` or `/dev/ttyACM0`
+    * on Linux: something like: `/dev/ttyUSB0` or `/dev/ttyACM0`
     * on OSX: something like: `/dev/tty-usb.serialAACC6789`
     * on Windows: something like: `COM1`
 * select a configuration file: from the folder `ssdn_python-master`: `examples/configuration/example_hiveconfig.xml`
@@ -51,7 +51,7 @@ The first step is to plug in the battery to the MiniBee. The battery is connecte
 
 Turn on the minibee, by moving the small switch which is next to the JST connector.
 
-A green LED, the middle one in the row of three next to the power switch will start burning. After a few seconds, an orange LED will start blinking, indicating that the radio is active. After a while a red LED will turn on momentarily, indicating that the MiniBee is receiving data from the coordinator node. The software sends a message to assign the MiniBee an ID. At the coordinator node, you will notice that the RX/TX LEDs start blinking as well.
+A green LED, the middle one in the row of three next to the power switch will light up. After a few seconds, an orange LED will start blinking, indicating that the radio is active. After a while a red LED will turn on momentarily, indicating that the MiniBee is receiving data from the coordinator node. The software sends a message to assign the MiniBee an ID. At the coordinator node, you will notice that the RX/TX LEDs start blinking as well.
 
 
 > *insert pictures here to show the blinking lights*
