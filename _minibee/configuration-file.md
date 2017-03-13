@@ -5,7 +5,7 @@ layout: documentation
 type: reference
 date: 2017-02-06
 category: software
-sub-category: configuration
+subcategory: configuration
 tags:
     - configuration
 related:
@@ -55,18 +55,18 @@ So top level:
 
 Then for each pin:
 
-- *id* – this should be one of: A0, A1, A2, A3, (A4, A5,) A6, A7, D3, D5, D6, D7, D8, D9, D10, D11
+- *id* – this should be one of: A0, A1, A2, A3, (A4, A5,) A6, A7, D2, D3, D5, D6, D7, D8, D9, D10, D11
 - *label* - The label is used to create a label for the DataSlot that this pin will be providing in the DataNode corresponding to the MiniBee (when using the DataNetwork mode to communicate)
 - *configuration* – Pins that are not mentioned are not configured. Possible pin configurations (use these exact names, it is case sensitive):
-    * `DigitalIn` — digital input (any pin except for A4, A5)
-    * `DigitalInPullup` — digital input with pullup resistor enabled (any pin except for A4, A5) since library version 6 (June 2013)
-    * `DigitalOut` — digital output on/off (any pin except for A4, A5)
+    * `DigitalIn` — digital input (any pin *except* for A4, A5, A6, A7)
+    * `DigitalInPullup` — digital input with pullup resistor enabled (any pin *except* for A4, A5, A6, A7) since library version 6 (June 2013)
+    * `DigitalOut` — digital output on/off (any pin *except* for A4, A5, A6, A7)
     * `AnalogIn` — analog input (for pin A0, A1, A2, A3, A6, A7)
     * `AnalogIn10bit` — analog input with 10bit result (for pin A0, A1, A2, A3, A6, A7)
     * `AnalogOut` — PWM or analog out (pins D3, D5, D6, D9, D10, D11)
-    * `Ping` — Ultrasonic sensor (any pin except for A4, A5)
-    * `SHTClock` — Clock signal for SHT15 sensor (temperature/humidity) (any pin except for A4, A5)
-    * `SHTData` — Data signal for SHT15 sensor (temperature/humidity) (any pin except for A4, A5)
+    * `Ping` — Ultrasonic sensor (any pin *except* for A4, A5, A6, A7)
+    * `SHTClock` — Clock signal for SHT15 sensor (temperature/humidity) (any pin *except* for A4, A5, A6, A7)
+    * `SHTData` — Data signal for SHT15 sensor (temperature/humidity) (any pin *except* for A4, A5, A6, A7)
     * `TWIClock` — Use a TWI/I2C sensor, clock signal (pin A5), configured automatically, if a TWI device is present in the configuration.
     * `TWIData` — Use a TWI/I2C sensor, data signal (pin A4), configured automatically, if a TWI device is present in the configuration.
 
@@ -78,6 +78,16 @@ Then for each pin:
             <twislot id="2" name="z" />
         </twi>
 
+## Note on D2 and D7 for MiniBee revision F
+
+With board revision F, the connection of pin D2 to the XBee sleep pin was changed: instead pin D7 is connected to the XBee sleep pin, and pin D2 is connected to the pin header instead of D7. In order to keep backwards compatibility of expansion boards the firmware and software behave as follows:
+
+* if pin `D2` is defined in the configuration file, then the function defined there is used
+* if pin `D7` is defined in the configuration file, and no function is defined for `D2`, then the function defined for `D7` is used for pin `D2`.
+* if both `D2` and `D7` are defined in the configuration file, then the function defined for `D2` is used for the pin, and the function for `D7` is ignored.
+* For older minibee revisions any configuration of pin `D2` is ignored.
+
+For revision F the software makes a pass to move the configuration of pin `D2` to `D7`.
 
 # Automatically generating configurations
 

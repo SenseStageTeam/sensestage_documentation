@@ -19,15 +19,15 @@ related:
 
 To begin with, you should inspect the contents of your kit. Be able to identify the various parts of the Sense/Stage hardware setup. Your starter kit should include the following:
 
-1. 2 or 5 Minibee boards including headers
-2. 3 or 6 Xbee radios (all but one connected to Minibees)
+1. 2 Minibee boards including headers
+2. 3 XBee radios (all but one connected to Minibees)
 3. a red coordinator board
-4. green Xpee expansion boards (2 or 5) including headers
-5. green Xpree expansion boards (2 or 5) including headers
+4. 2 green Xpee expansion boards including headers
+5. 2 green Xpree expansion boards including headers
 
-You may have also purchased a battery kit, which should include 2 or 5 LiPo batteries and a red USB charging board.
+You may have also purchased a battery kit, which should include 2 LiPo batteries and a red USB charging board.
 
-![](/img/minibee-starter-kit-labled.jpg)
+![](/img/sensestagekit_annotated.png)
 
 
 # Minibees
@@ -38,33 +38,44 @@ Unlike an Arduino, the Minibee has a built-in accelerometer and is ready to star
 
 In the future you'll likely want to add additional sensors to capture more phenomena of the physical world.
 
-The standard Sense/Stage kit should have 2 Minibees, a PLUS kit has 5. In addition, for each Minibee you should have a black expansion header.
+The standard Sense/Stage kit has 2 Minibees. In addition, for each Minibee you should have a black expansion header.
 
-![](/img/minibee-single-kit.jpg)
+![](/img/minibee_revF_header_top.jpg)
 
-# Xbee Radios
+# XBee Radios
 
 While Minibees can operate fine on their own as tiny Arduinos, their real power is in their ability to communicate data wirelessly over a distance.
 
-In order to be able to engage in wireless communication, every Minibee needs to be equipped with a little wireless radio device called an Xbee.
+In order to be able to engage in wireless communication, every Minibee needs to be equipped with a little wireless radio device called an XBee.
 
-All of your Minibees will come with Xbee radios already attached to them, labled **N** for **NODE**.
+All of your Minibees will come with XBee radios already attached to them, labeled **N** for **NODE**.
 
-You should also have one extra Xbee to use with the coordinator board, labled **C** for **COORDINATOR**.
+You should also have one extra XBee to use with the coordinator board, labeled **C** for **COORDINATOR**.
+
+
+*The right way of putting the XBee on the MiniBee:*
+![](/img/minibee_revF_xbee_right.jpg )
+
+*The **wrong** way of putting the XBee on the MiniBee:*
+![](/img/minibee_revF_xbee_wrong.png)
 
 
 # The Coordinator Board
 
-The small red board with a mini USB connector on it. This board must also be equipped with an Xbee radio. It will connect to your computer via USB so that your computer can join the wireless conversation with your swarm of Minibees.
+The small red board with a mini USB connector on it. This board must also be equipped with an XBee radio. It will connect to your computer via USB so that your computer can join the wireless conversation with your swarm of Minibees.
 
 > NOTE: A USB mini cable is not included with your Sense/Stage kit!
 
-## Putting the Xbee on the Coordinator Board
+## Putting the XBee on the Coordinator Board
 Before you can use the coordinator board you need to connect an XBee to it. Your kit is provided with one extra XBee labled "C" for this purpose.
 
-Be very gentle when attaching the Xbee, and make sure you use the correct orientation.
+Be very gentle when attaching the XBee, and make sure you use the correct orientation.
 
-![IMAGE ILLUSTRATING ATTACHING THE XBEE WITH CORRECT ORIENTATION]()
+*The right way of putting the XBee on the coordinator board:*
+![](/img/coordinator_xbee_right.jpg)
+
+*The **wrong** way of putting the XBee on the coordinator board:*
+![](/img/coordinator_xbee_wrong.png)
 
 > [More information about the coordinator board](coordinator-board)
 

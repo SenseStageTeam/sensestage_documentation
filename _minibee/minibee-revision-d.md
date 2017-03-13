@@ -64,9 +64,11 @@ For [programming the firmware](programming-firmware-with-the-arduino-ide), use t
 
 # Subversions
 
-The first manufacturing run has the Atmega328 chip instead of the Atmega328p chip. This is a subtle difference that only affects the board if you want to program the bootloader onto the board, or program firmware without using the bootloader. The boards of this first batch can be recognized by a sticker on the bottom with a serial number, and the desoldered pin holes. In the hardware definitions within the Arduino IDE, this version is called "Sense/Stage MiniBee revD1 (3.3V, 12MHz) w/ Atmega328". You *only* need this for programming the bootloader or programming the board with the Atmel programmer, not for the regular uploading of firmware.
+The first manufacturing run has the Atmega328 chip instead of the Atmega328p chip. This is a subtle difference that only affects the board if you want to program the bootloader onto the board, or program firmware without using the bootloader. The boards of this first batch can be recognized by a sticker on the bottom with a serial number, and the desoldered pin holes. In the hardware definitions within the Arduino IDE, this version is called "Sense/Stage MiniBee revD0 (3.3V, 12MHz) w/ Atmega328". You *only* need this for programming the bootloader or programming the board with the Atmel programmer, not for the regular uploading of firmware.
 
-![](/img/MiniBee_revD1.jpg)
+![](/img/MiniBee_revD0.jpg)
+
+![](/img/MiniBee_revD0_bottom.jpg)
 
 
 # TODO

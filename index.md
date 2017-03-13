@@ -2,7 +2,7 @@
 layout: page
 ---
 
-This page is currently a work in progress. See [here](https://docs.sensestage.eu/old/topic/documentation) for an overview of the old documentation. In the pages below the old sites are linked where necessary. If you want to help out in the documentation process, please read on [how to contribute](contributing-to-sense-stage).
+This page is currently a work in progress. See [here](https://docs.sensestage.eu/old/topic/documentation) for an overview of the old documentation. In the pages below the old sites are linked where necessary. If you want to help out in the documentation process, please read on [how to contribute](minibee/contributing-to-sense-stage).
 
 # MiniBee Documentation
 

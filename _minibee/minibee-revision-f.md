@@ -26,6 +26,9 @@ Overview of the board:
 * Regulated power output: 3.3V, GND
 * blue pcb
 
+![](/img/minibee_revF_plus_header_top.jpg)
+![](/img/minibee_revF_plus_header_bottom.jpg)
+
 # Pin out
 
 The pin outs on the header are from left to right:
@@ -33,6 +36,17 @@ The pin outs on the header are from left to right:
     GND - RX - D5 - D2 - D9 - D11 - A6 - SDA - A2 - A0
     3v3 - TX - D3 - D6 - D8 - D10 - A7 - SCL - A3 - A1
 
+On the bottom of the board, the pin labels are also printed. *By mistake pin D2 is labeled as D7*. 
+
+# Bottom pads
+
+On the bottom of the board, a couple of pads are broken out:
+
+* POWER `+` and `-`
+* two pads for adding your own external switch
+* `INT1` and `INT2` of the ADXL345
+
+![](/img/minibee_revF_bottom_annotated.png)
 
 # LEDs
 
@@ -65,3 +79,5 @@ For [programming the firmware](programming-firmware-with-the-arduino-ide), use t
 # TODO
 
 - check links
+- add images
+
