@@ -8,7 +8,6 @@ category: software
 subcategory: installation
 tags:
     - basics
-    - todo
 ---
 
 # Installation
@@ -65,7 +64,3 @@ Most Linux distributions also provide setuptools in their package manager, e.g. 
 # Starting the program
 
 {% include pydonhive_start.md %}
-
-# TODO
-
-- update pyserial bit

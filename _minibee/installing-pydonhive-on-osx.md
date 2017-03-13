@@ -8,7 +8,6 @@ category: software
 subcategory: installation
 tags:
     - basics
-    - todo
 ---
 
 # Installation
@@ -52,6 +51,3 @@ On OSX you can just doubleclick on them to extract them.
 
 {% include pydonhive_start.md %}
 
-# TODO
-
-- update pyserial bit

@@ -65,61 +65,65 @@ To see which parameters are available:
 
 this will print the help:
 
-    Usage: pydoncli.py [options]
+```
+Usage: pydoncli.py [options]
 
-    MetaPydonHive - Create a client to communicate with the minibee network.
+MetaPydonHive - Create a client to communicate with the minibee network.
 
-    Options:
-      -h, --help            show this help message and exit
-      -P PROGRAM, --program=PROGRAM
+Options:
+  -h, --help            show this help message and exit
+  -P PROGRAM, --program=PROGRAM
                         Which program/infrastructure do you want to use?
                         options: datanetwork, osc, libmapper, junxion
-      -s SERIAL, --serial=SERIAL
+  -s SERIAL, --serial=SERIAL
                         the serial port [default:/dev/ttyUSB0]
-      -a APIMODE, --apimode=APIMODE
+  -a APIMODE, --apimode=APIMODE
                         use API mode for communication with the minibees
                         [default:False]
-      -v VERBOSE, --verbose=VERBOSE
+  -v VERBOSE, --verbose=VERBOSE
                         verbose printing [default:False]
-      -u IGNORE, --ignore-unknown=IGNORE
+  -u IGNORE, --ignore-unknown=IGNORE
                         ignore unknown minibees [default:False]
-      -x XBEEERROR, --check-for-xbee-error=XBEEERROR
+  -f CREATENEWFILES, --create-new-files=CREATENEWFILES
+                        create new files for unknown minibees [default:True]
+  -x XBEEERROR, --check-for-xbee-error=XBEEERROR
                         check whether xbee-error occurred [default:False]
-      --auto=AUTOSTART      autostart [default:False]
-      -l LOGDATA, --logdata=LOGDATA
+  --auto=AUTOSTART      autostart [default:False]
+  -l LOGDATA, --logdata=LOGDATA
                         log data to file [default:False]
-      -c CONFIG, --config=CONFIG
+  -c CONFIG, --config=CONFIG
                         the name of the configuration file for the minibees
                         [default:../configs/example_hiveconfig.xml]
-      -n NAME, --name=NAME  the name of the client in the datanetwork
+  -n NAME, --name=NAME  the name of the client in the datanetwork
                         [default:pydonhive] (needed for datanetwork or
                         libmapper)
-      -b BAUDRATE, --baudrate=BAUDRATE
+  -b BAUDRATE, --baudrate=BAUDRATE
                         the serial port [default:57600]
-      -m MINIBEES, --nr_of_minibees=MINIBEES
+  -m MINIBEES, --nr_of_minibees=MINIBEES
                         the number of minibees in the network [default:20]
-      -o MBOFFSET, --minibee_offset=MBOFFSET
+  -o MBOFFSET, --minibee_offset=MBOFFSET
                         the offset of the number range for the minibees in the
                         network [default:1]
-      -d HOST, --host_ip=HOST
+  -d HOST, --host_ip=HOST
                         the ip address of the datanetwork host or osc/junxion
                         receiver [default:127.0.0.1]
-      -t HPORT, --host_port=HPORT
+  -t HPORT, --host_port=HPORT
                         the port on which the application that has to receive
                         the OSC messages will listen [default:57120] (needed
                         for osc or junxion or default for datanetwork)
-      -i IP, --ip=IP        the ip on which the client will listen
+  -i IP, --ip=IP        the ip on which the client will listen
                         [default:0.0.0.0]
-      -p PORT, --port=PORT  the port on which the client will listen
+  -p PORT, --port=PORT  the port on which the client will listen
                         [default:57600]
-      -N LOGNAME, --logname=LOGNAME
+  -N LOGNAME, --logname=LOGNAME
                         log name (default pydon.log)
-      -V LOGLEVEL, --loglevel=LOGLEVEL
+  -V LOGLEVEL, --loglevel=LOGLEVEL
                         logging level (debug, info, error)
-      -L LOGDIR, --logdir=LOGDIR
+  -L LOGDIR, --logdir=LOGDIR
                         log DIRECTORY (default ./)
-      -Q, --quiet           do not log to console
-      -C, --clean           remove old log file
+  -Q, --quiet           do not log to console
+  -C, --clean           remove old log file
+```
 
 To start it you would do for example:
 

@@ -8,7 +8,6 @@ category: software
 subcategory: installation
 tags:
     - basics
-    - todo
 ---
 
 # Installation
@@ -19,7 +18,7 @@ tags:
 
 Tools needed on Windows:
 
-* 7-zip – to unpack `pyosc.tar.gz`, `XBee-2.0.1.tar.gz` and `pyserial.tar.gz`
+* 7-zip – to unpack `pyosc.tar.gz`, `XBee-2.0.1.tar.gz` and `pyserial-sensestage.tar.gz`
 * A driver for the coordinator board, either the FTDI driver, or another driver (as for the Arduino Uno).
 
 
@@ -27,13 +26,13 @@ Tools needed on Windows:
 
 # Installation step by step
 
-Step by step instructions are below, also always check the `INSTALL.txt` in the package for the latest information.
+Step by step instructions are below, also always check the `INSTALL.md` in the package for the latest information.
 
 > These step by step instructions are basically the commands carried out by the installation script.
 
 The instructions below, need to be executed in the terminal. For each code snippet you see there, you have to copy them literally into the terminal, except when otherwise noted and except for the dollar sign, which indicates the command prompt.
 
-On Windows this is called the “command prompt”, and can be opened from the Windows menu by typing “cmd.exe” in the dialog box that shows up when choosing “Run”. See also specific Windows instructions below.
+On Windows this is called the “command prompt”, and can be opened from the Windows menu by typing `cmd.exe` in the dialog box that shows up when choosing  `Run`. See also the instructions below.
 
 ## [step 0] : install 7-zip
 
@@ -50,8 +49,8 @@ Then:
 * Right-click on `XBee2.0.1.tar.gz`, in the context menu there should be an entry “7-zip”, select that and choose “extract here”.
 * Then do the same again on the resulting `XBee2.0.1.tar` file. Now you have a folder `XBee2.0.1`
 
-* Right-click on `pyserial.tar.gz`, in the context menu there should be an entry “7-zip”, select that and choose “extract here”.
-* Then do the same again on the resulting `pyserial.tar` file. Now you have a folder `pyserial`
+* Right-click on `pyserial-sensestage.tar.gz`, in the context menu there should be an entry “7-zip”, select that and choose “extract here”.
+* Then do the same again on the resulting `pyserial.tar` file. Now you have a folder `pyserial-sensestage`
 
 ## [step 2] : open cmd.exe and navigate
 
@@ -102,7 +101,7 @@ C:> cd XBee2.0.1
 C:> C:\Python2-7\python.exe setup.py install
 C:> cd ..
 ```
-* Navigate to pyserial and install:
+* Navigate to pyserial-serial and install:
 ```
 C:> cd pyserial
 C:> C:\Python2-7\python.exe setup.py install
@@ -122,8 +121,4 @@ You can now start the program with:
 
     C:> cd scripts
     C:> C:\Python2-7\python.exe pydongui.py
-
-# TODO
-
-- update pyserial bit
 

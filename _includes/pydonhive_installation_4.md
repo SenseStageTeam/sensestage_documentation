@@ -14,9 +14,9 @@
     $ sudo python setup.py install
     $ cd ..
 
-### pyserial
+### pyserial-sensestage
 
-    $ tar -xzvf pyserial.tar.gz
-    $ cd pyserial
+    $ tar -xzvf pyserial-sensestage.tar.gz
+    $ cd pyserial-sensestage
     $ sudo python setup.py install
     $ cd ..

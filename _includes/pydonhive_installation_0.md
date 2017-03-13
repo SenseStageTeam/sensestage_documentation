@@ -1,4 +1,4 @@
-Step by step instructions are below, also always check the `INSTALL.txt` in the package for the latest information.
+Step by step instructions are below, also always check the `INSTALL.md` in the package for the latest information.
 
 > These step by step instructions are basically the commands carried out by the installation script.
 

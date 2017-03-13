@@ -2,12 +2,24 @@
 
 In the download package you’ll find two folders and a few files:
 
-* `README.txt` – short introduction
-* `INSTALL.txt` – details how to install the package and its dependencies
-* `GETTING_STARTED.txt` – gives a quick overview on how to start with the MiniBees you just got and how to interface with them.
-* `MINIHIVEOSC_DOCUMENTATION.txt` gives an overview of the OSC interface of MiniHiveOsc, one of the ways to interface with the minibees through the SenseWorld DataNetwork
-* `TODO.txt` – todo list for pydon
+* `README.md` – short introduction
+* `INSTALL.md` – details how to install the package and its dependencies
+* `GETTING_STARTED.md` – gives a quick overview on how to start with the MiniBees you just got and how to interface with them.
+* `MINIHIVEOSC_DOCUMENTATION.md` gives an overview of the OSC interface of MiniHiveOsc, one of the ways to interface with the minibees through the SenseWorld DataNetwork
+* `TODO.txt` – (outdated) todo list for pydon
+
+* `examples` - folder with examples
+    * `configuration` - example configurations for pydon
+    * `eyesweb` - example patch for [EyesWeb](http://www.infomus.org/eyesweb_eng.php)
+    * `max` - example patch for [Max/MSP](https://cycling74.com/products/max)
+    * `puredata` - example patch for [PureData](http://puredata.info)
+    * `supercollider` - example scripts for [SuperCollider](http://supercollider.github.io)
+    * `vvvv` - example patch for [vvvv](https://vvvv.org)
+
+* `windows` - this contains scripts for installing on windows
+
 * `pydon` – this is the actual pydon package, with inside it:
+    * `setup.py` - the installation script
     * A folder `scripts` – the python datanetwork client library, containing:
         * `pydongui.py` – an encapsulating program, providing a GUI-interface for metapydonhive.
         * `pydoncli.py` – an encapsulating program, providing a command line interface for metapydonhive.
@@ -22,13 +34,12 @@ In the download package you’ll find two folders and a few files:
         * `metapydonhive.py` – an encapsulating program, where you can select one of the possible interfaces to use (datanetwork, osc, junxion, libmapper).
         * `pydonguifront.py` – an encapsulating program, providing a GUI-interface for metapydonhive.
         * `pydonlogger.py` – a helper utility to log the output into both the GUI window of pydongui, and a log file.
-    * A folder `configs` – containing some example configuration files.
-    * `supercollider` – containing a few test scripts to interface with pydon.
-    * `pyosc.tar.gz` – a compressed archive containing pyosc.
-    * `XBee-2.0.1.tar.gz` – a compressed archive containing a slightly modified version of the python-xbee library.
-    * `pyserial.tar.gz`
-
-    
-# TODO
-
-- update package contents
+        * `hiveserialapi.py` - handling the serial API interface
+        * `hiveserial.py` - handling the serial AT interface
+        * `__init__.py` - python package file
+    * A folder `configs` – containing some more example configuration files.
+    * A folder `obsolete` – containing obsolete files.
+* `pyosc.tar.gz` – a compressed archive containing pyosc.
+* `XBee-2.0.1.tar.gz` – a compressed archive containing a slightly modified version of the python-xbee library.
+* `pyserial-sensestage.tar.gz`
+* `installation.sh` - a script for installation on Linux and OSX

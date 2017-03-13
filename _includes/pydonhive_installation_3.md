@@ -2,6 +2,8 @@ Setuptools is a tool to manage dependencies for Python packages, you can get it 
 
 * Navigate to the extracted package
 * Type:
-    $ python ez_setup.py
-* Or, as superuser (you’ll need to give your password)
-    $ sudo python ez_setup.py
+
+    `$ python ez_setup.py`
+* Or as superuser (you’ll need to give your password)
+
+    `$ sudo python ez_setup.py`
