@@ -31,48 +31,28 @@ The important folders where you will want to put files or change files are:
 * `_minibee` : this is the documentation for everything around the MiniBee system
 * `img` : this is where images for the documentation go
 
+# Writing your contribution
+
 ## Edit a page
 
 To find the page that you want to edit, look at the URL of the documentation page. For example if you want to improve the Getting Started page, the URL is `https://docs.sensestage.eu/minibee/getting-started-with-sense-stage.html`. You can then find the source file in the folder `_minibee` (mirroring the `/minibee` in the URL) with the filename `getting-started-with-sense-stage.md`. Click on the file name. You will see a rendered version of the documentation page. If you click on the "Edit" button you will be able to edit the documentation page.
 
-See the [next section on how to do the formatting of the text](#formatting)
+See the [this page for the formatting of the text](formatting-documentation-pages)
 
 ## Make a new page
 
 * Go to the directory where you want to make the file. For example `_minibee`
 * Create new file
 * The name of the page should match the title of the page you want to make. Except with `-` instead of spaces or other signs. So "Getting started with Sense/Stage" should have the file name `getting-started-with-sense-stage.md'
+* Filling in the [metadata of the page](formating-documentation-pages#metadata)
+* Writing the page.
 
-At the top of the page there should be some meta-data:
+See [this page for the formatting of the text](formatting-documentation-pages)
 
-```
----
-title: title of page
-summary: a short description of what this documentation page is about
-layout: documentation
-type: [tutorial | guide | reference | overview]
-date: 2017-02-06
-category: [ introduction | hardware | firmware | software | meta ]
-subcategory: [minibee | expansion ]
-related:
-  - anotherTitle
-  - yetAnotherTitle
----
-```
+## Upload files
 
-* `title` - this should be the title of the page
-* `summary` - a summary of what the page is about. This will be presented in the overview pages of the documentation.
-* `layout` - this should be `documentation`.
-* `type` - this is the kind of page it is; so if you are writing a tutorial on how to use sensor data in Max, it should be `tutorial`. If it is a reference about what features the new expansion board has, it is a `reference`.
-* `date` - of the day you write it.
-* `category` - one of `introduction`, `hardware`, `firmware`, `software`, `meta` (for anything else)
-* `subcategory` - the particular topic within the category, for example `minibee`, `installation`, `community`.
-* `related` - other documentation pages that are related to the same topic and readers may also want to look up.
 
-Below this meta-data (which is between two lines with `---`) you can write the page.
-
-See the [next section on how to do the formatting of the text](#formatting)
-
+# Making the update
 
 ## Committing the change
 
@@ -102,37 +82,4 @@ We will then be notified about the changes, review them and merge them into the 
 ## Syncing your copy of the repository with the latest version
 
 [https://www.sitepoint.com/quick-tip-sync-your-fork-with-the-original-without-the-cli/]()
-
-# Formatting the text {#formatting}
-
-We use Markdown for formatting the text. This is a simple method to indicate headers, make lists, indicate that words should be italic or bold, and include links in the text.
-
-* making links and anchors
-* including images
-* bold / italic
-* headers
-
-A `#` in front of a line will make it into a header:
-
-```
-# This is a header
-```
-
-Renders to:
-
-------------------
-# This is a header
-------------------
-
-Adding more `#`'s makes subheaders:
-
-```
-## This is a subheader
-### This is a sub-sub-header
-```
-
-------------------
-## This is a subheader
-### This is a sub-sub-header
-------------------
 
