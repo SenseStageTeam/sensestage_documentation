@@ -3,7 +3,7 @@ title: Uploading firmware to a MiniBee
 summary: This page describes how the firmware is structured.
 layout: documentation
 type: guide
-date: 2017-02-06
+creation-date: 2017-02-06
 tags: 
     - expert
     - todo

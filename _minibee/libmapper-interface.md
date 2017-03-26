@@ -3,7 +3,7 @@ title: Libmapper interface
 summary: Using the libmapper interface to transfer the data to multiple clients using the libmapper framework.
 layout: documentation
 type: reference
-date: 2017-02-06
+creation-date: 2017-02-06
 category: software
 subcategory: interfaces
 tags:

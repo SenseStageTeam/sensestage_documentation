@@ -3,7 +3,7 @@ title: Interfacing with JunXion
 summary: This page describes how to interface with the MiniBees with JunXion
 layout: documentation
 type: guide
-date: 2017-02-06
+creation-date: 2017-02-06
 category: software
 subcategory: examples
 related:

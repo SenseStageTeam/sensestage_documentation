@@ -3,7 +3,7 @@ title: Assigning a MiniBee Configuration via OSC
 summary: A guide on how to assign a configuration to a MiniBee by sending an OSC message
 layout: documentation
 type: guide
-date: 2017-02-06
+creation-date: 2017-02-06
 tags:
     - intermediate
     - configuration

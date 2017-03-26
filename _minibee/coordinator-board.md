@@ -3,7 +3,7 @@ title: Coordinator Board
 summary: The coordinator board handles the communication between the hive software and the minibee swarm.
 layout: documentation
 type: overview
-date: 2017-02-06
+creation-date: 2017-02-06
 category: hardware
 subcategory: coordinator
 tags:

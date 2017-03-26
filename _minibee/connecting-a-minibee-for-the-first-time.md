@@ -3,7 +3,7 @@ title: Connecting a MiniBee for the first time
 summary: A guide on how to configure a MiniBee for the first time
 layout: documentation
 type: guide
-date: 2017-02-06
+creation-date: 2017-02-06
 tags:
     - basics
     - configuration

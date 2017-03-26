@@ -3,7 +3,7 @@ title: Creating MiniBee configurations via OSC
 summary: A guide on how to create a configuration from scratch via OSC
 layout: documentation
 type: guide
-date: 2017-02-06
+creation-date: 2017-02-06
 tags:
     - advanced
     - configuration

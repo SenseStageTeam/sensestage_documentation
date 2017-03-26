@@ -3,7 +3,7 @@ title: Customizing firmware
 summary: This page describes how to write custom firmware.
 layout: documentation
 type: guide
-date: 2017-02-06
+creation-date: 2017-02-06
 tags: 
     - expert
     - todo

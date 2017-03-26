@@ -3,7 +3,7 @@ title: Programming the bootloader
 summary: This page describes how to program the bootloader onto a MiniBee board
 layout: documentation
 type: guide
-date: 2017-02-06
+creation-date: 2017-02-06
 tags: 
     - expert
     - todo

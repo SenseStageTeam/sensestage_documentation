@@ -1,11 +1,11 @@
 ---
 title: Contributing to Sense/Stage
 summary: How to contribute to the Sense/Stage project
-layout: documentation
-type: guide
-date: 2017-02-06
+type: overview
+layout: subcategory_overview
+creation-date: 2017-02-06
 category: meta
-subcategory: community
+subcategory: contributing
 tags:
     - todo
 ---
@@ -27,24 +27,12 @@ There are many ways to contribute to the Sense/Stage project:
 
 # Documentation {#document}
 
-These documentation pages are written in a flavour of markdown text called [kramdown](https://kramdown.gettalong.org/syntax.html). The pages are then rendered with [Jekyll](https://jekyllrb.com/docs/home/).
+There are several ways to [contribute to the documentation](contributing-to-the-documentation):
 
-The source files of the documentation are hosted [on github](https://github.com/SenseStageTeam/sensestage_documentation).
-
-If you want to contribute to the documentation, you can do so in different ways:
-
-- mail me with an updated page (the markdown file and the pictures you made that belong to the page)
-- suggest an improvement for a documentation page via the [forum](https://forum.sensestage.eu).
-- via github:
-    - create a user account if you don't have one
-    - file an [issue on github](https://github.com/SenseStageTeam/sensestage_documentation/issues) and suggest an improvement there.
-    - if you are familiar with `git`
-        - create a clone of the repository
-        - modify or add the file you want
-        - commit it and push it to your clone
-        - create a pull request
-
-For us, it is the most convenient if a contribution is supplied via `git`, as it will be the least work for us to keep files in sync. But if you are not familiar with `git` we more than welcome contributions via the forum or mail.
+* Ask questions and make suggestions [on the forum](contributing-to-the-documentation#forum)
+* Submit an [issue on github](contributing-to-the-documentation#issue)
+* [Editing documentation pages online with github](contributing-to-the-documentation#github)
+* Advanced method: [Editing offline and previewing on your computer](contributing-to-the-documentation#advanced)
 
 # Hardware {#hardware}
 

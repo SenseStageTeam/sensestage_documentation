@@ -3,12 +3,11 @@ title: Formatting documentation pages
 summary: A guide on the syntax for the markdown used on documentation pages
 layout: documentation
 type: guide
-date: 2017-03-26
+creation-date: 2017-03-26
 tags: 
     - documentation
-    - contribution
 category: meta
-subcategory: community
+subcategory: contributing
 related:
   - Contributing to the documentation
 ---
@@ -203,6 +202,22 @@ Renders to:
 
 ----
 
+If you want to use the URL as the linkable text you can use this syntax:
+
+```
+[https://forum.sensestage.eu]()
+```
+
+Renders to:
+
+----
+[https://forum.sensestage.eu]()
+
+----
+
+
+## Anchors {#anchors}
+
 You can create anchors within a page, if you want to link to a particular part of the page. For example if you want an overview of the page on top, with links to the different sections of the page. The anchors need to be in a [header or subheader](#headers).
 
 ```
@@ -320,7 +335,7 @@ title: title of page
 summary: a short description of what this documentation page is about
 layout: documentation
 type: [tutorial | guide | reference | overview]
-date: 2017-02-06
+creation-date: 2017-02-06
 category: [ introduction | hardware | firmware | software | meta ]
 subcategory: [minibee | expansion ]
 related:
@@ -333,7 +348,7 @@ related:
 * `summary` - a summary of what the page is about. This will be presented in the overview pages of the documentation.
 * `layout` - this should be `documentation`.
 * `type` - this is the kind of page it is; so if you are writing a tutorial on how to use sensor data in Max, it should be `tutorial`. If it is a reference about what features the new expansion board has, it is a `reference`.
-* `date` - of the day you write it.
+* `creation-date` - the date of when you are creating the file, so today.
 * `category` - one of `introduction`, `hardware`, `firmware`, `software`, `meta` (for anything else)
 * `subcategory` - the particular topic within the category, for example `minibee`, `installation`, `community`.
 * `related` - other documentation pages that are related to the same topic and readers may also want to look up.

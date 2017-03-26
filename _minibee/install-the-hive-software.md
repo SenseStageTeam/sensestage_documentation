@@ -3,7 +3,7 @@ title: Install the Hive Software
 summary: A guide on how to install the pydonhive software
 layout: documentation
 type: guide
-date: 2017-02-06
+creation-date: 2017-02-06
 tags:
     - basics
     - todo

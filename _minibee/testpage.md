@@ -4,7 +4,7 @@ subtitle: a more detailed description
 summary: "a summary is a short description of what this documentation page is about"
 layout: documentation
 type: reference
-date: 2017-02-07
+creation-date: 2017-02-07
 tags: 
     - aTag
     - anotherTag

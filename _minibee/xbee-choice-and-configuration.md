@@ -3,7 +3,7 @@ title: XBee choice and configuration
 summary: This page describes which XBee to use and how to configure it.
 layout: documentation
 type: guide
-date: 2017-02-06
+creation-date: 2017-02-06
 tags: 
     - todo
 category: hardware

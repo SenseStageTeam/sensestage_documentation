@@ -3,7 +3,7 @@ title: Getting help
 summary: a description of where to get support and how to navigate the documentation
 layout: documentation
 type: reference
-date: 2017-02-06
+creation-date: 2017-02-06
 category: meta
 subcategory: community
 ---

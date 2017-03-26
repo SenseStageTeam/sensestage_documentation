@@ -3,7 +3,7 @@ title: Overview of the system
 summary: This page gives an overview of the different components that are used in the system
 layout: documentation
 type: reference
-date: 2017-02-06
+creation-date: 2017-02-06
 category: introduction
 subcategory: glossary
 tags:

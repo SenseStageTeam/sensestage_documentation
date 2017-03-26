@@ -3,7 +3,7 @@ title: MiniBee Revision D
 summary: The MiniBee revision D was the third version of the MiniBee, the production version. It was manufactured and sold between 2011 and 2016.
 layout: documentation
 type: reference
-date: 2017-02-06
+creation-date: 2017-02-06
 category: hardware
 subcategory: minibee
 related: 
