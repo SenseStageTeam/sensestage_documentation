@@ -46,3 +46,6 @@ You may have also purchased a battery kit, which should include 2 LiPo batteries
 
 [Examples of interfacing via OSC](examples-of-interfacing-via-osc)
 
+# notes for improvement
+* suggestion
+* bullet
