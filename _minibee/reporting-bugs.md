@@ -3,9 +3,9 @@ title: Reporting bugs
 summary: where and how to report bugs
 layout: documentation
 type: guide
-date: 2017-02-06
+creation-date: 2017-02-06
 category: meta
-subcategory: community
+subcategory: contributing
 tags:
     - todo
 ---
@@ -31,7 +31,7 @@ If you think you found an issue somewhere, you can start a discussion on the for
 
 There are repositories for different parts of the project; each one of these has an issue tracker. You need an account at Github to file issues.
 
-* [documentation](https://github.com/SenseStageTeam/sensestage_documentation/issues)
+* [documentation](https://github.com/SenseStageTeam/sensestage_documentation/issues) - [guide on how to submit issues for the documentation](contributing-to-the-documentation#issue)
 * [hardware]
 * [firmware]
 * [software]
