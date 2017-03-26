@@ -10,13 +10,13 @@
 		{% capture catname %}{{ page.category | replace: "_", " " }}{% endcapture %}
 		{% capture subcatname %}{{ page.subcategory | replace: "_", " " }}{% endcapture %}
 		<table><tr>
-		<td><em>category</em></td>
+		<th><em>category</em></th>
 		{% if page.category %}<td><a href="{{site.baseurl}}/index.html#{{catname}}">{{ catname }}</a></td>{% endif %}
 		{% if page.subcategory %}<td><a href="{{site.baseurl}}/index.html#{{subcatname}}">{{ subcatname }}</a></td>{% endif %}
                 </tr>
 		{% if page.tags %}
                     <tr>
-                    <td><em>tags</em></td>
+                    <th><em>tags</em></th>
                     {% for tag in page.tags %}
                         <td>{{ tag }}</td>
                     {% endfor %}
