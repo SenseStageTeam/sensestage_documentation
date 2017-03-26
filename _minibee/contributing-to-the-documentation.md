@@ -105,18 +105,15 @@ At some point you might notice that the files in the main SenseStageTeam reposit
 ![](/img/Github_Syncing_Behind.jpg)
 
 1. Click the "New Pull Request" button.
-![](/img/Github_New_PR.jpg)
+![](/img/Github_Syncing_New_PR.jpg)
 This will take you to the Comparing Changes screen.. which should look something like this.
 ![](/img/Github_Syncing_Comparing_Changes.jpg)
 
 2. If the option to "Try switching the base for your comparison" is there, click that
-![](/img/Github_Syncing_Try_Switching_Base.jpg)
-
 If not, switch the bases manually using the dropdown menus. Set them up so that your local fork is on the left, and the original is on the right.
-![](/img/Github_Syncing_Manual_Switching_Base.jpg)
+![](/img/Github_Syncing_Create_PR.jpg)
 
 3. Click the "Create pull request" button. If you want you can also scroll down and see what's different between your files and the ones in the SenseStageTeam repository. 
-![](/img/Github_Syncing_Create_PR.jpg)
 
 4. Give it a title like "updating my local copy".
 ![](/img/Github_Syncing_Create_PR_Title.jpg)
