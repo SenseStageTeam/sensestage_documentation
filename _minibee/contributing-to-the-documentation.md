@@ -69,6 +69,10 @@ related:
 * `subcategory` - the particular topic within the category, for example `minibee`, `installation`, `community`.
 * `related` - other documentation pages that are related to the same topic and readers may also want to look up.
 
+Below this meta-data (which is between two lines with `---`) you can write the page.
+
+See the [next section on how to do the formatting of the text](#formatting)
+
 
 ## Committing the change
 
@@ -95,6 +99,9 @@ We will then be notified about the changes, review them and merge them into the 
 * Go to your profile
 * Go to your repositories
 
+## Syncing your copy of the repository with the latest version
+
+[https://www.sitepoint.com/quick-tip-sync-your-fork-with-the-original-without-the-cli/]()
 
 # Formatting the text {#formatting}
 
