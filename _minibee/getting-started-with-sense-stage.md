@@ -19,7 +19,7 @@ subcategory: getting-started
 
 # 0. [Unpacking the Sense/Stage MiniBee kit](unpacking-the-sensestage-kit) {#step0}
 
-To begin with, you should inspect the contents of your kit. Be able to identify the various parts of the Sense/Stage hardware setup. Your starter kit should include the following:
+To start with, you should inspect the contents of your kit. Be able to identify the various parts of the Sense/Stage hardware setup. Your starter kit should include the following:
 
 1. 2 MiniBee boards including headers
 2. 3 Xbee radios (all but one connected to MiniBees)
