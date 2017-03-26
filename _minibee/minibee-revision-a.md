@@ -8,6 +8,7 @@ category: hardware
 subcategory: minibee
 related: 
     - Programming firmware with the arduino IDE
+    - Prepare the Arduino IDE for use with Sense/Stage
 tags:
     - todo
 ---
@@ -39,9 +40,9 @@ It was only distributed to those who were somehow involved in the project. The o
 
 [Design files for Eagle on github](https://github.com/sensestage/minibee_hardware/tree/master/minibee/revA)
 
-# Programming firmware
+# Programming firmware {#programmingfirmware}
 
-For [programming the firmware]({{base_url}}/minibee/programming-firmware-with-arduino-ide), use the board definition: "Sense/Stage MiniBee revA (3.3V, 8MHz) w/ Atmega168"
+For [programming the firmware](prepare-the-arduino-ide-for-use-with=sense-stage#board), use the board definition: `Sense/Stage MiniBee revA (3.3V, 8MHz) w/ Atmega168`
 
 # Programming the bootloader
 
@@ -64,8 +65,8 @@ While programming the bootloader, you must hold a wire to the reset pin. This is
 
 Use the Arduino programming software:
 
-* Set the board type to "Sense/Stage MiniBee revA (3.3V, 8MHz) w/ Atmega168"
-* Choose “Program Bootloader” with “AVR ISP mkII”
+* Set the board type to `Sense/Stage MiniBee revA (3.3V, 8MHz) w/ Atmega168`
+* Choose `Program Bootloader` with `AVR ISP mkII`
 * On Ubuntu Linux you must run the Arduino software as root in order to do this
 
 # TODO

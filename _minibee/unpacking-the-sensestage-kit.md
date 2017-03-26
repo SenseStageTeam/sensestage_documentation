@@ -1,6 +1,6 @@
 ---
-title: Unpacking the Sense/Stage Kit
-summary: A guide on what is in the Sense/Stage kit.
+title: Unpacking the Sense/Stage MiniBee Kit
+summary: A guide on what is in the Sense/Stage MiniBee kit.
 layout: documentation
 type: guide
 date: 2017-02-06
@@ -17,7 +17,7 @@ related:
 ---
 
 
-To begin with, you should inspect the contents of your kit. Be able to identify the various parts of the Sense/Stage hardware setup. Your starter kit should include the following:
+To begin with, you should inspect the contents of your kit. Be able to identify the various parts of the Sense/Stage MiniBee hardware setup. Your starter kit should include the following:
 
 1. 2 Minibee boards including headers
 2. 3 XBee radios (all but one connected to Minibees)
@@ -30,9 +30,9 @@ You may have also purchased a battery kit, which should include 2 LiPo batteries
 ![](/img/sensestagekit_annotated.png)
 
 
-# Minibees
+# MiniBees
 
-These are the small sensor data capture devices that form the core of Sense/Stage. If you're familiar with Arduino, then you're probably already accustomed to the kind of projects such devices can be used for.
+These are the small sensor data capture devices that form the core of the Sense/Stage MiniBee system. If you're familiar with Arduino, then you're probably already accustomed to the kind of projects such devices can be used for.
 
 Unlike an Arduino, the Minibee has a built-in accelerometer and is ready to start measuring motion right out of the box.
 
@@ -81,7 +81,7 @@ Be very gentle when attaching the XBee, and make sure you use the correct orient
 
 # Expansion Boards
 
-Every starter kit comes with expansion boards for adding new sensors and custom circuits to your Minibees. There are two types of expansion boards: the standard **XPree** experimentation board, and the simplified **XPee**.
+Every starter kit comes with expansion boards for adding new sensors and custom circuits to your MiniBees. There are two types of expansion boards: the standard **XPree** experimentation board, and the simplified **XPee**.
 
 You should have one XPree and one XPee for each Minibee in your kit.
 

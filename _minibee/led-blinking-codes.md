@@ -5,6 +5,7 @@ layout: documentation
 type: reference
 date: 2017-02-06
 category: hardware
+subcategory: minibee
 tags:
     - todo
 ---

@@ -8,6 +8,7 @@ category: hardware
 subcategory: minibee
 related: 
     - Programming firmware with the arduino IDE
+    - Prepare the Arduino IDE for use with Sense/Stage
 tags:
     - todo
 ---
@@ -62,8 +63,4 @@ Revision B of the board has several improvements over revision A:
 
 # Programming firmware and bootloader
 
-For [programming the firmware](programming-firmware-with-the-arduino-ide), use the board definition: "Sense/Stage MiniBee revB/D/F (3.3V, 12MHz) w/ Atmega328p"
-
-# TODO
-
-- check links
+For [programming the firmware](prepare-the-arduino-ide-for-use-with=sense-stage#board), use the board definition: `Sense/Stage MiniBee revB/D/F (3.3V, 12MHz) w/ Atmega328p`

@@ -10,7 +10,11 @@ tags:
     - todo
 ---
 
+* How long do batteries last?
+* How do power my MiniBee with a different kind of battery?
+* Or from a wall plug?
 
+* What kind of power does the MiniBee supply me with?
 
 
 The Sense/Stage MiniBee runs at 3.3 V. On board there is a power regulator, which can regulate power from 3.3 V to 5V down to a steady 3.3 V.
