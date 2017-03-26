@@ -1,6 +1,6 @@
 ---
 title: Basic features of the firmware
-summary: This page describes how the basic feature of the firmware.
+summary: This page describes the basic functionality of the firmware
 layout: documentation
 type: guide
 creation-date: 2017-02-06

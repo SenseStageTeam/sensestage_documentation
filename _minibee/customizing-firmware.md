@@ -1,6 +1,6 @@
 ---
 title: Customizing firmware
-summary: This page describes how to write custom firmware.
+summary: This page describes how to write custom firmware
 layout: documentation
 type: guide
 creation-date: 2017-02-06

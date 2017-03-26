@@ -8,7 +8,7 @@ tags:
     - expert
     - todo
 category: firmware
-subcategory: minibee
+subcategory: arduino-ide
 ---
 
 
