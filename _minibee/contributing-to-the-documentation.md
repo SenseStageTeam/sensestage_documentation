@@ -101,30 +101,29 @@ We will then be notified about the changes, review them and merge them into the 
 
 ## Syncing your local copy of the repository with the latest version
 
-* Log in to your github account and go to your local copy of the sensestage_documentation files.
-* Click the "New Pull Request" button.
-![](/img/Github_New_PR.jpg)
+At some point you might notice that the files in the main SenseStageTeam repository have been updated, while your local copy remains outdated. In order to get the latest version of the documentation files you need to do a pull request that copies over all the new files into your local fork.
+![](/img/Github_Syncing_Behind.jpg)
 
+1. Click the "New Pull Request" button.
+![](/img/Github_New_PR.jpg)
 This will take you to the Comparing Changes screen.. which should look something like this.
 ![](/img/Github_Syncing_Comparing_Changes.jpg)
 
-* If the option to "Try switching the base for your comparison" is there, click that
+2. If the option to "Try switching the base for your comparison" is there, click that
 ![](/img/Github_Syncing_Try_Switching_Base.jpg)
 
-* If not, switch the bases manually using the dropdown menus. Set them up so that your local fork is on the left, and the original is on the right.
+If not, switch the bases manually using the dropdown menus. Set them up so that your local fork is on the left, and the original is on the right.
 ![](/img/Github_Syncing_Manual_Switching_Base.jpg)
 
-
-* You'll be presented with a green "Create pull request" button, if you want you can also scroll down and see what's different between your files and the ones in the main repository. 
-* Click that green button to create the pull request.
+3. Click the "Create pull request" button. If you want you can also scroll down and see what's different between your files and the ones in the SenseStageTeam repository. 
 ![](/img/Github_Syncing_Create_PR.jpg)
 
-* Give it a title like "updating my local copy"
+4. Give it a title like "updating my local copy".
 ![](/img/Github_Syncing_Create_PR_Title.jpg)
 
-
-* Click the green create pull request button to actually send the pull request.
-* Now you'll get a green button to "Merge pull request". Click it and "Confirm Merge" afterwards, and you should be done!
+5. Click the "Create Pull Request" button.
+6. Click the "Merge pull request" button, and after that "Confirm Merge". You're up to date!
+![](/img/Github_Syncing_Create_PR_Merge.jpg)
 ![](/img/Github_Syncing_Create_PR_Confirm.jpg)
 
 
