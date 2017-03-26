@@ -8,6 +8,7 @@ $base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 $base-font-size:   16px;
 $base-font-weight: 400;
 $small-font-size:  $base-font-size * 0.875;
+$big-font-size:  $base-font-size * 1.25;
 $base-line-height: 1.5;
 
 $spacing-unit:     30px;
@@ -25,6 +26,38 @@ $content-width:    800px;
 
 $on-palm:          600px;
 $on-laptop:        800px;
+
+
+
+.post-summary {
+    font-size: $big-font-size;
+    background-color: lighten($brand-color, 30%);
+}
+
+#sidebar
+{
+    float: right;
+    width: 200px;
+    background: $grey-color-light;
+    min-height: 100%;
+    font-size: $small-font-size;
+}
+
+table {
+/*     width: 100%; */
+    border: 1px solid $grey-color-light;
+    border-collapse: collapse;
+}
+
+th, td {
+    font-size: $small-font-size;
+    border: 1px solid $grey-color-light;
+    height: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: left;
+}
+td:hover {background-color: #f1f1f1}
 
 // Minima also includes a mixin for defining media queries.
 // Use media queries like this:

@@ -24,4 +24,5 @@ navigation:
     - name: meta
       children:
         - name: community
+        - name: contributing
         - name: nonsense

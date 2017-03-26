@@ -1,0 +1,34 @@
+		{% if page.related %}
+		<h2 id=related><em>Related pages:</em></h2>
+                    <ul>
+                    {% for related in page.related %}
+                    <li><a href="{{ related | slugify }}.html">{{ related }}</a></li>
+                    {% endfor %}
+                    </ul>
+		{% endif %}
+
+		{% capture catname %}{{ page.category | replace: "_", " " }}{% endcapture %}
+		{% capture subcatname %}{{ page.subcategory | replace: "_", " " }}{% endcapture %}
+		<table><tr>
+		<td><em>category</em></td>
+		{% if page.category %}<td><a href="{{site.baseurl}}/index.html#{{catname}}">{{ catname }}</a></td>{% endif %}
+		{% if page.subcategory %}<td><a href="{{site.baseurl}}/index.html#{{subcatname}}">{{ subcatname }}</a></td>{% endif %}
+                </tr>
+		{% if page.tags %}
+                    <tr>
+                    <td><em>tags</em></td>
+                    {% for tag in page.tags %}
+                        <td>{{ tag }}</td>
+                    {% endfor %}
+                    </tr>
+		{% endif %}
+                </table>
+
+		<table>
+		<tr>
+                    <th>page created on:</th>
+                    <th>last changed on:</th></tr>
+                <tr>
+                    <td>{{ page.creation-date | date: "%-d %B %Y"}}</td>
+                    <td>{{ page.date |  date: "%-d %B %Y" }}</td>
+                </tr></table>
