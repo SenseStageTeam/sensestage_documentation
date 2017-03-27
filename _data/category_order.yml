@@ -21,7 +21,5 @@ navigation:
       children:
         - name: minibee
         - name: arduino-ide
-    - name: meta
-      children:
-        - name: community
-        - name: contributing
+    - name: community
+    - name: contributing
