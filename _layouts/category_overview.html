@@ -5,11 +5,11 @@ layout: default
 <article class="post">
 
         {% include postheader.html %}
-
+        
 	<div class="post-content">
 		{% comment %}Overview text{% endcomment %}
-		{% capture cat-subcat %}{{ page.category }}_{{ page.subcategory }}{% endcapture %}
-		{% assign catoverview = site.minibee_overviews | where:"name", cat-subcat | first %}
+<!-- 		{% capture cat-subcat %}{{ page.category }}_{{ page.subcategory }}{% endcapture %} -->
+		{% assign catoverview = site.minibee_overviews | where:"name", page.category | first %}
 		{% if catoverview %}
 		<div class="overview">
 			{{catoverview | markdownify }}
@@ -17,10 +17,10 @@ layout: default
 		{% endif %}
 
 		{{ content }}
-		
+
 		{% for coll in site.collections %}
                     {% if coll.label == page.collection %}
-                        {% assign subpages = coll.docs | where: "category", page.category | where: "subcategory", page.subcategory %}
+                        {% assign subpages = coll.docs | where: "category", page.category %}
 <ul>
                         {% for spage in subpages %}
                             {% unless spage.type == "overview" %}
@@ -30,8 +30,7 @@ layout: default
 </ul>
                     {% endif %}
                 {% endfor %}
-
-	<hr>
+<hr>
         {% include postfooter.html %}
 
         </div>
