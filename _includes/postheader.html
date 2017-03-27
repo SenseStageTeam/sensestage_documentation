@@ -17,6 +17,7 @@
 		{% capture subcatname %}{{ page.subcategory | replace: "_", " " }}{% endcapture %}
                 <table><tr>
 		<th><em>category</em></th>
+		<td><a href="{{site.baseurl}}/index.html#sensestage{{page.collection}}">{{ page.collection }}</a></td>
 		{% if page.category %}<td><a href="{{site.baseurl}}/index.html#{{catname}}">{{ catname }}</a></td>{% endif %}
 		{% if page.subcategory %}<td><a href="{{site.baseurl}}/index.html#{{subcatname}}">{{ subcatname }}</a></td>{% endif %}
                 </tr>
