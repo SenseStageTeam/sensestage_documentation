@@ -3,7 +3,7 @@ This repository contains the source files for the documentation website of [Sens
 
 # Format
 
-See [/_general/contributing-to-the-documentation.md]() for a description on how to contribute to these pages.
+See [_general/contributing-to-the-documentation.md]() for a description on how to contribute to these pages.
 
 ## Overview pages
 
