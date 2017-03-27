@@ -1,9 +1,9 @@
-This repository contains the source files for the documentation website of [Sense/Stage](https://sensestage.eu).
+This repository contains the source files for the [documentation website](https://docs.sensestage.eu) of [Sense/Stage](https://sensestage.eu).
 
 
 # Format
 
-See [_minibee/testpage.md]() for an example of the frontmatter of a page
+See [/_general/contributing-to-the-documentation.md]() for a description on how to contribute to these pages.
 
 ## Overview pages
 
