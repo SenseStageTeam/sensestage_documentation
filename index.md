@@ -4,9 +4,13 @@ layout: page
 
 This page is currently a work in progress. See [here](https://docs.sensestage.eu/old/topic/documentation) for an overview of the old documentation. In the pages below the old sites are linked where necessary. If you want to help out in the documentation process, please read on [how to contribute](minibee/contributing-to-sense-stage).
 
+
 {% for coll in site.collections %}
 {% if coll.output %}
 {% if coll.docs.size > 0 %}
+
+{% include allcollection_index.html collname = coll.label %}
+
 # {{ coll.label | capitalize }} documentation {#sensestage{{ coll.label }}}
   {% for cat in site.data.category_order.navigation %}
     {% if cat.children != null %}
@@ -14,6 +18,7 @@ This page is currently a work in progress. See [here](https://docs.sensestage.eu
         {% for child in cat.children %}
         {% assign thesepages = coll.docs | where: "category", cat.name | where: "subcategory", child.name %}
             {% if thesepages.size > 0 %}
+<hr>
                 {% if hasNoPages %}
 ## {{ cat.name | capitalize }} {#{{cat.name}}}
                 {% endif %}
@@ -29,7 +34,7 @@ This page is currently a work in progress. See [here](https://docs.sensestage.eu
                 {% if hasOverview == 0 %}
 ### {{ child.name | capitalize }} {#{{child.name}}}
                 {% endif %}
-
+{% include category_index.html collname = coll.label catname=cat.name subcatname=child.name %}
                 {% for post in thesepages %}
                     {% unless post.type == "overview" %}
 * <a href="{{post.url}}">{{ post.title }}</a> {% if post.summary %}: {{ post.summary }}  {% endif %}
@@ -40,6 +45,7 @@ This page is currently a work in progress. See [here](https://docs.sensestage.eu
         
         {% endfor %}
     {% else %}
+<hr>
         {% assign thesepages = coll.docs | where: "category", cat.name %}
         {% assign hasOverview = 0 %}
         {% if thesepages.size > 0 %}

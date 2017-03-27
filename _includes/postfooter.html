@@ -1,35 +1,19 @@
-		{% if page.related %}
-		<h2 id=related><em>Related pages:</em></h2>
-                    <ul>
-                    {% for related in page.related %}
-                    <li><a href="{{ related | slugify }}.html">{{ related }}</a></li>
-                    {% endfor %}
-                    </ul>
-		{% endif %}
+{% if page.related %}
+<h2 id=related><em>Related pages:</em></h2>
+    <ul>
+    {% for related in page.related %}
+    <li><a href="{{ related | slugify }}.html">{{ related }}</a></li>
+    {% endfor %}
+    </ul>
+{% endif %}
 
-		{% capture catname %}{{ page.category | replace: "_", " " }}{% endcapture %}
-		{% capture subcatname %}{{ page.subcategory | replace: "_", " " }}{% endcapture %}
-		<table><tr>
-		<th><em>category</em></th>
-		<td><a href="{{site.baseurl}}/index.html#sensestage{{page.collection}}">{{ page.collection }}</a></td>
-		{% if page.category %}<td><a href="{{site.baseurl}}/index.html#{{catname}}">{{ catname }}</a></td>{% endif %}
-		{% if page.subcategory %}<td><a href="{{site.baseurl}}/index.html#{{subcatname}}">{{ subcatname }}</a></td>{% endif %}
-                </tr>
-		{% if page.tags %}
-                    <tr>
-                    <th><em>tags</em></th>
-                    {% for tag in page.tags %}
-                        <td>{{ tag }}</td>
-                    {% endfor %}
-                    </tr>
-		{% endif %}
-                </table>
+{% include page_navigation.html %}
 
-		<table>
-		<tr>
-                    <th>page created on:</th>
-                    <th>last changed on:</th></tr>
-                <tr>
-                    <td>{{ page.creation-date | date: "%-d %B %Y"}}</td>
-                    <td>{{ page.date |  date: "%-d %B %Y" }}</td>
-                </tr></table>
+<table>
+<tr>
+    <th>page created on:</th>
+    <th>last changed on:</th></tr>
+<tr>
+    <td>{{ page.creation-date | date: "%-d %B %Y"}}</td>
+    <td>{{ page.date |  date: "%-d %B %Y" }}</td>
+</tr></table>
