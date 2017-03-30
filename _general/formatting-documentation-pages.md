@@ -354,6 +354,7 @@ related:
 
 Below this meta-data (which is between two lines with `---`) you can write the actual content of the page.
 
+Here you can find a [page template](https://github.com/SenseStageTeam/sensestage_documentation/blob/master/page_template.md)
 
 # The bottom of the page {#bottom}
 
