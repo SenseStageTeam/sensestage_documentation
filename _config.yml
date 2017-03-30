@@ -43,5 +43,6 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - README.md
+  - page_template.md
   - rsync_site.sh
 

@@ -32,7 +32,7 @@ There are repositories for different parts of the project; each one of these has
 
 * [documentation](https://github.com/SenseStageTeam/sensestage_documentation/issues) - [guide on how to submit issues for the documentation](contributing-to-the-documentation#issue)
 * [hardware]
-* [firmware]
+* [minibee firmware](https://github.com/sensestage/ssdn_minibee/issues)
 * [software]
 
 # Fixing bugs {#fixes}
