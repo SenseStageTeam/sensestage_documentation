@@ -3,9 +3,8 @@ title: Getting help
 summary: a description of where to get support and how to navigate the documentation
 layout: documentation
 type: reference
-date: 2017-02-06
-category: meta
-subcategory: community
+creation-date: 2017-02-06
+category: community
 ---
 
 The [Getting Started](getting-started-with-sensestage) pages guide you through the process of getting set up to use the Sense/Stage MiniBees describing what is what and how to set up the software.

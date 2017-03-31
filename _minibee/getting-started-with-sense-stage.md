@@ -3,7 +3,7 @@ title: Getting Started with the Sense/Stage MiniBee
 summary: A guide to unpacking and setting up the Sense/Stage MiniBee system for first time users.
 layout: documentation
 type: overview
-date: 2017-02-06
+creation-date: 2017-02-06
 tags:
     - basics
     - installation

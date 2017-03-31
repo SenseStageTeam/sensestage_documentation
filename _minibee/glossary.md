@@ -3,7 +3,7 @@ title: Glossary
 summary: a glossary of terms used around Sense/Stage
 layout: documentation
 type: overview
-date: 2017-02-06
+creation-date: 2017-02-06
 category: introduction
 subcategory: glossary
 tags:

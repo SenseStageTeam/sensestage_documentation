@@ -3,7 +3,7 @@ title: Changing settings of the XBee
 summary: This page describes how to change settings on the XBee and which settings you may want to change.
 layout: documentation
 type: guide
-date: 2017-02-06
+creation-date: 2017-02-06
 tags: 
     - todo
 category: hardware

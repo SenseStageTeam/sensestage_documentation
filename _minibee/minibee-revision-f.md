@@ -3,7 +3,7 @@ title: MiniBee Revision F
 summary: The MiniBee revision F is the fourth version of the MiniBee, the second production version. It is manufactured and sold from 2017.
 layout: documentation
 type: reference
-date: 2017-02-06
+creation-date: 2017-02-06
 category: hardware
 subcategory: minibee
 related: 

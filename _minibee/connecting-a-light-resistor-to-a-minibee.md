@@ -3,7 +3,7 @@ title: Connecting a light resistor to a MiniBee
 summary: This is a simple tutorial on how to connect a light sensor to a MiniBee and get the data from it into your software.
 layout: documentation
 type: tutorial
-date: 2017-02-06
+creation-date: 2017-02-06
 category: introduction
 related:
     - XPee

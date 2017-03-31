@@ -4,7 +4,7 @@ subtitle: different versions of the MiniBee hardware
 summary: There are several versions of the MiniBee. This page describes the main features of the MiniBee and links to the different versions of the board.
 layout: subcategory_overview
 type: overview
-date: 2017-02-06
+creation-date: 2017-02-06
 category: hardware
 subcategory: minibee
 ---

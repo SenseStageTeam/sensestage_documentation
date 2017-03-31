@@ -3,7 +3,7 @@ title: MiniBee Revision A
 summary: The MiniBee revision A was the first version of the MiniBee, the alpha version. It was manufactured during the research-creation project Sense/Stage at Concordia University and McGill University in 2009.
 layout: documentation
 type: reference
-date: 2017-02-06
+creation-date: 2017-02-06
 category: hardware
 subcategory: minibee
 related: 

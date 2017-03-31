@@ -3,7 +3,7 @@ title: Installing pydonhive on Windows
 summary: How to install the hive (pydongui) on Windows
 layout: documentation
 type: guide
-date: 2017-02-06
+creation-date: 2017-02-06
 category: software
 subcategory: installation
 tags:

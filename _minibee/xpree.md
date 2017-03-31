@@ -3,7 +3,7 @@ title: XPree
 summary: The XPree board is a small expansion board that allows you to prototype on a breadboard or make a small custom circuit.
 layout: documentation
 type: reference
-date: 2017-02-06
+creation-date: 2017-02-06
 category: hardware
 subcategory: expansion
 tags:

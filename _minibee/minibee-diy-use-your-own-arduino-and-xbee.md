@@ -3,7 +3,7 @@ title: MiniBee DIY - use your own Arduino and XBee
 summary: "This page describes how to make use of the MiniBee firmware with your own Arduino and XBee combination."
 layout: documentation
 type: reference
-date: 2017-02-06
+creation-date: 2017-02-06
 category: hardware
 subcategory: minibee
 tags:

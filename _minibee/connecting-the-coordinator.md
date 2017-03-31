@@ -3,7 +3,7 @@ title: Connecting the coordinator
 summary: This page describes how to connect the coordinator board to your computer.
 layout: documentation
 type: guide
-date: 2017-02-06
+creation-date: 2017-02-06
 tags: 
     - basics
     - todo

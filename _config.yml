@@ -24,10 +24,15 @@ github_username:
 
 
 collections:
+  general:
+    output: true
+    layout: documentation
   minibee:
     output: true
     layout: documentation
   minibee_overviews:
+    output: false
+  posts:
     output: false
 # Build settings
 markdown: kramdown
@@ -38,5 +43,6 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - README.md
+  - page_template.md
   - rsync_site.sh
 

@@ -1,14 +1,14 @@
 ---
 title: Uploading firmware to a MiniBee
-summary: This page describes how the firmware is structured.
+summary: This page describes how to upload firmware to the MiniBee
 layout: documentation
 type: guide
-date: 2017-02-06
+creation-date: 2017-02-06
 tags: 
     - expert
     - todo
 category: firmware
-subcategory: minibee
+subcategory: arduino-ide
 ---
 
 

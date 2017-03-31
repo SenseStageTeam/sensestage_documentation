@@ -3,7 +3,7 @@ title: Battery charging
 summary: How to charge LiIon batteries.
 layout: documentation
 type: guide
-date: 2017-02-06
+creation-date: 2017-02-06
 category: hardware
 subcategory: battery
 tags:
