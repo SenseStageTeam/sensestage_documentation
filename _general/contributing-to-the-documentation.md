@@ -14,10 +14,10 @@ related:
 
 There are several ways to contribute to the documentation:
 
-* Ask questions and make suggestions [on the forum](#forum)
-* Submit an [issue on github](#issue)
-* [Editing documentation pages online with github](#github)
-* Advanced method: [Editing offline and previewing on your computer](#advanced)
+* EASY: Ask questions and make suggestions [on the forum](#forum)
+* EASY: Submit an [issue on github](#issue)
+* PRETTY EASY: [Editing documentation pages online with github](#github)
+* ADVANCED: [Editing offline and previewing on your computer](#advanced)
 
 # Ask questions and make suggestions on the forum {#forum}
 
@@ -51,6 +51,43 @@ We host our documentation pages on github. By signing up with github, you can ed
 * Navigate to the file you want to change the documentation of.
 
 ## Forking in detail
+
+The process of making edits to a project on github is simple, but the workflow can be a little confusing if you've never encountered it before. In order to make changes to a project you need to first make your own copy of the project called a "fork". You're free to make whatever edits you want to the files in your fork without worrying about accidentally messing something up. Once you've made your edits in your fork, you send these changes to the Sense Stage team for review. When you send changes for review it's called a "pull request", because you're asking us to pull your changes into the main project. 
+Once you send us a pull request we'll give it a quick check and then merge it into the main documentation as soon as we can.
+
+Here's the process in more detail:
+
+1. Log into github and go to the sensestage_documentation file repository. Click on the "Fork" button in the upper right. This will give you your own copy of the documentation files for editing. 
+![](/img/editing01-make-a-fork.jpg)
+![](/img/editing02-forked-repo.jpg)
+
+2. In your local fork, use the file navigation to go to the directory where the documentation file you want to edit is stored. For documentation of the Minibee System this is the **\_minibee** directory.
+
+3. Inside that directory click on the file you want to edit. 
+![](/img/editing04-finding-the-documentation-file.jpg)
+
+4. In the next screen, click the pencil icon in the upper right corner to edit the file. This will open up a simple text editor where you can go in and make the changes you want.
+![](/img/editing05-edit-file.jpg)
+![](/img/editing06-edit-text.jpg)
+
+5. Once you're done editing the file, scroll down to the "Commit changes" section. Enter a short description of the changes you made and click the green "Commit changes" button.
+![](/img/editing07-commit-edits.jpg)
+
+You'll be brought back to the homepage of your fork and receive a little confirmation message with the description of changes you just made. At this point you can make changes to other files, make more changes to the same file, or.. if you're all done, you should submit a Pull Request.
+![](/img/editing08-commit-success.jpg)
+
+### Submitting your edits to the Sense Stage team
+
+Once you've made a bunch of edits to your local fork you'll want to send them to us so we can merge them into the main documentation files. To do this you need to submit a "Pull Request". 
+
+1. Go to the "Pull requests" tab of your local fork (the copy where you made your edits). Click on "New pull request".
+![](/img/editing09-new-pr.jpg)
+
+2. You'll be taken to the main documentation repository page. Click on "Create pull request".
+![](/img/editing10-new-pr2.jpg)
+
+3. Give your submission a short but descriptive title and click on the "Create pull request" button to send it to us. Thanks!
+![](/img/editing10-new-pr3.jpg)
 
 ## Layout of the repository
 
