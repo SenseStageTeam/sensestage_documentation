@@ -62,6 +62,7 @@ Here's the process in more detail:
 ![](/img/editing02-forked-repo.jpg)
 
 2. In your local fork, use the file navigation to go to the directory where the documentation file you want to edit is stored. For documentation of the Minibee System this is the **\_minibee** directory.
+![](/img/editing03-finding-the-documentation-dir.jpg)
 
 3. Inside that directory click on the file you want to edit. 
 ![](/img/editing04-finding-the-documentation-file.jpg)
@@ -87,7 +88,7 @@ Once you've made a bunch of edits to your local fork you'll want to send them to
 ![](/img/editing10-new-pr2.jpg)
 
 3. Give your submission a short but descriptive title and click on the "Create pull request" button to send it to us. Thanks!
-![](/img/editing10-new-pr3.jpg)
+![](/img/editing11-new-pr3.jpg)
 
 ## Layout of the repository
 
