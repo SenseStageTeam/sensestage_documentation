@@ -17,6 +17,6 @@ related:
 
 * Preparing new from factory Xbees for use with Sense/Stage.
 
-* [Choosing the right Xbee](https://docs.sensestage.eu/xbee-choice-andconfiguration)
+* [Choosing the right Xbee](https://docs.sensestage.eu/old/xbee-choice-andconfiguration)
 
 * Putting new profiles onto your Xbees
