@@ -1,0 +1,77 @@
+---
+title: Using X-CTU to change settings of an XBee
+summary: This page describes how to use X-CTU to change settings on an XBee.
+layout: documentation
+type: guide
+creation-date: 2017-05-04
+tags: 
+category: hardware
+subcategory: xbee
+related:
+  - Using X-CTU to configure an XBee
+---
+
+# Opening the radio in X-CTU
+
+Follow the instructions to:
+
+* [get X-CTU](using-x-ctu-to-configure-an-xbee#getting)
+* [select the radio](using-x-ctu-to-configure-an-xbee#selectradio)
+
+
+# Changing settings of an XBee with X-CTU {#settings}
+
+Once you have selected the radio to view its configuration, you will see the following screen:
+
+![](/img/x-ctu-radio-settings.png)
+
+The settings you most likely want to change are the Channel, pan id and power level.
+
+## Channel and pan id
+
+The `channel` determines on which radio frequency the XBee are transmitting. In the 2.4 GHz band there are different subbands which can be used; which one to choose depends on what other frequencies are being used in the space, for example by WiFi routers. See [the documentation page on choosing a radio frequency](choosing-a-radio-frequency-for-the-xbee) for a discussion about this.
+
+The `pan id` is an identifier within the channel to distinguish different XBee networks from each other. XBees will just ignore traffic that is happening with different pan ids. `pan` is an acronym for 'Personal Area Network'.
+
+
+In general, you just may want to change the channel and/or the pan id in order to have something different that the default setting the XBee is shipped with as part of the MiniBee set. This will avoid problems when you happen to be in the same space as someone else using the MiniBees. For example in your class with other students working with MiniBee sets, or in a concert or exhibition space.
+
+## Power level
+
+The international version of the XBee Pro has a higher power level than is generally allowed in Europe. So you will have to set the power level to 0 in order to be within European regulations for radio transmissions.
+
+By default the power level is at 4.
+
+## Changing the settings
+
+
+## Writing the changed settings
+
+You still need to write the settings to the XBee. For this, select `Write` from the menu, as shown in the screenshot.
+
+![](/img/x-ctu-select-write-settings.png)
+
+You may get a popup window that there are some empty values; don't worry about this and click ok.
+
+![](/img/x-ctu-warning-empty-values.png)
+
+You will get a popup window indicating that the settings are being written:
+
+![](/img/x-ctu-writing-values.png)
+
+After writing the values, the triangles that were green are now blue. This indicates that the values are written to the radio, but that they are different from the factory settings of the XBee.
+
+![](/img/x-ctu-radio-settings.png)
+
+You can now close the radio again by selecting the cross, see where the mouse cursor is in the screenshot:
+
+![](/img/x-ctu-close-radio.png)
+
+Now, disconnect the coordinator node from the computer and, if you want to configure another XBee, remove the XBee and place the new XBee on top. And [start again](#configure).
+
+
+
+# Old documentation (using the serial program)
+
+* [Changing the Pan ID and channel of your Xbees](https://docs.sensestage.eu/old/changing-the-pan-id-and-channel-of-the-xbee)
+* [Changing the transmission power (for XBee Pro)](https://docs.sensestage.eu/old/changing-the-power-level-of-the-xbee-pro)
