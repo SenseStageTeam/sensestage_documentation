@@ -76,3 +76,8 @@ Also the design has been moved from the (closed source) Eagle software to the op
 
 For [programming the firmware](prepare-the-arduino-ide-for-use-with=sense-stage#board), use the board definition: `Sense/Stage MiniBee revB/D/F (3.3V, 12MHz) w/ Atmega328p`
 
+In the source code of customized firmware, make sure that you use revision F, so the `Bee.setup` command should be:
+
+```
+Bee.setup(57600,'F');
+```
