@@ -44,6 +44,13 @@ By default the power level is at 4.
 
 ## Changing the settings
 
+You can click on the `i` on the left of a setting, to see a description of the setting. In the editing field on the right side, you can type the new value you want to use. There will be a popup, showing you the allowed values.
+
+![](/img/x-ctu-adapt-setting.png)
+
+Once you change the setting, the blue triangle will turn green, indicating that you changed the setting in the dialog, but have not written it to the radio yet.
+
+![](/img/x-ctu-setting-changed.png)
 
 ## Writing the changed settings
 
