@@ -1,3 +1,7 @@
+toplevelcategories:
+    - general
+    - minibee
+    - nextstage
 navigation:
     - name: introduction
       children:

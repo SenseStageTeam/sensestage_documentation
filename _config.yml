@@ -26,9 +26,12 @@ github_username:
 collections:
   pages:
     output: true
-    layout: default
+    layout: page
   general:
     output: true
+    layout: documentation
+  nextstage:
+    output: false
     layout: documentation
   minibee:
     output: true
