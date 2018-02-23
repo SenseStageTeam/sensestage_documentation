@@ -9,9 +9,9 @@
     {% assign childpages = coll.docs | where: "category", cat.name %}
     {% if childpages.size > 0 %}
         {% if child2.name == include.subcatname %}
-<td id="currentcat"><a href="#{{ child2.name }}">{{ child2.name | capitalize }}</a></td>
+<td id="currentcat"><a href="#{{ child2.name }}">{{ child2.name | capitalize }}</a></td><td>></td>
         {% else %}
-<td><a href="#{{ child2.name }}">{{ child2.name | capitalize }}</a></td>
+<td><a href="#{{ child2.name }}">{{ child2.name | capitalize }}</a> > </td><td>></td>
         {% endif %}
     {% endif %}
 {% endfor %}

@@ -8,9 +8,9 @@
             {% assign thesepages = coll2.docs | where: "category", cat.name %}
             {% if thesepages.size > 0 %}
                 {% if cat.name == include.catname %}
-<td id="currentcat"><a href="#{{ cat.name }}">{{ cat.name | capitalize }}</a></td>
+<td id="currentcat"><a href="#{{ cat.name }}">{{ cat.name | capitalize }}</a></td><td>|</td>
                 {% else %}
-<td><a href="#{{ cat.name }}">{{ cat.name | capitalize }}</a></td>
+<td><a href="#{{ cat.name }}">{{ cat.name | capitalize }}</a></td><td>|</td>
                 {% endif %}
             {% endif %}
         {% endfor %}

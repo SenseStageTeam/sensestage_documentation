@@ -1,6 +1,7 @@
 <hr>
 <table id="breadcrumb">
 {% for coll2 in site.collections %}
+{% if site.data.category_order.toplevelcategories contains coll2.label %}
 <tr>
 {% if coll2.output %}
 {% if coll2.docs.size > 0 %}
@@ -18,6 +19,7 @@
 {% endif %}
 {% endif %}
 </tr>
+{% endif %}
 {% endfor %}
 </table>
 <hr>
