@@ -19,14 +19,21 @@ description: > # this means to ignore newlines until "baseurl:"
   Documentation pages for the Sense/Stage system
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://docs.sensestage.eu" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: 
-github_username:  
+twitter_username:
+github_username:
 
 
 collections:
   pages:
-    output: true
+    output: false # explicitly disable the pages collection
     layout: page
+  sensestage-v1:  # Sense/Stage v1 documentation site
+    output: true
+    layout: documentation
+    permalink: /:collection/:path
+  sensestage-v2:  # Sense/Stage v2 documentation site
+    output: true
+    layout: documentation
   general:
     output: true
     layout: documentation
@@ -51,4 +58,3 @@ exclude:
   - README.md
   - page_template.md
   - rsync_site.sh
-

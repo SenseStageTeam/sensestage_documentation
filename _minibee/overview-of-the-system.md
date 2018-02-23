@@ -63,4 +63,3 @@ The software communicates with other programs using the OpenSoundControl (OSC) p
 # TODO
 
 - links to other pages
-
