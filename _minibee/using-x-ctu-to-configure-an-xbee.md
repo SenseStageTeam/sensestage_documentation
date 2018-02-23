@@ -12,7 +12,7 @@ related:
   - Using X-CTU to change settings of an XBee
 ---
 
-{% include get-x-ctu.md %}
+{% include xctu/get-x-ctu.md %}
 
 # Getting the XBee profiles for the Sense/Stage MiniBee {#profiles}
 
@@ -33,7 +33,7 @@ Unpack the folder. The layout of the folders is as follows:
 
 # Loading a profile onto the XBee with X-CTU {#configure}
 
-{% include x-ctu-select-radio.md %}
+{% include xctu/x-ctu-select-radio.md %}
 
 ## Selecting a profile {#selectprofile}
 

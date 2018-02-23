@@ -13,11 +13,11 @@ related:
 ---
 
 
-{% include get-x-ctu.md %}
+{% include xctu/get-x-ctu.md %}
 
 # Opening the radio in X-CTU
 
-{% include x-ctu-select-radio.md %}
+{% include xctu/x-ctu-select-radio.md %}
 
 # Read settings of an XBee with X-CTU {#settings}
 

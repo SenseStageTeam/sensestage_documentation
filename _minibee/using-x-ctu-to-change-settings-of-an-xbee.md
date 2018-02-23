@@ -12,12 +12,12 @@ related:
   - Using X-CTU to read settings of an XBee  
 ---
 
-{% include get-x-ctu.md %}
+{% include xctu/get-x-ctu.md %}
 
 
 # Opening the radio in X-CTU
 
-{% include x-ctu-select-radio.md %}
+{% include xctu/x-ctu-select-radio.md %}
 
 
 # Changing settings of an XBee with X-CTU {#settings}
