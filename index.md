@@ -18,7 +18,7 @@ Here are a few links to get started right away. Below you find a full overview o
 *If you want to help out in the documentation process, please read on [how to contribute](general/contributing-to-the-documentation).*
 
 {% for coll in site.collections %}
-{% if coll.output %}
+{% if site.data.category_order.toplevelcategories contains coll.label %}
 {% if coll.docs.size > 0 %}
 <hr>
 # {{ coll.label | capitalize }} documentation {#sensestage{{ coll.label }}}
@@ -45,7 +45,7 @@ Here are a few links to get started right away. Below you find a full overview o
                 {% if hasOverview == 0 %}
 ### {{ child.name | capitalize }} {#{{child.name}}}
                 {% endif %}
-{% include category_index.html collname = coll.label catname=cat.name subcatname=child.name %}
+<!-- {% include category_index.html collname = coll.label catname=cat.name subcatname=child.name %} -->
                 {% for post in thesepages %}
                     {% unless post.type == "overview" %}
 * <a href="{{post.url}}">{{ post.title }}</a> {% if post.summary %}: {{ post.summary }}  {% endif %}
@@ -77,7 +77,8 @@ Here are a few links to get started right away. Below you find a full overview o
 * <a href="{{post.url}}">{{ post.title }}</a> {% if post.summary %}: {{ post.summary }}  {% endif %}
                 {% endunless %}
             {% endfor %}
-        {% endif %}
+
+            {% endif %}
      {% endif %}
   {% endfor %}
 {% endif %}
