@@ -40,7 +40,7 @@ The pin outs on the header are from left to right:
 
 # Technical documents
 
-Board layout and schematic are available here: [Design files for Eagle on github](https://github.com/sensestage/minibee_hardware/tree/master/minibee/revB)
+Board layout and schematic are available here: [design files for Eagle on github](https://github.com/sensestage/minibee_hardware/tree/master/minibee/revB)
 
 # Changes to previous version
 

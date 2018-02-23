@@ -51,7 +51,7 @@ Vraw - 3v3 -  D4
 
 # Technical documents
 
-Board layout and schematic are available here: [Design files for Eagle on github](https://github.com/sensestage/minibee_hardware/tree/master/minibee/revA)
+Board layout and schematic are available here: [design files for Eagle on github](https://github.com/sensestage/minibee_hardware/tree/master/minibee/revA)
 
 # Programming firmware {#programmingfirmware}
 

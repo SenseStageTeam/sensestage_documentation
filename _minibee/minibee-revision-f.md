@@ -49,13 +49,17 @@ On the bottom of the board, a couple of pads are broken out:
 
 # LEDs
 
+There are four LEDs on the MiniBee revision D:
+
+* a red LED to indicate that the MiniBee is receiving data from the coordinator node. This one only goes on for about a second, when the XBee is receiving data.
+* a green LED to indicate that the MiniBee is on. This one will be on if you have switched the power on.
+* an orange LED to indicate that the XBee is associating with a network and that it is on. This one will be blinking.
+* a green LED is just between the XBee header and the extension header. This one is used inside the firmware to indicate that the module is sending out data.
+
 
 # Technical documents
 
-* board layout
-* schematic
-
-[Design files for KiCad on github](https://github.com/sensestage/minibee_hardware/tree/master/minibee/revF)
+Board layout and schematic are available here: [design files for KiCad on github](https://github.com/sensestage/minibee_hardware/tree/master/minibee/revF)
 
 # Changes to previous version
 
