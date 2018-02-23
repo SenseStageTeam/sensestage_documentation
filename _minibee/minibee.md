@@ -30,3 +30,6 @@ subcategory: minibee
 
 # The different versions:
 
+{:.image-caption}
+![](/img/minibee_revisions.jpg)
+*From left to right: MiniBee revisions A, B, D and F*

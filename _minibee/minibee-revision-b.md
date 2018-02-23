@@ -11,7 +11,9 @@ related:
     - Prepare the Arduino IDE for use with Sense/Stage
 ---
 
-The MiniBee revision B was the second version of the MiniBee, the beta version. It was manufactured during the research-creation project Sense/Stage at Concordia University and McGill University in 2010. It was only distributed to those who were somehow involved in the project. The overview of the board is given here for historical reference.
+The MiniBee revision B was the second version of the MiniBee, the beta version. It was manufactured during the research-creation project Sense/Stage at Concordia University and McGill University in 2010. It was only distributed to those who were somehow involved in the project at that time, and some may still be around at Concordia University in Chris Salter's lab or in the IDMIL lab at McGill University. The overview of the board is given here for historical reference.
+
+![](/img/minibee_revision-b.png){:width="200px"}
 
 ![](/img/minibee_revB_annotated.jpg)
 
@@ -32,17 +34,13 @@ Overview of the board:
 The pin outs on the header are from left to right:
 
     GND - GND - D5 - D7 - D9 - D11 - A6 - SDA - A2 - A0
-    3v3 - D3 - D4 - D6 - D8 - D10 - A7 - SCL - A3 - A1
+    3v3 -  D3 - D4 - D6 - D8 - D10 - A7 - SCL - A3 - A1
 
 # LEDs
 
 # Technical documents
 
-* board layout
-* schematic
-
-
-[Design files for Eagle on github](https://github.com/sensestage/minibee_hardware/tree/master/minibee/revB)
+Board layout and schematic are available here: [design files for Eagle on github](https://github.com/sensestage/minibee_hardware/tree/master/minibee/revB)
 
 # Changes to previous version
 

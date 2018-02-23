@@ -11,7 +11,7 @@ related:
     - Prepare the Arduino IDE for use with Sense/Stage
 ---
 
-It was only distributed to those who were somehow involved in the project. The overview of the board is given here for historical reference.
+It was only distributed to those who were somehow involved in the project in 2009/2010. The overview of the board is given here for historical reference.
     
 ![](/img/minibee_revA_annotated2.jpg)
 
@@ -27,16 +27,31 @@ It was only distributed to those who were somehow involved in the project. The o
 
 # Pin out
 
+```
+  RX -  TX - D13
+ SDA -     - D12
+ SCL -     - D11
+  A0 -     - D10
+  A1 -     -  D9
+  A2 -     -  D8
+  A3 -     -  D7
+  A6 -     -  D6
+  A7 -     -  D5
+Vraw - 3v3 -  D4
+ GND - GND -  D3
+
+```
+
 
 # LEDs
+
+* Next to D13 : yellow for network association
+* Next to D3 : red for RSSI, green for XBee radio on
 
 
 # Technical documents
 
-* board layout
-* schematic
-
-[Design files for Eagle on github](https://github.com/sensestage/minibee_hardware/tree/master/minibee/revA)
+Board layout and schematic are available here: [design files for Eagle on github](https://github.com/sensestage/minibee_hardware/tree/master/minibee/revA)
 
 # Programming firmware {#programmingfirmware}
 
@@ -66,8 +81,3 @@ Use the Arduino programming software:
 * Set the board type to `Sense/Stage MiniBee revA (3.3V, 8MHz) w/ Atmega168`
 * Choose `Program Bootloader` with `AVR ISP mkII`
 * On Ubuntu Linux you must run the Arduino software as root in order to do this
-
-# TODO
-
-- add pinout
-- add note about LEDs
