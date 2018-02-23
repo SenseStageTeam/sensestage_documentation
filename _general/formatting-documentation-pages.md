@@ -265,6 +265,28 @@ To insert the image like this:
 
 ![](/img/MiniBee_revD_XBee_header.jpg)
 
+Additional parameters for images:
+
+```
+![](/img/MiniBee_revD_XBee_header.jpg){:width="100px"}
+```
+
+![](/img/MiniBee_revD_XBee_header.jpg){:width="100px"}
+
+
+Add a caption:
+
+```
+{:.image-caption}
+![](/img/minibee_revisions.jpg)
+*From left to right: MiniBee revisions A, B, D and F*
+```
+
+renders to
+
+{:.image-caption}
+![](/img/minibee_revisions.jpg)
+*From left to right: MiniBee revisions A, B, D and F*
 
 ## Creating section headers {#headers}
 

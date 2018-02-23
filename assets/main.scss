@@ -89,6 +89,14 @@ a {
 
 td:hover {background-color: #f1f1f1}
 
+
+.image-caption {
+  text-align: center;
+  font-size: 1.0rem;
+  color: $grey-color;  
+  width: 90%;
+}
+
 // Minima also includes a mixin for defining media queries.
 // Use media queries like this:
 // @include media-query($on-palm) {
