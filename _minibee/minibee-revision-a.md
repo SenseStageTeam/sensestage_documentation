@@ -9,8 +9,6 @@ subcategory: minibee
 related: 
     - Programming firmware with the arduino IDE
     - Prepare the Arduino IDE for use with Sense/Stage
-tags:
-    - todo
 ---
 
 It was only distributed to those who were somehow involved in the project. The overview of the board is given here for historical reference.
@@ -42,7 +40,7 @@ It was only distributed to those who were somehow involved in the project. The o
 
 # Programming firmware {#programmingfirmware}
 
-For [programming the firmware](prepare-the-arduino-ide-for-use-with=sense-stage#board), use the board definition: `Sense/Stage MiniBee revA (3.3V, 8MHz) w/ Atmega168`
+For [programming the firmware](prepare-the-arduino-ide-for-use-with-sense-stage#board), use the board definition: `Sense/Stage MiniBee revA (3.3V, 8MHz) w/ Atmega168`
 
 # Programming the bootloader
 

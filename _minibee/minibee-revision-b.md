@@ -9,8 +9,6 @@ subcategory: minibee
 related: 
     - Programming firmware with the arduino IDE
     - Prepare the Arduino IDE for use with Sense/Stage
-tags:
-    - todo
 ---
 
 The MiniBee revision B was the second version of the MiniBee, the beta version. It was manufactured during the research-creation project Sense/Stage at Concordia University and McGill University in 2010. It was only distributed to those who were somehow involved in the project. The overview of the board is given here for historical reference.
@@ -63,4 +61,4 @@ Revision B of the board has several improvements over revision A:
 
 # Programming firmware and bootloader
 
-For [programming the firmware](prepare-the-arduino-ide-for-use-with=sense-stage#board), use the board definition: `Sense/Stage MiniBee revB/D/F (3.3V, 12MHz) w/ Atmega328p`
+For [programming the firmware](prepare-the-arduino-ide-for-use-with-sense-stage#board), use the board definition: `Sense/Stage MiniBee revB/D/F (3.3V, 12MHz) w/ Atmega328p`
