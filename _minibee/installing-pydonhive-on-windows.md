@@ -12,7 +12,7 @@ tags:
 
 # Installation
 
-{% include pydonhive_installation_short_windows.md %}
+{% include pydonhive/pydonhive_installation_short_windows.md %}
 
 ## Some details
 
@@ -93,7 +93,7 @@ Here also change `C:\Python27\python.exe` to `C:\Python278\python.exe` everywher
 
 
 
-{% include dependencies_pydonhive.md %}
+{% include pydonhive/dependencies_pydonhive.md %}
 
 Tools needed on Windows:
 
@@ -101,7 +101,7 @@ Tools needed on Windows:
 * A driver for the coordinator board, either the FTDI driver, or another driver (as for the Arduino Uno).
 
 
-{% include packagecontents_pydonhive.md %}
+{% include pydonhive/packagecontents_pydonhive.md %}
 
 # Installation step by step
 
@@ -149,7 +149,7 @@ if you want to go to drive “E:”, and then use `cd` (change directory) to nav
 
 ## [step 2] : check Python version
 
-{% include pydonhive_installation_2.md %}
+{% include pydonhive/pydonhive_installation_2.md %}
 
 Alternatively you can provide the full path to python when invoking python, e.g.
 

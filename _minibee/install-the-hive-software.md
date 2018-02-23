@@ -29,18 +29,18 @@ related:
 
 ## [Installation on Linux](installing-pydonhive-on-linux) {#install-linux}
 
-{% include pydonhive_installation_short_linux.md %}
+{% include pydonhive/pydonhive_installation_short_linux.md %}
 
-{% include pydonhive_start.md %}
+{% include pydonhive/pydonhive_start.md %}
 
 
 ## [Installation on OSX](installing-pydonhive-on-osx) {#install-osx}
 
-{% include pydonhive_installation_short_osx.md %}
+{% include pydonhive/pydonhive_installation_short_osx.md %}
 
-{% include pydonhive_start.md %}
+{% include pydonhive/pydonhive_start.md %}
 
-## [Installation on Windows](installing-pydonhive-on-window) {#install-win}
+## [Installation on Windows](installing-pydonhive-on-windows) {#install-win}
 
-{% include pydonhive_installation_short_windows.md %}
+{% include pydonhive/pydonhive_installation_short_windows.md %}
 
