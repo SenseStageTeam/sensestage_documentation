@@ -9,8 +9,8 @@ permalink: /sensestage-v1/
 
 Here are a few links to get started right away. Below you find a full overview of the documentation. If you have any questions, please join us on the [Sense/Stage Forum](https://forum.sensestage.eu).
 
-* [An overview of the Sense/Stage MiniBee system](/sensestage-v1/minibee/overview-of-the-system)
-* [Unpacking the Sense/Stage MiniBee kit](sensestage-v1/minibee/getting-started-with-sense-stage)
+* [An overview of the Sense/Stage MiniBee system](overview-of-the-system)
+* [Unpacking the Sense/Stage MiniBee kit](getting-started-with-sense-stage)
 
 <hr>
 

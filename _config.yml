@@ -34,14 +34,12 @@ collections:
   sensestage-v2:  # Sense/Stage v2 documentation site
     output: true
     layout: documentation
+    permalink: /:collection/:path
   general:
     output: true
     layout: documentation
   nextstage:
     output: false
-    layout: documentation
-  minibee:
-    output: true
     layout: documentation
   minibee_overviews:
     output: false
