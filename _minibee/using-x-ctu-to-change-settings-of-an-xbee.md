@@ -9,14 +9,15 @@ category: hardware
 subcategory: xbee
 related:
   - Using X-CTU to configure an XBee
+  - Using X-CTU to read settings of an XBee  
 ---
+
+{% include get-x-ctu.md %}
+
 
 # Opening the radio in X-CTU
 
-Follow the instructions to:
-
-* [get X-CTU](using-x-ctu-to-configure-an-xbee#getting)
-* [select the radio](using-x-ctu-to-configure-an-xbee#selectradio)
+{% include x-ctu-select-radio.md %}
 
 
 # Changing settings of an XBee with X-CTU {#settings}
