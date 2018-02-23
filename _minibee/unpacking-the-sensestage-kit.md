@@ -92,10 +92,12 @@ You should have one XPree and one XPee for each MiniBee in your kit.
 
 # Battery and Charger
 
-If you also purchased a battery kit, you should find included two or five LiPo batteries and a red charger with a USB connector.
+If you also purchased a battery kit, you should find included two or five LiIon batteries and a red charger with a USB connector.
+
+![](/img/usb-battery-charger-batteries.jpg)
 
 > NOTE Make sure to fully charge your batteries before the first use.
 
-> WARNING! LiPo batteries require special handling care. For more information see [this useful link](https://www.sparkfun.com/tutorials/241) from Sparkfun.com.
+> WARNING! LiIon batteries require special handling care. For more information see [this useful link](https://www.sparkfun.com/tutorials/241) from Sparkfun.com.
 
 > [More information about the batteries](battery)
