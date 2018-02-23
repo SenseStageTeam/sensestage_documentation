@@ -18,7 +18,7 @@ Here are a few links to get started right away. Below you find a full overview o
 *If you want to help out in the documentation process, please read on [how to contribute](general/contributing-to-the-documentation).*
 
 
-{% assign collname = "minibee" %}
+{% assign collname = "sensestage-v1" %}
 
 
 {% for coll in site.collections %}
