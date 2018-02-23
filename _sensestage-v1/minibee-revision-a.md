@@ -57,6 +57,17 @@ Board layout and schematic are available here: [design files for Eagle on github
 
 For [programming the firmware](prepare-the-arduino-ide-for-use-with-sense-stage#board), use the board definition: `Sense/Stage MiniBee revA (3.3V, 8MHz) w/ Atmega168`
 
+
+{:.image-caption}
+![](/img/minibee_revA_program_arduino_small.jpg)
+*Programming minibee revision A using an Arduino board*
+
+
+{:.image-caption}
+![](/img/minibee_revA_program-usb-adapter.jpg)
+*Programming minibee revision A using a USB adapter board*
+
+
 # Programming the bootloader
 
 Before the firmware can be uploaded to the board, a bootloader needs to be present on the board. This section describes how the bootloader can be programmed onto the board. This only needs to be done once; depending on how you obtained your board, the bootloader may already have been programmed onto the board.
@@ -81,3 +92,5 @@ Use the Arduino programming software:
 * Set the board type to `Sense/Stage MiniBee revA (3.3V, 8MHz) w/ Atmega168`
 * Choose `Program Bootloader` with `AVR ISP mkII`
 * On Ubuntu Linux you must run the Arduino software as root in order to do this
+
+
