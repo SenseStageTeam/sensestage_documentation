@@ -44,7 +44,7 @@ $on-laptop:        800px;
 }
 
 table {
-/*     width: 100%; */
+    width: 100%;
     border: 1px solid $grey-color-light;
     border-collapse: collapse;
     background-color: lighten($brand-color, 40%);
@@ -57,10 +57,18 @@ th, td {
     padding-left: 15px;
     padding-right: 15px;
     text-align: left;
+    white-space: nowrap;
 }
 
 #currentcat{
     background-color: lighten($brand-color, 20%);
+}
+
+#tags{
+    text-align: right;
+    padding-left: 30px;
+    width: 99%;
+/*     background-color: darken($brand-color, 10%); */
 }
 
 #breadcrumb {
