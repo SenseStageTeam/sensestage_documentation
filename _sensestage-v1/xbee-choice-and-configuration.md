@@ -5,7 +5,7 @@ layout: documentation
 type: guide
 creation-date: 2017-02-06
 tags: 
-    - advanced
+    - expert
 category: hardware
 subcategory: xbee
 related:
