@@ -1,5 +1,6 @@
 ---
 layout: page
+permalink: /general/
 ---
 
 {% assign collname = "general" %}
