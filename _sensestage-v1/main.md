@@ -14,15 +14,19 @@ Here are a few links to get started right away. Below you find a full overview o
 
 <hr>
 
-*This page is currently a work in progress. See [here](https://docs.sensestage.eu/old/topic/documentation) for an overview of the old documentation. In the pages below the old sites are linked where necessary.*
-
 *If you want to help out in the documentation process, please read on [how to contribute](general/contributing-to-the-documentation).*
+
+{% assign collname = "sensestage-v1" %}
+
 
 {% for coll in site.collections %}
 {% if site.data.category_order.toplevelcategories contains coll.label %}
+
+{% if coll.label == collname %}
+
 {% if coll.docs.size > 0 %}
 <hr>
-# {{ coll.label | capitalize }} documentation {#sensestage{{ coll.label }}}
+<!-- # {{ coll.label | capitalize }} documentation {#sensestage{{ coll.label }}} -->
 {% include allcollection_index.html collname = coll.label %}
   {% for cat in site.data.category_order.navigation %}
     {% if cat.children != null %}
@@ -82,6 +86,7 @@ Here are a few links to get started right away. Below you find a full overview o
             {% endif %}
      {% endif %}
   {% endfor %}
+{% endif %}
 {% endif %}
 {% endif %}
 {% endfor %}
