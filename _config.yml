@@ -24,9 +24,9 @@ github_username:
 
 
 collections:
-  pages:
-    output: false # explicitly disable the pages collection
-    layout: page
+  # pages:
+  #   output: false # explicitly disable the pages collection from rendering
+  #   layout: page
   sensestage-v1:  # Sense/Stage v1 documentation site
     output: true
     layout: documentation
@@ -34,14 +34,12 @@ collections:
   sensestage-v2:  # Sense/Stage v2 documentation site
     output: true
     layout: documentation
-  general:
-    output: true
-    layout: documentation
+    permalink: /:collection/:path
+  # general:
+  #   output: false
+  #   layout: documentation
   nextstage:
     output: false
-    layout: documentation
-  minibee:
-    output: true
     layout: documentation
   minibee_overviews:
     output: false
