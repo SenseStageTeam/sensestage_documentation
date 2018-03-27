@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Sense/Stage v1 Documentation
+title: Sense/Stage v1 documentation
 permalink: /sensestage-v1/
 ---
 
@@ -9,14 +9,12 @@ permalink: /sensestage-v1/
 
 Here are a few links to get started right away. Below you find a full overview of the documentation. If you have any questions, please join us on the [Sense/Stage Forum](https://forum.sensestage.eu).
 
-* [An overview of the Sense/Stage MiniBee system](/sensestage-v1/minibee/overview-of-the-system)
-* [Unpacking the Sense/Stage MiniBee kit](sensestage-v1/minibee/getting-started-with-sense-stage)
+* [An overview of the Sense/Stage MiniBee system](/sensestage-v1/overview-of-the-system)
+* [Unpacking the Sense/Stage MiniBee kit](/sensestage-v1/getting-started-with-sense-stage)
 
 <hr>
 
-*This page is currently a work in progress. See [here](https://docs.sensestage.eu/old/topic/documentation) for an overview of the old documentation. In the pages below the old sites are linked where necessary.*
-
-*If you want to help out in the documentation process, please read on [how to contribute](general/contributing-to-the-documentation).*
+*If you want to help out in the documentation process, please read on [how to contribute](/general/contributing-to-the-documentation).*
 
 {% for coll in site.collections %}
 {% if site.data.category_order.toplevelcategories contains coll.label %}
