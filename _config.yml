@@ -35,9 +35,10 @@ collections:
     output: true
     layout: documentation
     permalink: /:collection/:path
-  # general:
-  #   output: false
-  #   layout: documentation
+  general:
+     output: true
+     layout: documentation
+     permalink: /:collection/:path
   nextstage:
     output: false
     layout: documentation
@@ -56,3 +57,5 @@ exclude:
   - README.md
   - page_template.md
   - rsync_site.sh
+  - index.md.old
+  - index_old.md  
