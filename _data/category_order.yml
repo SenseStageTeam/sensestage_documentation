@@ -1,7 +1,7 @@
 toplevelcategories:
-#    - general
+    - general
     - sensestage-v1
-    - nextstage
+    - sensestage-v2
 navigation:
     - name: introduction
       children:
