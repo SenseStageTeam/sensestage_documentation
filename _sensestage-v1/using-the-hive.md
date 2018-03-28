@@ -7,12 +7,13 @@ creation-date: 2017-02-06
 category: software
 subcategory: usage
 related:
+    - Install the Hive Software
     - Startup settings of the Hive
 ---
 
-After you have installed the Python software, you can use the python program to interface with your Sense/Stage MiniBee network. There are two options for usage, through a GUI, or through a command-line script.
+After you have [installed the Python software](install-the-hive-software), you can use the python program to interface with your Sense/Stage MiniBee network. There are two options for usage, through a [GUI](#gui), or through a [command-line script](#cli).
 
-# GUI version
+## GUI version {#gui}
 
 The GUI can be started in the following ways:
 
@@ -45,11 +46,11 @@ The most important ones are:
 
 - **Autostart:** this is an option to automatically start with the last used settings, the next time the program is started. This allows for a quick automatic startup. 
 
-In the **[Options]** menu, you can select the [Advanced] mode, which will allow tweaking all settings. In most normal use cases you will not need to change the advanced settings. The [settings are described here](startup-settings-of-the-hive).
+In the **[Options]** menu, you can select the [Advanced] mode, which will allow tweaking all settings. In most normal use cases you will not need to change the advanced settings. The [settings are described in detail here](startup-settings-of-the-hive).
 
-By clicking **[START]** you start the communication with the Sense/Stage MiniBees and the OSC communication. At this point also the settings are stored to a file named `pydondefaults.ini`. The next time you start `pydongui.py` it will read the [settings from this file](startup-settings-of-the-hive) and use these as defaults. The program will look for the last used settings in the directory from which you start `pydongui.py`.
+By clicking **[START]** you start the communication with the Sense/Stage MiniBees and the OSC communication. At this point also the settings are stored to a file named `pydondefaults.ini` *in the directory from which you start `pydongui.py`*. The next time you start `pydongui.py` it will read the [settings from this file](startup-settings-of-the-hive) and use these as defaults. The program will look for the last used settings in the directory from which you start `pydongui.py`.
 
-### Command line interface
+## Command line interface {#cli}
 
 Alternatively you can use the command line interface:
 
