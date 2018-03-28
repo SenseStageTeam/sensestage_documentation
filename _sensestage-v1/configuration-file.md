@@ -10,6 +10,7 @@ tags:
     - configuration
 related:
     - Connecting a MiniBee for the first time
+    - Basic features of the firmware
 ---
 
 The configuration files for PydonHive use the XML format.
