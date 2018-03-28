@@ -46,7 +46,7 @@ The most important ones are:
 
 - **Autostart:** this is an option to automatically start with the last used settings, the next time the program is started. This allows for a quick automatic startup. 
 
-In the **[Options]** menu, you can select the [Advanced] mode, which will allow tweaking all settings. In most normal use cases you will not need to change the advanced settings. The [settings are described in detail here](startup-settings-of-the-hive).
+In the **[Options]** menu, you can select the **[Advanced]** mode, which will allow tweaking all settings. In most normal use cases you will not need to change the advanced settings. The [settings are described in detail here](startup-settings-of-the-hive).
 
 By clicking **[START]** you start the communication with the Sense/Stage MiniBees and the OSC communication. At this point also the settings are stored to a file named `pydondefaults.ini` *in the directory from which you start `pydongui.py`*. The next time you start `pydongui.py` it will read the [settings from this file](startup-settings-of-the-hive) and use these as defaults. The program will look for the last used settings in the directory from which you start `pydongui.py`.
 
@@ -56,15 +56,40 @@ Alternatively you can use the command line interface:
 
     $ pydoncli.py
 
-[Options are taken from the file](startup-settings-of-the-hive) `pydondefaults.ini` that should be in the same folder as from where you call the script.
+[Options are taken from the file](startup-settings-of-the-hive) `pydondefaults.ini` that should be in the same folder as from where you call the script. If no `pydondefaults.ini` file is chosen, sensible default values are used instead.
 
-If you provide additional command line parameters, it will start with default arguments for all parameters not specified on the command line, and use the command line parameters for the other ones (and store these as new defaults).
+If you provide additional command line parameters, these will take precedence over the parameters defined as default and stored as the new defaults in `pydondefaults.ini`.
 
-To see which parameters are available:
+To see which [parameters are available](#cliargs) you can type:
 
     $ pydoncli.py -h
 
-this will print the help:
+To start it you would do for example:
+
+
+    $ pydoncli.py -P osc -c configs/example_hiveconfig.xml -s /dev/ttyUSB0
+
+`/dev/ttyUSB0` is the address of your serial port, on a Mac it will be something like: `/dev/tty-usb.serialASSFADF0002332`:
+
+    $ pydoncli.py -P osc -c configs/example_hiveconfig.xml -s /dev/tty-usb.serialASSFADF0002332
+
+If you want to send the data to another machine:
+
+    $ pydoncli.py -c nameofconfigfile.xml -d 192.168.0.7
+
+where `192.168.0.7` is the IP address of the other machine.
+
+If you need to figure out what is going on, there is a verbosity switch, which will print more output:
+
+    $ pydoncli.py -c example_hiveconfig.xml -s /dev/ttyUSB0 -v True
+
+
+
+### Available parameters on the command line interface {#cliargs}
+
+Output of `$ pydoncli.py -h`:
+
+
 
 ```
 Usage: pydoncli.py [options]
@@ -126,22 +151,8 @@ Options:
   -C, --clean           remove old log file
 ```
 
-To start it you would do for example:
 
+    
+### TODO
 
-    $ pydoncli.py -P osc -c configs/example_hiveconfig.xml -s /dev/ttyUSB0
-
-`/dev/ttyUSB0` is the address of your serial port, it will be different on a mac (something like: `/dev/tty-usb.serialASSFADF0002332`):
-
-    $ pydoncli.py -P osc -c configs/example_hiveconfig.xml -s /dev/tty-usb.serialASSFADF0002332
-
-If you want to send the data to another machine:
-
-    $ pydoncli.py -c nameofconfigfile.xml -d 192.168.0.7
-
-where `192.168.0.7` is the IP address of the other machine.
-
-If you need to figure out what is going on, there is a verbosity switch, which will print more output:
-
-    $ pydoncli.py -c example_hiveconfig.xml -s /dev/ttyUSB0 -v True
-
+- update the image of the GUI with latest version
