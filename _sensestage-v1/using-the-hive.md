@@ -3,6 +3,9 @@ title: Using the Hive
 summary: This page describes how to use the Hive
 layout: documentation
 type: guide
+parent: using-the-hive
+step: 0
+featured-image: feature-thumb5.jpg
 creation-date: 2017-02-06
 category: software
 subcategory: usage
@@ -34,7 +37,7 @@ The most important ones are:
     * [*libmapper*](libmapper) – Using the libmapper interface to transfer the data to multiple clients using the libmapper framework.
 
     As you switch between the different options, settings that are relevant to these options will become enabled.
-    
+
 - [**MiniBee configuration file:**](configuration-file) this is an XML file containing information on what kind of sensors are attached to your minibees. Examples are provided in the download of the pydon package. For documentation on the format, read [this page](configuration-file). You can browse to the appropriate configuration file using the [...] button.
 
 - **Serial port:** here you need to select the serial port to use. The dropdown menu provides all ports that are found on your computer.
@@ -43,7 +46,7 @@ The most important ones are:
 
 - **Verbosity:** these are some options to provide more output as the program is running; they are mainly meant for debugging, or recording data in a raw format. For a performance situation you would leave these options off.
 
-- **Autostart:** this is an option to automatically start with the last used settings, the next time the program is started. This allows for a quick automatic startup. 
+- **Autostart:** this is an option to automatically start with the last used settings, the next time the program is started. This allows for a quick automatic startup.
 
 In the **[Options]** menu, you can select the [Advanced] mode, which will allow tweaking all settings. In most normal use cases you will not need to change the advanced settings. The [settings are described here](startup-settings-of-the-hive).
 
@@ -143,4 +146,3 @@ where `192.168.0.7` is the IP address of the other machine.
 If you need to figure out what is going on, there is a verbosity switch, which will print more output:
 
     $ pydoncli.py -c example_hiveconfig.xml -s /dev/ttyUSB0 -v True
-

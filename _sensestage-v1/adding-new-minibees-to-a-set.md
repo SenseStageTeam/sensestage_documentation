@@ -5,7 +5,7 @@ layout: documentation
 type: guide
 parent: adding-new-minibees-to-a-set
 step: 0
-featured-image: feature-thumb.jpg
+featured-image: feature-thumb1.jpg
 creation-date: 2017-02-06
 tags:
     - basics

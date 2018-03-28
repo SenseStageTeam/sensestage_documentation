@@ -3,8 +3,12 @@ title: Uploading firmware to a MiniBee
 summary: This page describes how to upload firmware to the MiniBee
 layout: documentation
 type: guide
+parent: uploading-firmware-to-a-minibee
+step: 0
+featured-image: feature-thumb4.jpg
+
 creation-date: 2017-02-06
-tags: 
+tags:
     - expert
     - todo
 category: firmware
@@ -22,6 +26,3 @@ subcategory: arduino-ide
 [old website - uplaoding firmware to revA](https://docs.sensestage.eu/minibee-reva-uploading-the-firmware)
 
 [old website - uploading firmware](https://docs.sensestage.eu/programming-new-firmware-onto-the-minibee)
-
-
-

@@ -3,6 +3,9 @@ title: Unpacking the Sense/Stage MiniBee Kit
 summary: A guide on what is in the Sense/Stage MiniBee kit.
 layout: documentation
 type: guide
+parent: unpacking-the-sensestage-kit
+step: 0
+featured-image: feature-thumb3.jpg
 creation-date: 2017-02-06
 tags:
     - basics

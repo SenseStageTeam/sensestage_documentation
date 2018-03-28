@@ -22,10 +22,12 @@ $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 25%);
 
 // Width of the content area
-$content-width:    800px;
+$content-width:    1200px; // was 800px, changed by Jon 28.03.18
 
 $on-palm:          600px;
-$on-laptop:        800px;
+$on-laptop:        1200px; // was 800px, changed by Jon 28.03.18
+
+$grid-column-width:   ($content-width / 4);
 
 
 
@@ -93,8 +95,32 @@ td:hover {background-color: #f1f1f1}
 .image-caption {
   text-align: center;
   font-size: 1.0rem;
-  color: $grey-color;  
+  color: $grey-color;
   width: 90%;
+}
+
+/* Grid Formatting */
+.grid-container {
+  display: grid;
+  //grid-column-gap: 30px;
+  //grid-row-gap: 30px;
+  grid-gap: 50px; // sets both column and row in one value
+  grid-template-columns: $grid-column-width $grid-column-width $grid-column-width;
+
+  .grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 14px;
+    text-align: center;
+    width: 250px;
+    height: 200px;
+  }
+
+  .thumb {
+    width: 200px;
+  }
+
 }
 
 // Minima also includes a mixin for defining media queries.
