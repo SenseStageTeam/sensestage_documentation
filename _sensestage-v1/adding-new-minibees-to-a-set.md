@@ -8,7 +8,7 @@ tags:
     - basics
     - todo
 category: introduction
-subcategory: getting-started
+subcategory: tutorials
 related:
     - Overview of the system
     - Unpacking the Sense/Stage MiniBee Kit
