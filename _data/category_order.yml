@@ -7,6 +7,7 @@ navigation:
       children:
         - name: getting-started
         - name: tutorials
+        - name: references
         - name: glossary
     - name: hardware
       children:
