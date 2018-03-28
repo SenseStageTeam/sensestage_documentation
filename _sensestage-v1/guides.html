@@ -12,18 +12,15 @@ permalink: /sensestage-v1/guides
   {% if coll.label == collname %}
     {% if coll.docs.size > 0 %}
 {% for page in coll.docs %}
-{% assign pagename = page.path | split: "/" %}
-{% assign pagename = pagename.last | split: "." %}
-{% assign pagename = pagename.first %}
-          {% if page.type == "guide" and page.parent == pagename %}
+{% if page.type == "guide" and {{ page.parent | slugify }} == {{ page.title | slugify }} %}
 <div class="grid-item">
 <a href="{{page.url}}"><img class="thumb" src="{{ site.data.v1-site.imgdir }}{{ page.featured-image }}" />{{ page.title }}</a>
 {{ page.summary }}
 </div>
-          {% endif %}
+{% endif %}
+{% endfor %}
 
-        {% endfor %}
-      {% endif %}
+{% endif %}
 
-    {% endif %}
+{% endif %}
 {% endfor %}

@@ -1,9 +1,9 @@
 ---
-title: Adding new MiniBees to a set
+title: Adding New MiniBees to a Set
 summary: A guide on what you need to do when you add new MiniBees to a set that you already have
 layout: documentation
 type: guide
-parent: adding-new-minibees-to-a-set
+parent: Adding New MiniBees to a Set
 step: 0
 featured-image: feature-thumb1.jpg
 creation-date: 2017-02-06
@@ -11,7 +11,7 @@ tags:
     - basics
     - todo
 category: introduction
-subcategory: getting-started
+subcategory: tutorials
 related:
     - Overview of the system
     - Unpacking the Sense/Stage MiniBee Kit

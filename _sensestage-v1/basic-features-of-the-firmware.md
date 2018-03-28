@@ -42,12 +42,11 @@ Configuration is currently done through the XML configuration file (see [documen
 
 
 
-## Sensors supported in older firmware versions
+## Sensors supported in older firmware versions {#obsolete}
 
 Up to firmware library version 8 the following additional two-wire sensors were supported:
 
 * LIS302DL &#8211; accelerometer
-* ADXL345 &#8211; accelerometer
 * HMC58X3 &#8211; magnetometer
 * TMP102 &#8211; temperature sensor
 * BMP085 &#8211; barometric pressure and temperature

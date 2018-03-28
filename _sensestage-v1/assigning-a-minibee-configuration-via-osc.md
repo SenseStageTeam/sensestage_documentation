@@ -8,7 +8,7 @@ tags:
     - intermediate
     - configuration
 category: introduction
-subcategory: getting-started
+subcategory: tutorials
 related:
     - Using the Hive
     - Power supply
