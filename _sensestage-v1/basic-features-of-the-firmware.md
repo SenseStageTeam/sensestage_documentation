@@ -5,9 +5,13 @@ layout: documentation
 type: guide
 creation-date: 2017-02-06
 tags: 
-    - expert
+    - configuration
+    - overview
 category: firmware
 subcategory: minibee
+related:
+    - Configuration file
+    - Assigning a MiniBee Configuration via OSC
 ---
 
 
@@ -25,7 +29,7 @@ The sensor and actuation options supported by the library are:
 
 ## Configuration
     
-Configuration is currently done through the XML configuration file (see [documentation on the Python hive client](http://127.0.0.1:4000/sensestage-v1/configuration-filecreating-a-configuration-file-for-pydonhive)) or [interactively via OSC](assigning-a-minibee-configuration-via-osc).
+Configuration is currently done through the XML configuration file (see [documentation on the hive client](configuration-file)) or [interactively via OSC](assigning-a-minibee-configuration-via-osc).
 
 ## What happens during the wireless configuration
     
@@ -53,4 +57,4 @@ as well as
 * SHT15: Relative humidity and temperature sensor
 * Ultrasound sensors
 
-In the newer versions these default support for these sensors has been removed, since new digital sensors are coming to the market fairly quickly, but also leaving the market faster than the MiniBee. So I've chosen to keep the MiniBee firmware small and add new digital sensors as examples of custom firmware rather than supporting them in the default firmware.
+In the newer versions the default support for these sensors has been removed, since new digital sensors are coming to the market fairly quickly, but also leaving the market faster than the MiniBee. So I've chosen to keep the MiniBee firmware small and add new digital sensors as examples of custom firmware rather than supporting them in the default firmware.
