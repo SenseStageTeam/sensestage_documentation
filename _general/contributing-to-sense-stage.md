@@ -1,7 +1,7 @@
 ---
-title: Contributing to Sense/Stage
+title: contribute
 summary: How to contribute to the Sense/Stage project
-type: overview
+type: contribute
 layout: category_overview
 creation-date: 2017-02-06
 category: contributing
@@ -50,4 +50,3 @@ There are several ways to [contribute to the documentation](contributing-to-the-
 - expand this page!
 
 ------------
-

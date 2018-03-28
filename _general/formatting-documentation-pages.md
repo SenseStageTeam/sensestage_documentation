@@ -2,9 +2,9 @@
 title: Formatting documentation pages
 summary: A guide on the syntax for the markdown used on documentation pages
 layout: documentation
-type: guide
+type: contribute
 creation-date: 2017-03-26
-tags: 
+tags:
     - documentation
 category: contributing
 related:

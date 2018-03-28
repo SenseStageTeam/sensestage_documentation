@@ -2,9 +2,9 @@
 title: Contributing to the documentation
 summary: how to contribute to the documentation
 layout: documentation
-type: guide
+type: contribute
 creation-date: 2017-03-26
-tags: 
+tags:
     - documentation
 category: contributing
 related:
@@ -52,19 +52,19 @@ We host our documentation pages on github. By signing up with github, you can ed
 
 ## Forking in detail
 
-The process of making edits to a project on github is simple, but the workflow can be a little confusing if you've never encountered it before. In order to make changes to a project you need to first make your own copy of the project called a "fork". You're free to make whatever edits you want to the files in your fork without worrying about accidentally messing something up. Once you've made your edits in your fork, you send these changes to the Sense Stage team for review. When you send changes for review it's called a "pull request", because you're asking us to pull your changes into the main project. 
+The process of making edits to a project on github is simple, but the workflow can be a little confusing if you've never encountered it before. In order to make changes to a project you need to first make your own copy of the project called a "fork". You're free to make whatever edits you want to the files in your fork without worrying about accidentally messing something up. Once you've made your edits in your fork, you send these changes to the Sense Stage team for review. When you send changes for review it's called a "pull request", because you're asking us to pull your changes into the main project.
 Once you send us a pull request we'll give it a quick check and then merge it into the main documentation as soon as we can.
 
 Here's the process in more detail:
 
-1. Log into github and go to the sensestage_documentation file repository. Click on the "Fork" button in the upper right. This will give you your own copy of the documentation files for editing. 
+1. Log into github and go to the sensestage_documentation file repository. Click on the "Fork" button in the upper right. This will give you your own copy of the documentation files for editing.
 ![](/img/editing01-make-a-fork.jpg)
 ![](/img/editing02-forked-repo.jpg)
 
 2. In your local fork, use the file navigation to go to the directory where the documentation file you want to edit is stored. For documentation of the Minibee System this is the **\_minibee** directory.
 ![](/img/editing03-finding-the-documentation-dir.jpg)
 
-3. Inside that directory click on the file you want to edit. 
+3. Inside that directory click on the file you want to edit.
 ![](/img/editing04-finding-the-documentation-file.jpg)
 
 4. In the next screen, click the pencil icon in the upper right corner to edit the file. This will open up a simple text editor where you can go in and make the changes you want.
@@ -79,7 +79,7 @@ You'll be brought back to the homepage of your fork and receive a little confirm
 
 ### Submitting your edits to the Sense Stage team
 
-Once you've made a bunch of edits to your local fork you'll want to send them to us so we can merge them into the main documentation files. To do this you need to submit a "Pull Request". 
+Once you've made a bunch of edits to your local fork you'll want to send them to us so we can merge them into the main documentation files. To do this you need to submit a "Pull Request".
 
 1. Go to the "Pull requests" tab of your local fork (the copy where you made your edits). Click on "New pull request".
 ![](/img/editing09-new-pr.jpg)
@@ -178,7 +178,7 @@ This will take you to the Comparing Changes screen.. which should look something
 If not, switch the bases manually using the dropdown menus. Set them up so that your local fork is on the left, and the original is on the right.
 ![](/img/Github_Syncing_Create_PR.jpg)
 
-3. Click the "Create pull request" button. If you want you can also scroll down and see what's different between your files and the ones in the SenseStageTeam repository. 
+3. Click the "Create pull request" button. If you want you can also scroll down and see what's different between your files and the ones in the SenseStageTeam repository.
 
 4. Give it a title like "updating my local copy".
 ![](/img/Github_Syncing_Create_PR_Title.jpg)
@@ -220,7 +220,7 @@ bundle install
 
 ## Run Jekyll locally
 
-Now you can start Jekyll on your local machine: 
+Now you can start Jekyll on your local machine:
 
 From `sensestage_documentation` folder:
 
@@ -234,7 +234,7 @@ And now you can browse to the local URL: [http://localhost:4000](http://localhos
 Once done, you can stop the local hosting again by pressing `CTRL-C` in the terminal.
 
 *Jekyll References*
-    
+
 * [https://jekyllrb.com/docs/home/]()
 * [http://jekyll.tips/]()
 

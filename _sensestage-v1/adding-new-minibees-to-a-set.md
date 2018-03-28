@@ -3,6 +3,9 @@ title: Adding new MiniBees to a set
 summary: A guide on what you need to do when you add new MiniBees to a set that you already have
 layout: documentation
 type: guide
+parent: adding-new-minibees-to-a-set
+step: 0
+featured-image: feature-thumb.jpg
 creation-date: 2017-02-06
 tags:
     - basics

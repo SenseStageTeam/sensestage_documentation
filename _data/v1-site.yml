@@ -1,0 +1,10 @@
+
+sitenav:
+  - title: guides
+    type: guide
+  - title: references
+    type: reference
+  - title: forum
+    type: forum
+  - title: contribute
+    type: contribute

@@ -1,0 +1,26 @@
+---
+name: guides
+layout: grid
+title: All Guides
+permalink: /sensestage-v1/guides
+---
+
+{% assign collname = "sensestage-v1" %}
+
+{% for coll in site.collections %}
+    {% if coll.label == collname %}
+      {% if coll.docs.size > 0 %}
+        {% for page in coll.docs %}
+        {% assign pagename = page.path | split: "/" %}
+        {% assign pagename = pagename.last | split: "." %}
+        {% assign pagename = pagename.first %}
+
+          {% if page.type == "guide" and page.parent == pagename %}
+            <a href="{{page.url}}"><img src="{{ page.featured-image }}" />{{ page.title }}</a> {{ page.summary }}
+          {% endif %}
+
+        {% endfor %}
+      {% endif %}
+
+    {% endif %}
+{% endfor %}
