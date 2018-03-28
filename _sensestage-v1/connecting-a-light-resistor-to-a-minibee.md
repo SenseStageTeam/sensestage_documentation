@@ -5,6 +5,7 @@ layout: documentation
 type: tutorial
 creation-date: 2017-02-06
 category: introduction
+subcategory: tutorials
 related:
     - XPee
     - XPree
@@ -18,7 +19,7 @@ tags:
 
 A light sensor is a variable resistor. In order to connect it to the MiniBee, you need to make a [voltage divider](http://en.wikipedia.org/wiki/Voltage_divider):
 
-![](/img/voltagedivider.png)
+![](/img/voltagedivider.png){:height="220px"}
 
 
 In this picture, RVAR (VARiable Resistor) is the light sensor, and R is another resistor with which you are creating the voltage divider. In this setup, the current will flow from Vcc to GND, and the voltage will be *divided* over RVAR and R. The voltage is measured by the MiniBee at A0. The voltage will vary, as RVAR will vary – in the case of our light sensor, it depends on the amount of light that is falling onto the sensor.
@@ -122,7 +123,7 @@ If you started from the `example_hiveconfig.xml` configuration file, it will loo
 We will add a new configuration element to it:
 
 
-    <configuration id="4" name="lightsensor" message_interval="50" samples_per_message="1" redundancy="3" rssi="True">
+    <configuration id="4" name="lightsensor" message_interval="50" samples_per_message="1">
     <pin config="AnalogIn10bit" id="A0" name="light" />
     <twi id="1" device="ADXL345" name="accelero"/>
     </configuration>
@@ -144,8 +145,6 @@ Then we can start pydongui.py and use our new configuration file.
 Then if we turn on our MiniBee, it will be assigned the new configuration, and send out the data as follows:
 
 
-    "/minibee/data" id lightsensor acceleration-x acceleration-y acceleration-z rssi
+    "/minibee/data" id lightsensor acceleration-x acceleration-y acceleration-z
 
-All are values between 0 and 1. Rssi stands for “received signal strength indication” and is a measure for the connection quality, bringing the minibee closer to or further from the receiver will change this value, as will obscuring the minibee with your body (blocking the signal).
-
-If you also configure digital pins, these values will come before the analog values.
+All are values between 0 and 1.
