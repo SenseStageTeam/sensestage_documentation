@@ -1,0 +1,55 @@
+---
+layout: base
+---
+
+<div class="wrapper-wide">
+
+<div id="guide-navbox">
+{% if page.parent == nil %}
+  {% assign myid = page.title | slugify %}
+{% else %}
+  {% assign myid = page.parent | slugify %}
+{% endif %}
+
+{% assign mycoll = page.collection %}
+
+{% for coll in site.collections %}
+  {% if coll.label == mycoll %}
+    {% assign guides = coll.docs | where:"type","guide" | sort:"guidestep" %}
+    {% for guide in guides %}
+      {% if guide.parent == nil %}
+        {% assign guideid = guide.title | slugify %}
+      {% else %}
+        {% assign guideid = guide.parent | slugify %}
+      {% endif %}
+      {% if guideid == myid %}
+      <a href="{{ guide.url }}">{{ guide.guidestep }} - {{ guide.title }}</a>
+      {% endif %}
+    {% endfor %}
+  {% endif %}
+{% endfor %}
+
+
+
+</div>
+
+<div id="guide-content">
+    <h1 class="post-title">{{ page.title | escape }}</h1>
+  {{ content }}
+</div>
+
+</div>
+
+<script>
+window.onscroll = function() {stickNavBox()};
+var navbox = document.getElementById("guide-navbox");
+var sticky = navbox.offsetTop;
+
+function stickNavBox() {
+  if (window.pageYOffset >= sticky) {
+    navbox.classList.add("sticky")
+  } else {
+    navbox.classList.remove("sticky");
+  }
+}
+</script>

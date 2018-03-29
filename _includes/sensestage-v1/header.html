@@ -14,7 +14,7 @@
         </svg>
       </span>
       {% for navitem in site.data.v1-site.sitenav %}
-        <a {% if page.type == navitem.type or (page.type == "mainpage" and page.title == navitem.title) %}class="active"{% endif %} href="{{ page.url }}">{{ navitem.title | upcase }}</a>
+        <a {% if page.type == navitem.type or (page.type == "mainpage" and page.title == navitem.title) %}class="active"{% endif %} href="{{ navitem.title }}">{{ navitem.title | upcase }}</a>
       {% endfor %}
     </nav>
 

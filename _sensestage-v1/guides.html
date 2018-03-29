@@ -1,7 +1,7 @@
 ---
-name: guides
 layout: grid
-title: All Guides
+title: guides
+heading: All Guides
 type: mainpage
 permalink: /sensestage-v1/guides
 ---
@@ -11,16 +11,15 @@ permalink: /sensestage-v1/guides
 {% for coll in site.collections %}
   {% if coll.label == collname %}
     {% if coll.docs.size > 0 %}
-{% for page in coll.docs %}
-{% if page.type == "guide" and {{ page.parent | slugify }} == {{ page.title | slugify }} %}
+      {% for page in coll.docs %}
+        {% if page.type == "guide" and page.parent == nil %}
 <div class="grid-item">
-<a href="{{page.url}}"><img class="thumb" src="{{ site.data.v1-site.imgdir }}{{ page.featured-image }}" />{{ page.title }}</a>
+<a href="{{page.url}}">{{ page.title }}</a>
+<img class="thumb" src="{{ site.data.v1-site.imgdir }}{% if page.featured-image == nil %}missing-featured-image.jpg{% else %}{{ page.featured-image }}{% endif %}" />
 {{ page.summary }}
 </div>
-{% endif %}
-{% endfor %}
-
-{% endif %}
-
-{% endif %}
+        {% endif %}
+      {% endfor %}
+    {% endif %}
+  {% endif %}
 {% endfor %}

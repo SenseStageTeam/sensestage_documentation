@@ -3,8 +3,6 @@ title: Using the Hive
 summary: This page describes how to use the Hive
 layout: documentation
 type: guide
-parent: using-the-hive
-step: 0
 featured-image: feature-thumb5.jpg
 creation-date: 2017-02-06
 category: software
@@ -158,7 +156,7 @@ Options:
 <<<<<<< HEAD
     $ pydoncli.py -c example_hiveconfig.xml -s /dev/ttyUSB0 -v True
 =======
-    
+
 ### TODO
 
 - update the image of the GUI with latest version

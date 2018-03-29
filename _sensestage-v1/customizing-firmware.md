@@ -1,10 +1,12 @@
 ---
 title: Customizing firmware
 summary: This page describes how to write custom firmware
-layout: documentation
+layout: guide
 type: guide
+guidestep: 0
+featured-image: feature-thumb2.jpg
 creation-date: 2017-02-06
-tags: 
+tags:
     - expert
     - todo
 category: firmware
@@ -53,7 +55,7 @@ void loop() {
   // perform all the actions that need to be taken in a loop step:
   Bee.loopStep();
 }
-``` 
+```
 
 
 

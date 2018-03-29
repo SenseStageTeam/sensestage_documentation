@@ -22,12 +22,15 @@ $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 25%);
 
 // Width of the content area
-$content-width:    1200px; // was 800px, changed by Jon 28.03.18
+$content-width:    800px;
+$narrow-content-width:  600px;
+$wide-content-width:    1200px;
+$header-height:   100px;
 
 $on-palm:          600px;
-$on-laptop:        1200px; // was 800px, changed by Jon 28.03.18
+$on-laptop:        800px; // The threshhold for a laptop screen width
 
-$grid-column-width:   ($content-width / 4);
+$grid-column-width:   ($wide-content-width / 4) - $spacing-unit;
 
 
 
@@ -104,8 +107,8 @@ td:hover {background-color: #f1f1f1}
   display: grid;
   //grid-column-gap: 30px;
   //grid-row-gap: 30px;
-  grid-gap: 50px; // sets both column and row in one value
-  grid-template-columns: $grid-column-width $grid-column-width $grid-column-width;
+  grid-gap: $spacing-unit; // sets both column and row in one value
+  grid-template-columns: $grid-column-width $grid-column-width $grid-column-width $grid-column-width;
 
   .grid-item {
     background-color: rgba(255, 255, 255, 0.8);
@@ -122,6 +125,69 @@ td:hover {background-color: #f1f1f1}
   }
 
 }
+
+
+
+/* Guide Styles */
+
+#guide-content {
+  width: $narrow-content-width;
+  margin-left: 220px; // same as navbox width, plus some padding
+  padding: 0px 10px;
+}
+
+#guide-navbox {
+    width: 200px; /* Set the width of the sidebar */
+    z-index: 1; /* Stay on top */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 10px;
+    float: left;
+}
+
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    #guide-navbox {padding-top: 15px;}
+    #guide-navbox a {font-size: 18px;}
+}
+
+/* Links are guide steps */
+#guide-navbox a {
+  //float: left;
+  display: block;
+  background-color: transparent;
+  color: #222222;
+  text-align: left;
+  padding: 10px;
+  text-decoration: none;
+  border: 1px #ddd solid;
+}
+
+/* When you mouse over the navigation links, change their color */
+#guide-navbox a:hover {
+    background-color: #f2f2f2;
+}
+
+
+
+/* The sticky class is added to the navbox with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 200px;
+}
+
+/* ??? Page content */
+.content {
+  padding: 16px;
+}
+
+/* ??? Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 60px;
+}
+
+
 
 // Minima also includes a mixin for defining media queries.
 // Use media queries like this:
