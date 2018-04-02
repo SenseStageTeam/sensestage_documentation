@@ -33,10 +33,82 @@ $on-laptop:        800px; // The threshhold for a laptop screen width
 $grid-column-width:   ($wide-content-width / 4) - $spacing-unit;
 
 
+.wrapper-narrow {
+  @extend .wrapper;
+  padding-top: $spacing-unit;
+  background-color: $background-color;
+  max-width: -webkit-calc(#{$narrow-content-width} - (#{$spacing-unit} * 2));
+  max-width:         calc(#{$narrow-content-width} - (#{$spacing-unit} * 2));
+}
+
+.wrapper-wide {
+  @extend .wrapper;
+  padding-top: $spacing-unit;
+  //background-color: $background-color;
+  max-width: -webkit-calc(#{$wide-content-width} - (#{$spacing-unit} * 2));
+  max-width:         calc(#{$wide-content-width} - (#{$spacing-unit} * 2));
+}
+
+.wrapper-leftcolumn {
+  @extend .wrapper;
+  padding-top: $spacing-unit;
+  background-color: $background-color;
+  float: left;
+  margin-left: 100px;
+  max-width: -webkit-calc(#{$narrow-content-width} - (#{$spacing-unit} * 2));
+  max-width:         calc(#{$narrow-content-width} - (#{$spacing-unit} * 2));
+}
+
+.wrapper-rightcolumn {
+  @extend .wrapper;
+  //float: right;
+  position: fixed;
+  top: $header-height + $spacing-unit;
+  right: 20%;
+  padding-top: $spacing-unit;
+  background-color: grey;
+  max-width: 200px;
+}
+
+
+
 
 .post-summary {
     font-size: $big-font-size;
     background-color: lighten($brand-color, 30%);
+}
+
+ul.breadcrumb {
+    padding: 0px 0px;
+    list-style: none;
+    margin: auto;
+    margin-left: 0px;
+    margin-bottom: 10px;
+    border-bottom: solid 1px black;
+    background-color: none;
+}
+
+/* Display list items side by side */
+ul.breadcrumb li {
+    display: inline;
+    font-size: 12px;
+}
+
+/* Add a slash symbol (/) before/behind each list item */
+ul.breadcrumb li+li:before {
+    padding: 4px;
+    color: black;
+    content: "/\00a0";
+}
+
+ul.breadcrumb li a {
+    color: #0275d8;
+    text-decoration: none;
+}
+
+ul.breadcrumb li a:hover {
+    color: #01447e;
+    text-decoration: underline;
 }
 
 #sidebar
@@ -168,6 +240,42 @@ td:hover {background-color: #f1f1f1}
     background-color: #f2f2f2;
 }
 
+#guide-navbox a.selected {
+  background-color: #f2f2f2f2;
+}
+
+#guide-content {
+  background-color: #fff;
+}
+
+#guide-previous-next-buttons {
+  width: 100%;
+  margin: auto;
+  align-items: center;
+}
+
+#guide-previous-next-buttons a {
+    font-size: +1em;
+    margin: auto;
+    display: block;
+    background-color: #f2f2f2;
+    border: 1px solid grey;
+    margin: 10px 10px;
+    padding: 10px 10px;
+    vertical-align: middle;
+}
+
+#guide-previous-next-buttons a.previous {
+  float: left;
+}
+
+#guide-previous-next-buttons a.next {
+  float: right;
+}
+
+.ltgt {
+  font-weight: bold;
+}
 
 
 /* The sticky class is added to the navbox with JS when it reaches its scroll position */

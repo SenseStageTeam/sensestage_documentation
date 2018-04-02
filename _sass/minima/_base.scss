@@ -173,42 +173,12 @@ pre {
   }
 }
 
-.wrapper-narrow {
+.wrapperfilled {
   @extend .wrapper;
   padding-top: $spacing-unit;
   background-color: $background-color;
-  max-width: -webkit-calc(#{$narrow-content-width} - (#{$spacing-unit} * 2));
-  max-width:         calc(#{$narrow-content-width} - (#{$spacing-unit} * 2));
-}
-
-.wrapper-wide {
-  @extend .wrapper;
-  padding-top: $spacing-unit;
-  //background-color: $background-color;
-  max-width: -webkit-calc(#{$wide-content-width} - (#{$spacing-unit} * 2));
-  max-width:         calc(#{$wide-content-width} - (#{$spacing-unit} * 2));
-}
-
-.wrapper-leftcolumn {
-  @extend .wrapper;
-  padding-top: $spacing-unit;
-  background-color: $background-color;
-  float: left;
-  margin-left: 100px;
-  max-width: -webkit-calc(#{$narrow-content-width} - (#{$spacing-unit} * 2));
-  max-width:         calc(#{$narrow-content-width} - (#{$spacing-unit} * 2));
-}
-
-/* TODO: Probably better to implement this floating window in Javascript, but doing it in plain CSS is appealing */
-.wrapper-rightcolumn {
-  @extend .wrapper;
-  //float: right;
-  position: fixed;
-  top: $header-height + $spacing-unit;
-  right: 20%;
-  padding-top: $spacing-unit;
-  background-color: grey;
-  max-width: 200px;
+  max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
+  max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
 }
 
 

@@ -1,7 +1,7 @@
 ---
 title: Sending private data
 summary: How to send private data from the firwmare
-layout: documentation
+layout: guide
 type: guide
 parent: Customizing firmware
 guidestep: 4

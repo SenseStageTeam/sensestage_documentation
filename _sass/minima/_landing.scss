@@ -4,17 +4,38 @@
 .splash-content {
   align-content: center;
   text-align: center;
+  width: 100%;
 
   .row {
     display: flex;
     flex-wrap: wrap;
     padding: 0 4px;
+    margin: 0px;
+    align-content: center;
+    text-align: center;
+    width: 100%;
   }
 
   .column {
-    flex: 50%;
-    max-width: 50%;
+    display: inline;
+    margin: auto auto;
+    vertical-align: top;
   }
+
+  #sensestagev1-splash {
+    background-image: url("/img/splash-version1.jpg");
+    width: 200px;
+    height: 350px;
+    background-repeat: no-repeat;
+  }
+
+  #sensestagev2-splash {
+    background-image: url("/img/splash-version2.jpg");
+    width: 200px;
+    height: 350px;
+    background-repeat: no-repeat;
+  }
+
 
   a {
     border-style: 10px solid green;
