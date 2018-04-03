@@ -2,7 +2,7 @@
 <h2 id=related><em>Related pages:</em></h2>
     <ul>
     {% for related in page.related %}
-    <li><a href="{{ related | slugify }}.html">{{ related }}</a></li>
+    <li><a href="{{ related | slugify }}">{{ related }}</a></li>
     {% endfor %}
     </ul>
 {% endif %}
