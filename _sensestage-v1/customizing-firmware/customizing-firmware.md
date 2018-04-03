@@ -1,5 +1,6 @@
 ---
 title: Customizing firmware
+permalink: /sensestage-v1/customizing-firmware/index.html
 summary: This page describes how to write custom firmware
 layout: guide
 type: guide
