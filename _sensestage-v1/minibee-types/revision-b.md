@@ -1,8 +1,10 @@
 ---
 title: MiniBee Revision B
 summary: The MiniBee revision B was the second version of the MiniBee, the beta version. It was manufactured during the research-creation project Sense/Stage at Concordia University and McGill University in 2010.
-layout: documentation
 type: reference
+parent: minibee-types
+layout: reference
+guidestep: 2
 creation-date: 2017-02-06
 category: hardware
 subcategory: minibee

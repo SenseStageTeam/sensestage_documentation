@@ -1,8 +1,10 @@
 ---
 title: XPee
 summary: The XPee board is a small expansion board that allows you to easily hook up 4 resistive sensors and 3 LEDs.
-layout: documentation
 type: reference
+parent: expansion-boards
+layout: reference
+guidestep: 2
 creation-date: 2017-02-06
 category: hardware
 subcategory: expansion

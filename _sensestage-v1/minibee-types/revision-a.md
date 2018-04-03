@@ -1,8 +1,10 @@
 ---
 title: MiniBee Revision A
 summary: The MiniBee revision A was the first version of the MiniBee, the alpha version. It was manufactured during the research-creation project Sense/Stage at Concordia University and McGill University in 2009.
-layout: documentation
 type: reference
+parent: minibee-types
+layout: reference
+guidestep: 1
 creation-date: 2017-02-06
 category: hardware
 subcategory: minibee
@@ -11,7 +13,7 @@ related:
     - Prepare the Arduino IDE for use with Sense/Stage
 ---
 
-It was only distributed to those who were somehow involved in the project in 2009/2010. The overview of the board is given here for historical reference.
+This revision was only distributed to those who were somehow involved in the project in 2009/2010. The overview of the board is given here for historical reference.
     
 ![](/img/minibee_revA_annotated2.jpg)
 
