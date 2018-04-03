@@ -151,13 +151,7 @@ Options:
   -Q, --quiet           do not log to console
   -C, --clean           remove old log file
 ```
-
-
-<<<<<<< HEAD
-    $ pydoncli.py -c example_hiveconfig.xml -s /dev/ttyUSB0 -v True
-=======
-
+    
 ### TODO
 
 - update the image of the GUI with latest version
->>>>>>> 6a08534b698615633523078df0e7b2e0343bd5f1
