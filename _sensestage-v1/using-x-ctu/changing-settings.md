@@ -31,7 +31,7 @@ In general, you just may want to change the channel and/or the pan id in order t
 
 ## Power level
 
-The international version of the XBee Pro has a higher power level than is generally allowed in Europe. So you will have to set the power level to 0 in order to be within European regulations for radio transmissions.
+The international version of the XBee Pro has a higher power level than is generally allowed in Europe. So you will have to set the power level to 0 (the lowest) in order to be within European regulations for radio transmissions.
 
 By default the power level is at 4.
 
