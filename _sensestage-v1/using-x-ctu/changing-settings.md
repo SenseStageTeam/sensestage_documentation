@@ -1,26 +1,18 @@
 ---
-title: Using X-CTU to change settings of an XBee
-summary: This page describes how to use X-CTU to change settings on an XBee.
-layout: documentation
+title: Changing settings
+summary: A guide on how to configure the XBee
+layout: guide
 type: guide
-creation-date: 2017-05-04
-tags: 
-category: hardware
+parent: Using X-CTU
+guidestep: 3
+creation-date: 2017-02-06
+tags:
+    - expert
+    - todo
+category: firmware
 subcategory: xbee
-related:
-  - Using X-CTU to configure an XBee
-  - Using X-CTU to read settings of an XBee  
 ---
 
-{% include xctu/get-x-ctu.md %}
-
-
-# Opening the radio in X-CTU
-
-{% include xctu/x-ctu-select-radio.md %}
-
-
-# Changing settings of an XBee with X-CTU {#settings}
 
 Once you have selected the radio to view its configuration, you will see the following screen:
 
@@ -30,7 +22,7 @@ The settings you most likely want to change are the Channel, pan id and power le
 
 ## Channel and pan id
 
-The `channel` determines on which radio frequency the XBee are transmitting. In the 2.4 GHz band there are different subbands which can be used; which one to choose depends on what other frequencies are being used in the space, for example by WiFi routers. See [the documentation page on choosing a radio frequency](choosing-a-radio-frequency-for-the-xbee) for a discussion about this.
+The `channel` determines on which radio frequency the XBee are transmitting. In the 2.4 GHz band there are different subbands which can be used; which one to choose depends on what other frequencies are being used in the space, for example by WiFi routers. See [the documentation page on choosing a radio frequency](../choosing-a-radio-frequency-for-the-xbee) for a discussion about this.
 
 The `pan id` is an identifier within the channel to distinguish different XBee networks from each other. XBees will just ignore traffic that is happening with different pan ids. `pan` is an acronym for 'Personal Area Network'.
 
@@ -75,7 +67,7 @@ You can now close the radio again by selecting the cross, see where the mouse cu
 
 ![](/img/x-ctu-close-radio.png)
 
-Now, disconnect the coordinator node from the computer and, if you want to configure another XBee, remove the XBee and place the new XBee on top. And [start again](#configure).
+Now, disconnect the coordinator node from the computer and, if you want to configure another XBee, remove the XBee and place the new XBee on top. And [start again](selecting-the-radio).
 
 
 

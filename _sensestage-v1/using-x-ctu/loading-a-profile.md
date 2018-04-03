@@ -1,22 +1,21 @@
 ---
-title: Using X-CTU to configure an XBee
-summary: This page describes how to use X-CTU to load an XBee configuration profile onto an XBee, to prepare the XBee for use with the Sense/Stage MiniBee.
-layout: documentation
+title: Loading a profile
+summary: A guide on how to configure the XBee
+layout: guide
 type: guide
-creation-date: 2017-05-04
-tags: 
-category: hardware
+parent: Using X-CTU
+guidestep: 4
+creation-date: 2017-02-06
+tags:
+    - expert
+    - todo
+category: firmware
 subcategory: xbee
-related:
-  - Using X-CTU to read settings of an XBee
-  - Using X-CTU to change settings of an XBee
 ---
-
-{% include xctu/get-x-ctu.md %}
 
 # Getting the XBee profiles for the Sense/Stage MiniBee {#profiles}
 
-The XBee profiles for Sense/Stage are available from [](https://github.com/sensestage/ssdn_xbee). Click on the `Clone or Download` button, or use this [direct link for a zip-file](https://github.com/sensestage/ssdn_xbee/archive/master.zip).
+The XBee profiles for Sense/Stage are available from [this git repository](https://github.com/sensestage/ssdn_xbee). Click on the `Clone or Download` button, or use this [direct link for a zip-file](https://github.com/sensestage/ssdn_xbee/archive/master.zip).
 
 Unpack the folder. The layout of the folders is as follows:
 
@@ -33,17 +32,17 @@ Unpack the folder. The layout of the folders is as follows:
 
 # Loading a profile onto the XBee with X-CTU {#configure}
 
-{% include xctu/x-ctu-select-radio.md %}
-
-## Selecting a profile {#selectprofile}
-
-![](/img/x-ctu-select-profile.png)
 
 We will now select a profile to load. Go with the mouse cursor to the `Profile` button at the top in the middle. Once you click on it, you can choose between loading and saving a profile.
 
+![](/img/x-ctu-select-profile.png)
+
 ![](/img/x-ctu-load-profile.png)
 
-Click on `Load configuration profile` and browse to where you [unpacked the zip-file with the profiles](#profiles). Choose `enddevice_2017F_10ef.xml` if you want to program the XBee for use on top of the MiniBee; choose `coordinator_2017F_10ef.xml` if you want to program the XBee for use on the coordinator board that is connected to the computer.
+Click on `Load configuration profile` and browse to where you [unpacked the zip-file with the profiles](#profiles).
+
+* Choose `enddevice_2017F_10ef.xml` if you want to program the XBee for use on top of the MiniBee
+* Choose `coordinator_2017F_10ef.xml` if you want to program the XBee for use on the coordinator board that is connected to the computer.
 
 X-CTU may give a warning that the radio firmware does not match with the profile and ask for updating:
 
