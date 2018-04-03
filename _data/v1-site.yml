@@ -2,10 +2,10 @@
 sitenav:
   - title: guides
     type: guide
-    url: guides
+    url: /sensestage-v1/guides
   - title: references
     type: reference
-    url: references
+    url: /sensestage-v1/references
   - title: forum
     type: forum
     url: https://forum.sensestage.eu
