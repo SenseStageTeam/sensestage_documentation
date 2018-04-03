@@ -31,12 +31,13 @@ For the LEDs there are also footprints available to solder the (fixed value) res
 
 ![](/img/xpee_schematic.png)
 
-
 [Design files for KiCad on github]()
 
 # Examples
 
+{:.image-caption}
 ![](/img/xpee_example_ldr_led.jpg)
+*An example of an XPee with an LDR connected to A0 and an LED to D9*
 
 # TODO
 

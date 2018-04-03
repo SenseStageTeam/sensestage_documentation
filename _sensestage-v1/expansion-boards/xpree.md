@@ -31,11 +31,12 @@ The Sense/Stage XPree is an expansion board for the MiniBee for experimentation 
 
 # Examples
 
-The XPree board on a breadboard connected to a MiniBee, with an LED connected to D3:
-
+{:.image-caption}
 ![](/img/XPree_breadboard.jpg)
+*The XPree board on a breadboard connected to a MiniBee, with an LED connected to D3*
 
 
 # TODO
 
 - update github link
+- update images
