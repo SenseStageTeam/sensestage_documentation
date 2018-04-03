@@ -2,7 +2,7 @@
 title: XBee choice and configuration
 summary: This page describes which XBee is used for Sense/Stage and which settings we are using in its configuration.
 layout: documentation
-type: guide
+type: reference
 creation-date: 2017-02-06
 tags: 
     - expert
