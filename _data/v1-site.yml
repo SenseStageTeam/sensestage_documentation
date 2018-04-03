@@ -2,10 +2,14 @@
 sitenav:
   - title: guides
     type: guide
+    url: guides
   - title: references
     type: reference
+    url: references
   - title: forum
     type: forum
+    url: https://forum.sensestage.eu
   - title: contribute
     type: contribute
+    url: /general/contributing-to-sense-stage
 imgdir: /img/v1/
