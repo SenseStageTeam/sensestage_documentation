@@ -1,11 +1,14 @@
 ---
-title: Prepare the Arduino IDE for use with Sense/Stage
-summary: This page describes how to install the hardware and firmware files for the Arduino IDE
-layout: documentation
+title: Prepare the Arduino IDE
+summary: This page describes how to install the Sense/Stage hardware and firmware files for the Arduino IDE
+layout: guide
 type: guide
+parent: Programming the MiniBee with Arduino
+guidestep: 2
 creation-date: 2017-02-06
 tags: 
     - expert
+    - todo
 category: firmware
 subcategory: arduino-ide
 ---
@@ -14,7 +17,7 @@ To program the Sense/Stage MiniBee you have to use the Arduino IDE and prepare i
 
 # Download files
 
-* [Download the Arduino IDE](https://www.arduino.cc/en/Main/Software)
+* [Download the Arduino IDE](https://www.arduino.cc/en/Main/Software) (version 1.6.5 or higher)
 
 * [Download the Sense/Stage MiniBee files for Arduino](https://github.com/sensestage/ssdn_minibee)
 
@@ -34,7 +37,7 @@ To program the Sense/Stage MiniBee you have to use the Arduino IDE and prepare i
     * If there is a `hardware` folder there, copy the folder `ssdn_minibee/minibee` to it
     * If there is no `libraries` folder there, just copy the folder `ssdn_minibee/libraries` to the sketchbook folder
     * If there is a `libraries` folder there, copy the folders in `ssdn_minibee/libraries` to it
-
+    
 * You should now have the following folders in your sketchbook folder:
 
 ```
@@ -56,13 +59,13 @@ libraries/XBee
 
 ```
 
-> NOTE: the minibee files are for version 1.6.5 and up of the Arduino IDE. If you use an older version of the Arduino IDE, you have to use a [different branch of ssdn_minibee](https://github.com/sensestage/ssdn_minibee/tree/arduino_1-0)
+> NOTE: the minibee files are for version 1.6.5 and up of the Arduino IDE. If you use an older version of the Arduino IDE (though not older than version 1.0), you have to use a [different branch of ssdn_minibee](https://github.com/sensestage/ssdn_minibee/tree/arduino_1-0)
 
 
-The MiniBee Firmware examples will show up in the:
+The MiniBee Firmware examples will show up in `File -> Examples -> MiniBeeAPIn`, and the MiniBee Firmware library will show up in `Sketch -> Import Library… -> MiniBeeAPIn`
 
-* **API-mode (recommended)** File -> Examples -> MiniBeeAPIn, and the MiniBee Firmware library will show up in Sketch -> Import Library… -> MiniBeeAPIn
-* **AT-mode: (no longer maintained)** File -> Examples -> MiniBee, and the MiniBee Firmware library will show up in Sketch -> Import Library… -> MiniBee
+<!-- * **API-mode (recommended)** File -> Examples -> MiniBeeAPIn, and the MiniBee Firmware library will show up in Sketch -> Import Library… -> MiniBeeAPIn -->
+<!-- * **AT-mode: (no longer maintained)** File -> Examples -> MiniBee, and the MiniBee Firmware library will show up in Sketch -> Import Library… -> MiniBee -->
 
 
 # Firmware examples
@@ -88,5 +91,10 @@ The MiniBee Firmware examples will show up in the:
 
 * In the `[TOOLS]` menu, choose `[Sense Stage MiniBee]`
 * The default processor is `ATmega328p revB/D/F (3.3V, 12 MHz)`
-* Only for [revision A](minibee-revision-a#programmingfirmware) and [particular versions of revision D](minibee-revision-d#subversions) you need to choose a different processor.
+* Only for [revision A](minibee-types/revision-a#programmingfirmware) and [particular versions of revision D](minibee-types/revision-d#subversions) you need to choose a different processor.
 
+
+
+## TODO
+
+- add screenshots
