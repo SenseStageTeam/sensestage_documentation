@@ -9,7 +9,7 @@ tags:
 category: hardware
 subcategory: xbee
 related:
-  - Using X-CTU to configure an XBee
+  - Using X-CTU
 ---
 
 The wireless transmission is done using the XBee wireless chip from [Digi](https://www.digi.com/). On this page we are explaining which one of the many available XBee chips we are using and what settings we are using for the one we have chosen.
