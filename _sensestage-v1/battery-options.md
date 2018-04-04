@@ -8,7 +8,7 @@ category: hardware
 subcategory: battery
 tags:
     - overview
-
+status: complete
 ---
 
 There is an obvious compromise to be made between battery size and battery capacity, and so we decided to consider two configurations:

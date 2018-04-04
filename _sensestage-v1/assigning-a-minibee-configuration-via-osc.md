@@ -15,6 +15,7 @@ related:
     - LED blinking codes
     - OSC interface
     - Creating minibee configurations via osc
+status: complete
 ---
 
 

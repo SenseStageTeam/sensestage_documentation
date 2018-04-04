@@ -12,6 +12,7 @@ subcategory: minibee
 related:
     - Configuration file
     - Assigning a MiniBee Configuration via OSC
+status: complete
 ---
 
 

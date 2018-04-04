@@ -12,6 +12,7 @@ related:
     - Connecting a MiniBee for the first time
     - Basic features of the firmware
     - Assigning a MiniBee Configuration via OSC
+status: complete
 ---
 
 The configuration files for PydonHive use the [XML format](https://www.w3schools.com/xml/default.asp).

@@ -9,6 +9,7 @@ subcategory: glossary
 tags:
     - overview
     - introduction
+status: complete
 ---
 
 ![]({{ base_url }}/img/SenseStage_overview.png)

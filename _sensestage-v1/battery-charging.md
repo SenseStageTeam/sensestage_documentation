@@ -8,7 +8,7 @@ category: hardware
 subcategory: battery
 tags:
     - basics
-    - todo
+status: backlist
 ---
 
 1. unplug the battery

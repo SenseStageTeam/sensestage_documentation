@@ -9,9 +9,9 @@ creation-date: 2017-02-06
 featured-image: feature-thumb2.jpg
 tags:
     - expert
-    - todo
 category: firmware
 subcategory: xbee
+status: fixmesoon
 ---
 
 
