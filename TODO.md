@@ -85,3 +85,24 @@ The unsorted list is generated from those pages that have 'todo' in their tags.
 {% endif %}
 {% endfor %}
 
+# Assume to be complete
+
+*without todo tag or status in front matter*
+
+{% for coll in site.collections %}
+
+{% if coll.docs.size > 0 %}
+<ul>
+{% assign thesepages = coll.docs %}
+{% if thesepages.size > 0 %}
+    {% for post in thesepages %}
+    {% unless post.tags contains 'todo' %}    
+        {% unless post.status %}
+            <li><a href="{{post.url}}">{{ post.title }}</a></li>
+        {% endunless %}
+    {% endunless %}
+    {% endfor %}
+{% endif %}
+</ul>    
+{% endif %}
+{% endfor %}
