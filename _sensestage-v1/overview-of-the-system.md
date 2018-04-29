@@ -1,8 +1,10 @@
 ---
 title: Overview of the system
 summary: This page gives an overview of the different components that are used in the system
+
 layout: documentation
 type: reference
+
 creation-date: 2017-02-06
 category: introduction
 subcategory: glossary
@@ -60,4 +62,3 @@ The coordinator node is a board that connects the [XBee](#xbee) via USB to a com
 The software is designed to interact with the firmware that runs on the MiniBees.
 
 The software communicates with other programs using the [OpenSoundControl (OSC) protocol](osc-interface).
-

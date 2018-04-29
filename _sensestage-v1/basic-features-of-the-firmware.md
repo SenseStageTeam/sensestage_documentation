@@ -2,9 +2,9 @@
 title: Basic features of the firmware
 summary: This page describes the basic functionality of the firmware
 layout: documentation
-type: guide
+type: reference
 creation-date: 2017-02-06
-tags: 
+tags:
     - configuration
     - overview
 category: firmware
@@ -29,13 +29,13 @@ The sensor and actuation options supported by the library are:
   * Digital output (on/off)
 
 ## Configuration
-    
+
 Configuration is currently done through the XML configuration file (see [documentation on the hive client](configuration-file)) or [interactively via OSC](assigning-a-minibee-configuration-via-osc).
 
 ## What happens during the wireless configuration
-    
+
 * Board reads the serial number of the XBee and sends it to the coordinator
-* Coordinator assigns an ID and tells the board whether or not it will receive a new configuration 
+* Coordinator assigns an ID and tells the board whether or not it will receive a new configuration
     * Board sends a message back that it is waiting
     * Coordinator sends configuration
 * Board sends a summary of the current configuration (for the coordinator to verify)

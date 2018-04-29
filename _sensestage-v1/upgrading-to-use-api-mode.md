@@ -1,9 +1,12 @@
 ---
 title: Upgrading to use API mode
+summary: How to upgrade your Xbees to use the more modern API mode. If you bought your Minibees in 2012 or later then this document is not relevant to you.
 date: 2011-11-23T15:45:47+00:00
 author: Marije Baalman
+
 layout: documentation
-type: guide
+type: reference
+
 category: firmware
 subcategory: minibee
 ---
@@ -12,7 +15,7 @@ subcategory: minibee
 
 To use the API mode for communication with the XBees you have to update the following things:
 
-  * The settings of the XBees to use the API mode 
+  * The settings of the XBees to use the API mode
   * The firmware on the MiniBee
   * Use the new version of the Hive software
 
@@ -45,6 +48,6 @@ In the configuration file you can now use serial numbers with or withouth the le
 
 can also be:
 
-`<minibee caps="7" configuration="1" id="1" libversion="8" name="minibee1" revision="D" serial="0013A200407E506D">` 
+`<minibee caps="7" configuration="1" id="1" libversion="8" name="minibee1" revision="D" serial="0013A200407E506D">`
 
 ![](/img/Xbee_serial.jpg)

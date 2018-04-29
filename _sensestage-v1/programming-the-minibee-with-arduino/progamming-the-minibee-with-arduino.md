@@ -6,7 +6,7 @@ layout: guide
 type: guide
 guidestep: 0
 creation-date: 2017-02-06
-featured-image: feature-thumb2.jpg
+featured-image:
 tags:
     - expert
     - todo

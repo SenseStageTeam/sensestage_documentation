@@ -185,11 +185,21 @@ td:hover {background-color: #f1f1f1}
   .grid-item {
     background-color: rgba(255, 255, 255, 0.8);
     border: 1px solid rgba(0, 0, 0, 0.8);
-    padding: 20px;
+    padding: 10px;
     font-size: 14px;
     text-align: center;
     width: 250px;
-    height: 260px;
+    height: 250px;
+
+    .grid-title {
+      font-size: 16px;
+      font-style: italic;
+      font-weight: bold;
+    }
+
+    .grid-text {
+      font-size: 12px;
+    }
   }
 
   .thumb {

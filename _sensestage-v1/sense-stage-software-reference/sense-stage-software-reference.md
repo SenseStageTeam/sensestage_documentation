@@ -1,0 +1,159 @@
+---
+title: Sense/Stage Software Reference
+summary: This page describes the different options and settings of the Sense/Stage software and what they do.
+
+layout: documentation
+type: reference
+featured-image:
+
+creation-date: 2017-02-06
+category: software
+subcategory: usage
+related:
+    - Install the Hive Software
+    - Startup settings of the Hive
+---
+
+After you have [installed the Python software](install-the-hive-software), you can use the python program to interface with your Sense/Stage MiniBee network. There are two options for usage, through a [GUI](#gui), or through a [command-line script](#cli).
+
+## GUI version {#gui}
+
+The GUI can be started in the following ways:
+
+- On Linux and OSX from the commandline with ```pydongui.py```
+- On Windows you can start it by double clicking on the file ```start_pydon.bat```
+
+A window will show that looks like this:
+
+![](/img/pydongui_startup.png)
+
+The window provides a number of settings, categorised by topic.
+
+The most important ones are:
+
+- **Communication mode:** this defines which kind of OSC communication you will use to communicate to other programs. Choices are:
+    * [*osc*](osc-interface) – Using a simple OSC-interface to communicate the data to one client.
+    * [*junxion*](junxion-interface) – Using a tailored OSC-interface to communicate with STEIM's Junxion software.
+    * [*datanetwork*](datanetwork-interface) – Using the SenseWorld DataNetwork to transfer the data to multiple clients using the DataNetwork framework.
+    * [*libmapper*](libmapper) – Using the libmapper interface to transfer the data to multiple clients using the libmapper framework.
+
+    As you switch between the different options, settings that are relevant to these options will become enabled.
+
+- [**MiniBee configuration file:**](configuration-file) this is an XML file containing information on what kind of sensors are attached to your minibees. Examples are provided in the download of the pydon package. For documentation on the format, read [this page](configuration-file). You can browse to the appropriate configuration file using the [...] button.
+
+- **Serial port:** here you need to select the serial port to use. The dropdown menu provides all ports that are found on your computer.
+
+- **OSC communication:** here you can define the target host and port, i.e. where the OSC messages will be sent.
+
+- **Verbosity:** these are some options to provide more output as the program is running; they are mainly meant for debugging, or recording data in a raw format. For a performance situation you would leave these options off.
+
+- **Autostart:** this is an option to automatically start with the last used settings, the next time the program is started. This allows for a quick automatic startup.
+
+In the **[Options]** menu, you can select the **[Advanced]** mode, which will allow tweaking all settings. In most normal use cases you will not need to change the advanced settings. The [settings are described in detail here](startup-settings-of-the-hive).
+
+By clicking **[START]** you start the communication with the Sense/Stage MiniBees and the OSC communication. At this point also the settings are stored to a file named `pydondefaults.ini` *in the directory from which you start `pydongui.py`*. The next time you start `pydongui.py` it will read the [settings from this file](startup-settings-of-the-hive) and use these as defaults. The program will look for the last used settings in the directory from which you start `pydongui.py`.
+
+## Command line interface {#cli}
+
+Alternatively you can use the command line interface:
+
+    $ pydoncli.py
+
+[Options are taken from the file](startup-settings-of-the-hive) `pydondefaults.ini` that should be in the same folder as from where you call the script. If no `pydondefaults.ini` file is chosen, sensible default values are used instead.
+
+If you provide additional command line parameters, these will take precedence over the parameters defined as default and stored as the new defaults in `pydondefaults.ini`.
+
+To see which [parameters are available](#cliargs) you can type:
+
+    $ pydoncli.py -h
+
+To start it you would do for example:
+
+
+    $ pydoncli.py -P osc -c configs/example_hiveconfig.xml -s /dev/ttyUSB0
+
+`/dev/ttyUSB0` is the address of your serial port, on a Mac it will be something like: `/dev/tty-usb.serialASSFADF0002332`:
+
+    $ pydoncli.py -P osc -c configs/example_hiveconfig.xml -s /dev/tty-usb.serialASSFADF0002332
+
+If you want to send the data to another machine:
+
+    $ pydoncli.py -c nameofconfigfile.xml -d 192.168.0.7
+
+where `192.168.0.7` is the IP address of the other machine.
+
+If you need to figure out what is going on, there is a verbosity switch, which will print more output:
+
+    $ pydoncli.py -c example_hiveconfig.xml -s /dev/ttyUSB0 -v True
+
+
+
+### Available parameters on the command line interface {#cliargs}
+
+Output of `$ pydoncli.py -h`:
+
+
+
+```
+Usage: pydoncli.py [options]
+
+MetaPydonHive - Create a client to communicate with the minibee network.
+
+Options:
+  -h, --help            show this help message and exit
+  -P PROGRAM, --program=PROGRAM
+                        Which program/infrastructure do you want to use?
+                        options: datanetwork, osc, libmapper, junxion
+  -s SERIAL, --serial=SERIAL
+                        the serial port [default:/dev/ttyUSB0]
+  -a APIMODE, --apimode=APIMODE
+                        use API mode for communication with the minibees
+                        [default:False]
+  -v VERBOSE, --verbose=VERBOSE
+                        verbose printing [default:False]
+  -u IGNORE, --ignore-unknown=IGNORE
+                        ignore unknown minibees [default:False]
+  -f CREATENEWFILES, --create-new-files=CREATENEWFILES
+                        create new files for unknown minibees [default:True]
+  -x XBEEERROR, --check-for-xbee-error=XBEEERROR
+                        check whether xbee-error occurred [default:False]
+  --auto=AUTOSTART      autostart [default:False]
+  -l LOGDATA, --logdata=LOGDATA
+                        log data to file [default:False]
+  -c CONFIG, --config=CONFIG
+                        the name of the configuration file for the minibees
+                        [default:../configs/example_hiveconfig.xml]
+  -n NAME, --name=NAME  the name of the client in the datanetwork
+                        [default:pydonhive] (needed for datanetwork or
+                        libmapper)
+  -b BAUDRATE, --baudrate=BAUDRATE
+                        the serial port [default:57600]
+  -m MINIBEES, --nr_of_minibees=MINIBEES
+                        the number of minibees in the network [default:20]
+  -o MBOFFSET, --minibee_offset=MBOFFSET
+                        the offset of the number range for the minibees in the
+                        network [default:1]
+  -d HOST, --host_ip=HOST
+                        the ip address of the datanetwork host or osc/junxion
+                        receiver [default:127.0.0.1]
+  -t HPORT, --host_port=HPORT
+                        the port on which the application that has to receive
+                        the OSC messages will listen [default:57120] (needed
+                        for osc or junxion or default for datanetwork)
+  -i IP, --ip=IP        the ip on which the client will listen
+                        [default:0.0.0.0]
+  -p PORT, --port=PORT  the port on which the client will listen
+                        [default:57600]
+  -N LOGNAME, --logname=LOGNAME
+                        log name (default pydon.log)
+  -V LOGLEVEL, --loglevel=LOGLEVEL
+                        logging level (debug, info, error)
+  -L LOGDIR, --logdir=LOGDIR
+                        log DIRECTORY (default ./)
+  -Q, --quiet           do not log to console
+  -C, --clean           remove old log file
+```
+
+### TODO
+
+- update the image of the GUI with latest version

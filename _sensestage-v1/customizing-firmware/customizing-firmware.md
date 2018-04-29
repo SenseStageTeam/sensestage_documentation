@@ -1,11 +1,11 @@
 ---
 title: Customizing firmware
 permalink: /sensestage-v1/customizing-firmware/index.html
-summary: This page describes how to write custom firmware
+summary: Advanced guide explaining how to use the Arduino IDE to reprogram and customize the firmware on the Minibees. For example, to support special I2C sensors.
 layout: guide
 type: guide
 guidestep: 0
-featured-image: feature-thumb2.jpg
+featured-image:
 creation-date: 2017-02-06
 tags:
     - expert

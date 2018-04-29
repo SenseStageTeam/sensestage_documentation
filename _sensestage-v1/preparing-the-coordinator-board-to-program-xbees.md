@@ -1,10 +1,14 @@
 ---
 title: Preparing the coordinator board to program XBees
 summary: This page describes how to prepare the coordinator board to program XBees used with Sense/Stage.
-layout: documentation
+
+layout: guide
 type: guide
+guidestep: 0
+featured-image:
+
 creation-date: 2017-02-06
-tags: 
+tags:
     - todo
 category: hardware
 subcategory: xbee
