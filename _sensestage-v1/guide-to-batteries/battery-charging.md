@@ -4,7 +4,7 @@ summary: How to charge LiIon batteries.
 
 layout: guide
 type: guide
-parent: Guide to Using LiPo Batteries
+parent: Guide to Batteries
 guidestep: 1
 
 creation-date: 2017-02-06

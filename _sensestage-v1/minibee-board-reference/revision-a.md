@@ -1,20 +1,22 @@
 ---
 title: MiniBee Revision A
 summary: The MiniBee revision A was the first version of the MiniBee, the alpha version. It was manufactured during the research-creation project Sense/Stage at Concordia University and McGill University in 2009.
+
 type: reference
-parent: minibee-types
+parent: minibee-board-reference
 layout: reference
 guidestep: 1
+
 creation-date: 2017-02-06
 category: hardware
 subcategory: minibee
-related: 
+related:
     - Programming firmware with the arduino IDE
     - Prepare the Arduino IDE for use with Sense/Stage
 ---
 
 This revision was only distributed to those who were somehow involved in the project in 2009/2010. The overview of the board is given here for historical reference.
-    
+
 ![](/img/minibee_revA_annotated2.jpg)
 
 
@@ -94,5 +96,3 @@ Use the Arduino programming software:
 * Set the board type to `Sense/Stage MiniBee revA (3.3V, 8MHz) w/ Atmega168`
 * Choose `Program Bootloader` with `AVR ISP mkII`
 * On Ubuntu Linux you must run the Arduino software as root in order to do this
-
-

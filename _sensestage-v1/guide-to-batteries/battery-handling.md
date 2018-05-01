@@ -4,7 +4,7 @@ summary: What to consider when using a LiIon battery with a MiniBee.
 
 layout: guide
 type: guide
-parent: Guide to Using LiPo Batteries
+parent: Guide to Batteries
 guidestep: 2
 
 creation-date: 2017-02-06

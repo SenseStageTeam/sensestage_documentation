@@ -19,7 +19,9 @@ related:
 ---
 
 
-**The Hive** is a cross-platform program that allows you to read data streams coming in from the Minibees directly using OpenSoundControl (OSC). OSC is supported by virtually all interactive design software such as PureData, SuperCollider, Max for Live, Processing, Max/MSP, vvvv, and Isadora.
+**Pydon** is a piece of software written in python that translates data coming in from your sensor network into OpenSoundControl (OSC). OSC is supported by virtually all interactive design software including PureData, SuperCollider, TouchDesigner, Processing, Max/MSP, vvvv, Isadora, and Max for Live.
+
+In order to use Sense/Stage you'll need to first install pydon. The installation procedure varies depending on your operating system, but, in general, it's the same python code. Linux and OSX users should have python already installed on their systems by default. Windows users may have to download and install python as a prerequisite.
 
 
 # Installation

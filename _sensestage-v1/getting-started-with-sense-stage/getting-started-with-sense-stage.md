@@ -15,38 +15,20 @@ category: introduction
 subcategory: getting-started
 ---
 
-[0. Unpacking the Sense/Stage MiniBee Kit](#step0)<br />
-[1. Installing Software](#step1)<br />
-[2. Plugging in the coordinator](#step2)<br />
-[3. Connect a minibee](#step3)<br />
-[4. Next Steps](#step4)<br />
+You want to start working on a wireless sensing project and you've got some Sense/Stage hardware. This guide is intended to help you get familiar enough with the system to begin getting data into your computer from the various wireless nodes (we call them MiniBees) in your network.
 
-# 0. [Unpacking the Sense/Stage MiniBee kit](unpacking-the-sensestage-kit) {#step0}
+To start with, you should make sure you have all the hardware necessary to get started. If you bought a starter kit then you should already have everything. Although it's important you be able to identify the different pieces of hardware, because we will be referencing them in later steps of the guide.
 
-To start with, you should inspect the contents of your kit. Be able to identify the various parts of the Sense/Stage hardware setup. Your starter kit should include the following:
+Once you have identified all the hardware and are sure you have a complete setup, we'll go into how to install the Sense/Stage communications software (we call it pydon). This is a small program written in the python programming language that will translate all the incoming data from your network of sensors into Open Sound Control (OSC) messages that are much easier to work with.
 
-1. 2 MiniBee boards including headers
-2. 3 Xbee radios (all but one connected to MiniBees)
-3. a red coordinator board
-4. 2 green Xpee expansion boards including headers
-5. 2 green Xpree expansion boards including headers
+Don't worry, you don't need to know python to use Sense/Stage. Although you will need to know how to run a program from the command line.
 
-You may have also purchased a battery kit, which should include 2 LiPo batteries and a red USB charging board.
+If you don't know what OSC is, you may want to briefly read up on it.
 
-> [READ MORE](unpacking-the-sensestage-kit)
+Sense/Stage is designed to communicate with and control other pieces of software, and the protocol by which it does this communication is OSC. Nearly all creative coding environments and audio/visual software have some way of receiving OSC data.
 
-# 1. [Install the Communicator Software (aka. "The Hive")](install-the-hive-software) {#step1}
+[Overview of the Sense/Stage system](/sensestage-v1/overview-of-the-system)
 
-**The Hive** is a cross-platform program that allows you to read data streams coming in from the MiniBees directly using OpenSoundControl (OSC). OSC is supported by virtually all interactive design software such as PureData, SuperCollider, Max for Live, Processing, Max/MSP, vvvv, and Isadora.
+[Overview of Sense/Stage OSC messages](/sensestage-v1/osc-interface)
 
-> [READ MORE](install-the-hive-software)
-
-
-# 2. [Plug in the coordinator](connecting-the-coordinator) {#step2}
-
-# 3. [Connect a MiniBee](connecting-a-minibee-for-the-first-time) {#step3}
-
-
-# notes for improvement
-* suggestion
-* bullet
+When you're ready, go to the next step of this guide by clicking next below.

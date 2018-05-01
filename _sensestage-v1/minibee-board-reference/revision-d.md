@@ -1,14 +1,16 @@
 ---
 title: MiniBee Revision D
 summary: The MiniBee revision D was the third version of the MiniBee, the production version. It was manufactured and sold between 2011 and 2016.
+
 type: reference
-parent: minibee-types
+parent: minibee-board-reference
 layout: reference
 guidestep: 3
+
 creation-date: 2017-02-06
 category: hardware
 subcategory: minibee
-related: 
+related:
     - Programming firmware with the arduino IDE
     - Prepare the Arduino IDE for use with Sense/Stage
 ---
@@ -34,7 +36,7 @@ The pin outs on the header are from left to right:
     GND - RX - D5 - D7 - D9 - D11 - A6 - SDA - A2 - A0
     3v3 - TX - D3 - D6 - D8 - D10 - A7 - SCL - A3 - A1
 
-    
+
 ![](/img/minibee_annotated-D-front.jpg)
 ![](/img/minibee_annotated-D-back.jpg)
 

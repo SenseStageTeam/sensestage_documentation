@@ -75,7 +75,7 @@ Be very gentle when attaching the XBee, and make sure you use the correct orient
 *The **wrong** way of putting the XBee on the coordinator board:*
 ![](/img/coordinator_xbee_wrong.png)
 
-> [More information about the coordinator board](coordinator-board)
+> [More information about the coordinator board](/sensestage-v1/coordinator-board)
 
 # Expansion Boards
 
@@ -85,7 +85,7 @@ You should have one XPree and one XPee for each MiniBee in your kit.
 
 ![](/img/minibee-expansion-kit-small.jpg)
 
-> [More information about the expansion boards](expansion-boards)
+> [More information about the expansion boards](/sensestage-v1/expansion-boards)
 
 
 # Battery and Charger
@@ -98,4 +98,4 @@ If you also purchased a battery kit, you should find included two or five LiIon 
 
 > WARNING! LiIon batteries require special handling care. For more information see [this useful link](https://www.sparkfun.com/tutorials/241) from Sparkfun.com.
 
-> [More information about the batteries](battery)
+> [More information about the batteries](/sensestage-v1/guide-to-batteries/)

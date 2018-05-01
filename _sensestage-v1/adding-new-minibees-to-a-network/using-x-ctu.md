@@ -5,7 +5,7 @@ summary: A guide on how to configure the XBee
 
 layout: guide
 type: guide
-parent: Adding New Nodes to a Network
+parent: Adding New Minibees to a Network
 guidestep: 1
 
 creation-date: 2017-02-06

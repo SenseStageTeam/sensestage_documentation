@@ -1,14 +1,16 @@
 ---
 title: MiniBee Revision F
 summary: The MiniBee revision F is the fourth version of the MiniBee, the second production version. It is manufactured and sold from 2017.
+
 type: reference
-parent: minibee-types
+parent: minibee-board-reference
 layout: reference
 guidestep: 4
+
 creation-date: 2017-02-06
 category: hardware
 subcategory: minibee
-related: 
+related:
     - Programming firmware with the arduino IDE
     - Prepare the Arduino IDE for use with Sense/Stage
 ---
@@ -37,7 +39,7 @@ The pin outs on the header are from left to right:
     GND - RX - D5 - D2 - D9 - D11 - A6 - SDA - A2 - A0
     3v3 - TX - D3 - D6 - D8 - D10 - A7 - SCL - A3 - A1
 
-On the bottom of the board, the pin labels are also printed. *By mistake pin D2 is labeled as D7*. 
+On the bottom of the board, the pin labels are also printed. *By mistake pin D2 is labeled as D7*.
 
 # Bottom pads
 

@@ -5,7 +5,7 @@ date: 2011-11-23T15:45:47+00:00
 author: Marije Baalman
 
 layout: documentation
-type: reference
+type: guide
 
 category: firmware
 subcategory: minibee

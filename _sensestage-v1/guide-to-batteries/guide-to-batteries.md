@@ -1,5 +1,5 @@
 ---
-title: Guide to Powering MiniBees and Battery Safety
+title: Guide to Batteries
 summary: An overview of the different types of batteries that can be used with the Minibees, including how to use LiPo batteries. Importantly, this guide includes safety advice for using LiPo batteries in your projects.
 
 layout: guide
@@ -13,6 +13,8 @@ subcategory: battery
 tags:
     - overview
 status: complete
+
+permalink: /sensestage-v1/guide-to-batteries/
 ---
 
 There is an obvious compromise to be made between battery size and battery capacity, and so we decided to consider two configurations:
