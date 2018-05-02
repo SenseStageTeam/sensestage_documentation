@@ -1,10 +1,12 @@
 ---
 title: Using command line XBee tools
-permalink: /sensestage-v1/using-command-line-xbee-tools/index.html
+permalink: /sensestage-v1/using-command-line-xbee-tools/
 summary: Advanced guide on configuring XBee radios from the command line instead of using XCTU.
+
 layout: guide
 type: guide
 guidestep: 0
+
 creation-date: 2017-02-06
 featured-image:
 tags:

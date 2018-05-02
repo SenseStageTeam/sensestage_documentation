@@ -4,8 +4,8 @@ summary: A guide on how to configure the XBee
 
 layout: guide
 type: guide
-parent: Adding New Minibees to a Network
-guidestep: 4
+parent: Adding New MiniBees to a Network with XCTU
+guidestep: 5
 
 creation-date: 2017-02-06
 tags:
@@ -15,7 +15,6 @@ category: firmware
 subcategory: xbee
 ---
 
-
 Once you have selected the radio to view its configuration, you will see the following screen:
 
 ![](/img/x-ctu-radio-settings.png)
@@ -24,7 +23,7 @@ The settings you most likely want to change are the Channel, pan id and power le
 
 ## Channel and pan id
 
-The `channel` determines on which radio frequency the XBee are transmitting. In the 2.4 GHz band there are different subbands which can be used; which one to choose depends on what other frequencies are being used in the space, for example by WiFi routers. See [the documentation page on choosing a radio frequency](../choosing-a-radio-frequency-for-the-xbee) for a discussion about this.
+The `channel` determines on which radio frequency the XBee are transmitting. In the 2.4 GHz band there are different sub-bands which can be used; which one to choose depends on what other frequencies are being used in the space, for example by WiFi routers. See [the page on choosing a radio frequency from the optimization guide](/sensestage-v1/optimizing-your-sense-stage-network/choosing-a-radio-frequency-for-the-xbee) for a discussion about this.
 
 The `pan id` is an identifier within the channel to distinguish different XBee networks from each other. XBees will just ignore traffic that is happening with different pan ids. `pan` is an acronym for 'Personal Area Network'.
 
@@ -70,10 +69,3 @@ You can now close the radio again by selecting the cross, see where the mouse cu
 ![](/img/x-ctu-close-radio.png)
 
 Now, disconnect the coordinator node from the computer and, if you want to configure another XBee, remove the XBee and place the new XBee on top. And [start again](selecting-the-radio).
-
-
-
-# Old documentation (using the serial program)
-
-* [Changing the Pan ID and channel of your Xbees](https://docs.sensestage.eu/old/changing-the-pan-id-and-channel-of-the-xbee)
-* [Changing the transmission power (for XBee Pro)](https://docs.sensestage.eu/old/changing-the-power-level-of-the-xbee-pro)
