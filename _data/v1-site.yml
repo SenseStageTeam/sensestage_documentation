@@ -12,4 +12,7 @@ sitenav:
   - title: contribute
     type: contribute
     url: /general/contributing-to-sense-stage
+  - title: download
+    type: download
+    url: /sensestage-v1/downloads
 imgdir: /img/v1/
