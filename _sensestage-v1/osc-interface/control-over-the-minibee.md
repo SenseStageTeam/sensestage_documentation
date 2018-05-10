@@ -16,6 +16,7 @@ tags:
     - interface
     - communication
 
+status: complete
 ---
 
 There are some options to control the behaviour of the MiniBee:

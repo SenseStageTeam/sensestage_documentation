@@ -16,6 +16,7 @@ tags:
     - interface
     - communication
 
+status: complete
 ---
 
 The data from the sensors of the MiniBee is sent with a message `/minibee/data`. The received signal strength with a message `/minibee/rssi`.

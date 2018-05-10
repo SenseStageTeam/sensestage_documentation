@@ -16,6 +16,7 @@ tags:
     - interface
     - communication
 
+status: complete
 ---
 
 It is also possible to create completely new configuration elements via OSC. After you have created a configuration element, you can save the configuration file or assign the configuration element to an unconfigured MiniBee.

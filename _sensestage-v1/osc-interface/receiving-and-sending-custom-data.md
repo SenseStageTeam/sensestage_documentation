@@ -16,6 +16,7 @@ tags:
     - interface
     - communication
 
+status: complete
 ---
 
 The MiniBee firmware gives the possibility to add custom data exchange between the user software and the MiniBee. Custom sensor data (added with the function `addCustomData`) is just received along with the other sensor data with the `/minibee/data` message.

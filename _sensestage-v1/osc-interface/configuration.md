@@ -16,6 +16,7 @@ tags:
     - interface
     - communication
 
+status: complete
 ---
 
 If a MiniBee is not defined in the configuration file, you can send an OSC message to configure it with a configuration that is defined in the file with the message `/minibee/configuration`.

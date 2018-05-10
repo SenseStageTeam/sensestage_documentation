@@ -16,6 +16,7 @@ tags:
     - interface
     - communication
 
+status: complete
 ---
 
 As a MiniBee gets connected to the communication software, the following messages are sent:
