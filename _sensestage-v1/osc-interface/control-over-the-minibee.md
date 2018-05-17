@@ -21,7 +21,7 @@ status: complete
 
 There are some options to control the behaviour of the MiniBee:
 
-* you can pause and unpause a MiniBee with `/minibee/pause` (make it temporarily stop sending data and resume again)
+* you can pause and unpause a MiniBee with `/minibee/run` (make it temporarily stop sending data and resume again)
 * debug the behaviour by enabling a loopback: `/minibee/loopback`
 * re-initialize the minibee firmware with `/minibee/announce`
 * reset the minibee with `/minibee/reset`
@@ -35,10 +35,12 @@ There are some options to control the behaviour of the MiniBee:
 ```
     /minibee/run - ii
 ```
-*Pausing a minibee:*
+*Running / pausing a minibee*.
     
 * `i` - the minibee id
 * `i` - whether to pause (0) or run (1) the minibee
+
+This feature is useful if you want to save bandwidth in a network with a lot of MiniBees.
 
 ```
     /minibee/loopback - ii
