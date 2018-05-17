@@ -18,6 +18,8 @@ In order to use Sense/Stage you'll need to first install pydon. **Pydon** is a p
 * [direct link to github](https://github.com/sensestage/ssdn_python)
 * [zip file from github](https://github.com/sensestage/ssdn_python/archive/master.zip)
 
+* [Windows package](https://sensestage.eu/downloads/PydonWindowsPackage.zip)
+
 # Arduino firmware and hardware files
 
 The firmware libraries and the hardware definitions that we have created for Sense/Stage for the Arduino IDE.
