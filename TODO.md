@@ -17,6 +17,19 @@ The unsorted list is generated from those pages that have 'todo' in their tags.
 
 *manual list of what we need guides on*
 
+- guide: connecting to TouchDesigner
+- guide: connecting to Wekinator
+- guide: connecting 9 dof sensor
+
+- update guide: optimising network: handy tips to add
+
+- update osc-reference: add some description why to use it
+
+- installation:
+    - screenshots OSX
+    - move step-by-step + contents package into a reference
+    - update Windows install serial drivers (arduino removed link; now in arduino installer)
+
 - a nice guide on getting accelerometer data
 
 # pages that really should be fixed soon
