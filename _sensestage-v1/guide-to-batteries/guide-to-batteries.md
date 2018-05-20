@@ -7,7 +7,7 @@ type: guide
 guidestep: 0
 featured-image:
 level: basics
-priority: 5
+priority: 7
 
 creation-date: 2018-03-28
 category: hardware

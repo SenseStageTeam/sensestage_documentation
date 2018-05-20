@@ -29,8 +29,8 @@ If you don't know what OSC is, you may want to briefly read up on it.
 
 Sense/Stage is designed to communicate with and control other pieces of software, and the protocol by which it does this communication is OSC. Nearly all creative coding environments and audio/visual software have some way of receiving OSC data.
 
-[Overview of the Sense/Stage system](/sensestage-v1/overview-of-the-system)
+If you haven't already, familiarize yourself with the [overview of the different parts of a Sense/Stage network](/sensestage-v1/overview-of-the-system).
 
-[Overview of Sense/Stage OSC messages](/sensestage-v1/osc-interface)
+If you're already set up and want to know how to parse the OSC messages coming from Sense/Stage, see [this overview of Sense/Stage's OSC messages](/sensestage-v1/osc-message-reference)
 
 When you're ready, go to the next step of this guide by clicking next below.

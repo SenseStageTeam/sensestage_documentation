@@ -1,11 +1,11 @@
 ---
-title: Connecting a MiniBee for the first time
-summary: A guide on how to configure a MiniBee for the first time
+title: Making your first Configuration File
+summary: A guide on how to make a configuration file for your network. This example shows a network created using two sensor nodes.
 
 layout: guide
 type: guide
 parent: Getting Started with Sense Stage
-guidestep: 7
+guidestep: 4
 
 creation-date: 2017-02-06
 tags:

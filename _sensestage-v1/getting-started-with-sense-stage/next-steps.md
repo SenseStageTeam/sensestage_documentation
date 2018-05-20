@@ -5,7 +5,7 @@ summary: What to do now that you've set up the system and installed the software
 layout: guide
 type: guide
 parent: Getting Started with Sense/Stage
-guidestep: 8
+guidestep: 5
 
 creation-date: 2018-04-29
 

@@ -5,7 +5,7 @@ summary: This page describes how to connect the coordinator board to your comput
 layout: guide
 type: guide
 parent: Getting Started with Sense Stage
-guidestep: 6
+guidestep: 3
 
 creation-date: 2017-02-06
 tags:

@@ -1,10 +1,14 @@
 ---
-title: Installing Pydon
-summary: A guide on how to install Pydon, the Sense/Stage OSC communication software.
+title: Pydon Installation Guide
+summary: Instructions on installing Pydon, the core Sense/Stage software that communicates between your sensor network and your computer.
+permalink: /sensestage-v1/pydon-installation-guide/
+
 layout: guide
 type: guide
-parent: Getting Started with Sense/Stage
-guidestep: 2
+guidestep: 0
+level: basics
+priority: 5
+
 creation-date: 2017-02-06
 tags:
     - basics

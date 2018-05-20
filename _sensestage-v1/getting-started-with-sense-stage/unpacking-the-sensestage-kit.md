@@ -1,6 +1,6 @@
 ---
-title: Unpacking the Sense/Stage MiniBee Kit
-summary: A guide on what is in the Sense/Stage MiniBee kit.
+title: Unpacking the Kit
+summary: A guide on what is in the Sense/Stage kit.
 layout: guide
 type: guide
 parent: Getting Started with Sense/Stage

@@ -4,7 +4,7 @@ layout: base
 
 <div class="wrapper-wide">
 
-<div id="guide-navbox">
+<div class="sidebar">
 {% if page.parent == nil %}
   {% assign myreference = page.title | capitalize %}
   {% assign myid = page.title | slugify %}
@@ -14,7 +14,8 @@ layout: base
 {% endif %}
 {% assign mystep = page.guidestep %}
 
-<div id="navbox-heading"><strong>{{ myreference }}</strong></div>
+<div class="sidebar-inner">
+<div class="sidebar-heading"><strong>{{ myreference }}</strong></div>
 
 {% assign mycoll = page.collection %}
 
@@ -47,6 +48,7 @@ layout: base
   {% endif %}
 {% endfor %}
 </div>
+</div> <!-- END SIDEBAR -->
 
 <div id="guide-content">
     <h1 class="page-title">{{ page.title | escape }}</h1>
@@ -81,7 +83,7 @@ layout: base
 
 </div> <!-- End Wrapper -->
 
-<script>
+<!-- script>
 window.onscroll = function() {stickNavBox()};
 var navbox = document.getElementById("guide-navbox");
 var sticky = navbox.offsetTop;
@@ -93,4 +95,4 @@ function stickNavBox() {
     navbox.classList.remove("sticky");
   }
 }
-</script>
+</script -->
