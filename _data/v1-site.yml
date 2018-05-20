@@ -1,18 +1,18 @@
 
 sitenav:
-  - title: guides
+  - title: Guides
     type: guide
     url: /sensestage-v1/guides
-  - title: references
+  - title: References
     type: reference
     url: /sensestage-v1/references
-  - title: forum
+  - title: Downloads
+    type: downloads
+    url: /sensestage-v1/downloads
+  - title: Forum
     type: forum
     url: https://forum.sensestage.eu
-  - title: contribute
+  - title: Contribute
     type: contribute
     url: /general/contributing-to-sense-stage
-  - title: download
-    type: download
-    url: /sensestage-v1/downloads
 imgdir: /img/v1/

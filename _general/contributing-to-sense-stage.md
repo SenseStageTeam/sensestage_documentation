@@ -1,5 +1,5 @@
 ---
-title: contribute
+title: Contribute
 summary: How to contribute to the Sense/Stage project
 type: contribute
 layout: category_overview

@@ -52,7 +52,7 @@ layout: base
     <h1 class="page-title">{{ page.title | escape }}</h1>
     <ul class="breadcrumb">
       <li><a href="/sensestage-v1">Sense/Stage v1</a></li>
-      <li><a href="/sensestage-v1/guides">References</a></li>
+      <li><a href="/sensestage-v1/references">References</a></li>
       {% if mystep == 0 %}
       <li>{{ myreference }}</li>
       {% else %}
@@ -62,6 +62,16 @@ layout: base
     </ul>
 
   {{ content }}
+
+  <table class="creation-footer">
+  <tr>
+      <th>page created on:</th>
+      <th>last changed on:</th></tr>
+  <tr>
+      <td>{{ page.creation-date | date: "%-d %B %Y"}}</td>
+      <td>{{ page.date |  date: "%-d %B %Y" }}</td>
+  </tr>
+  </table>
 
   <div id="guide-previous-next-buttons">
     {% if previouspage %}<a class="previous" href="{{ previouspage.url }}"><span class="ltgt">&lt;</span> Previous: {{ previouspage.title }}</a>{% endif %}

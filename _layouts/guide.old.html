@@ -4,18 +4,17 @@ layout: base
 
 <div class="wrapper-wide">
 
-  <div class="sidebar">
+<div id="guide-navbox">
 {% if page.parent == nil %}
-  {% assign myguide = page.title %}
+  {% assign myguide = page.title | capitalize %}
   {% assign myid = page.title | slugify %}
 {% else %}
-  {% assign myguide = page.parent %}
+  {% assign myguide = page.parent | capitalize %}
   {% assign myid = page.parent | slugify %}
 {% endif %}
 {% assign mystep = page.guidestep %}
 
-    <div class="sidebar-inner">
-      <div class="sidebar-heading"><strong>{{ myguide }}</strong></div>
+<div id="navbox-heading"><strong>{{ myguide }}</strong></div>
 
 {% assign mycoll = page.collection %}
 
@@ -47,8 +46,7 @@ layout: base
     {% endfor %}
   {% endif %}
 {% endfor %}
-    </div>
-  </div><!-- END SIDEBAR -->
+</div>
 
 <div id="guide-content">
     <h1 class="page-title">{{ page.title | escape }}</h1>
@@ -73,19 +71,9 @@ layout: base
 
 </div> <!-- End Wrapper -->
 
-<!-- script type="text/javascript">
-  var sidebar = new StickySidebar('.sidebar', {
-    topSpacing: 20,
-    bottomSpacing: 20,
-    containerSelector: '.wrapper-wide',
-    innerWrapperSelector: '.sidebar-inner'
-  });
-</script -->
-
-
-<!-- script>
+<script>
 window.onscroll = function() {stickNavBox()};
-var navbox = document.getElementById("sidebar");
+var navbox = document.getElementById("guide-navbox");
 var sticky = navbox.offsetTop;
 
 function stickNavBox() {
@@ -95,4 +83,4 @@ function stickNavBox() {
     navbox.classList.remove("sticky");
   }
 }
-</script -->
+</script>
