@@ -1,8 +1,14 @@
 ---
 title: JunXion interface
 summary: Using a tailored OSC-interface to communicate with STEIM’s Junxion software.
-layout: documentation
+
+layout: reference
 type: reference
+guidestep: 4
+featured-image:
+parent: OSC Message Reference
+
+
 creation-date: 2017-02-06
 category: software
 subcategory: interfaces

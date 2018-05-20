@@ -6,6 +6,8 @@ author: Marije Baalman
 
 layout: documentation
 type: guide
+level: advanced
+priority: 30
 
 category: firmware
 subcategory: minibee

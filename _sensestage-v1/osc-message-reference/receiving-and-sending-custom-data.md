@@ -1,11 +1,11 @@
 ---
 title: Receiving and sending custom data
-summary: 
+summary:
 layout: reference
 type: reference
 guidestep: 3
-featured-image: 
-parent: OSC interface
+featured-image:
+parent: OSC Message Reference
 
 creation-date: 2017-02-06
 category: software
@@ -52,4 +52,3 @@ Also, make sure that the values you send correspond to how you interpret the dat
 
 * `i` - the ID of the MiniBee
 * `ff..f` - a number of floating point data values that correspond to the sensors that are attached. The order of these values is always:
-

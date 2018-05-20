@@ -1,11 +1,11 @@
 ---
-title: Configuration
-summary: 
+title: Changing Minibee Configurations
+summary:
 layout: reference
 type: reference
-guidestep: 4
-featured-image: 
-parent: OSC interface
+guidestep: 5
+featured-image:
+parent: OSC Message Reference
 
 creation-date: 2017-02-06
 category: software
@@ -45,7 +45,7 @@ The hive sends a message back to confirm or to indicate an error. The arguments 
 You can load and save a configuration file via OSC:
 
 ```
-    /minihive/configuration/save  - s 
+    /minihive/configuration/save  - s
 ```
 
 *From user software to communication software*
@@ -54,11 +54,10 @@ You can load and save a configuration file via OSC:
 
 
 ```
-    /minihive/configuration/load  - s 
+    /minihive/configuration/load  - s
 ```
 
 *From user software to communication software*
 
 
 * `s` - the filename to load from
-

@@ -1,10 +1,13 @@
 ---
-title: Sense/Stage Software Reference
+title: Pydon Software Reference
 summary: This page describes the different options and settings of the Sense/Stage software and what they do.
 
-layout: documentation
+layout: reference
 type: reference
+guidestep: 0
 featured-image:
+
+permalink: /sensestage-v1/pydon-software-reference/
 
 creation-date: 2017-02-06
 category: software
@@ -14,44 +17,43 @@ related:
     - Startup settings of the Hive
 ---
 
-After you have [installed the Python software](install-the-hive-software), you can use the python program to interface with your Sense/Stage MiniBee network. There are two options for usage, through a [GUI](#gui), or through a [command-line script](#cli).
+After you have [installed Pydon](/sensestage-v1/getting-started-with-sense-stage/installing-pydon), you can use Pydon to interface with your Sense/Stage network using Open Sound Control (OSC) messages.
+
+There are two options for using Pydon, through a [GUI](#gui) interface, or through a [command-line script](#cli).
 
 ## GUI version {#gui}
 
 The GUI can be started in the following ways:
 
-- On Linux and OSX from the commandline with ```pydongui.py```
-- On Windows you can start it by double clicking on the file ```start_pydon.bat```
+- On Linux and OSX from the command line with ```pydongui.py```
+- On Windows by double clicking on the file ```start_pydon.bat```
 
-A window will show that looks like this:
+A window will open that looks something like this:
 
 ![](/img/pydongui_startup.png)
 
-The window provides a number of settings, categorised by topic.
+The window offers you a number of settings that can be adjusted before you actually start your Sense/Stage network. Some of the most important settings you should know about are:
 
-The most important ones are:
+- **Communication mode:** this defines the format of OSC messages that will be used to communicate with your sensor network. Which one you choose largely depends on the type of messages that are easiest to work with in the program that will be receiving data from your network. The Choices are:
+    * [*osc*](osc-interface) – This is one option for communicating with your network using simple OSC messages. Incoming data from your network is sent using the message ''/minibee/data'' where the first data element is the unique id number of the minibee, followed by its sensor values.
+    * [*junxion*](junxion-interface) – Uses a slightly modified version of the 'osc' option above. Incoming data from your network is sent such that the id number of the minibee is part of the message address, for example, if your minibee id was 2, you would receive the sensor data from this minibee via the message ''/minibee/data/2''.
+    * [*datanetwork*](datanetwork-interface) – Uses the SenseWorld DataNetwork to transfer the data to multiple clients using the DataNetwork framework. If you don't know what this is, then don't use it.
 
-- **Communication mode:** this defines which kind of OSC communication you will use to communicate to other programs. Choices are:
-    * [*osc*](osc-interface) – Using a simple OSC-interface to communicate the data to one client.
-    * [*junxion*](junxion-interface) – Using a tailored OSC-interface to communicate with STEIM's Junxion software.
-    * [*datanetwork*](datanetwork-interface) – Using the SenseWorld DataNetwork to transfer the data to multiple clients using the DataNetwork framework.
-    * [*libmapper*](libmapper) – Using the libmapper interface to transfer the data to multiple clients using the libmapper framework.
+    As you switch between the different communication options, settings that are relevant to these options will become enabled.
 
-    As you switch between the different options, settings that are relevant to these options will become enabled.
-
-- [**MiniBee configuration file:**](configuration-file) this is an XML file containing information on what kind of sensors are attached to your minibees. Examples are provided in the download of the pydon package. For documentation on the format, read [this page](configuration-file). You can browse to the appropriate configuration file using the [...] button.
+- [**MiniBee configuration file:**](/sensestage-v1/configuration-file) this is an XML file containing information on what kind of sensors are attached to your minibees. Examples are provided in the download of the pydon package. For documentation on the format, read [this page](/sensestage-v1/configuration-file). You can browse to the appropriate configuration file using the [...] button.
 
 - **Serial port:** here you need to select the serial port to use. The dropdown menu provides all ports that are found on your computer.
 
-- **OSC communication:** here you can define the target host and port, i.e. where the OSC messages will be sent.
+- **OSC communication:** here you can define the target host and port to send OSC data to. For most cases this will be your local host with a port that is specified in your client software.
 
-- **Verbosity:** these are some options to provide more output as the program is running; they are mainly meant for debugging, or recording data in a raw format. For a performance situation you would leave these options off.
+- **Verbosity:** these options provide more detailed output messages as the program is running; they are mainly meant for debugging, or recording data in a raw format. In a final production you would leave these options off.
 
-- **Autostart:** this is an option to automatically start with the last used settings, the next time the program is started. This allows for a quick automatic startup.
+- **Autostart:** this is an option to automatically start with the last used settings the next time the program is started. This allows for a somewhat quicker start-up time once your project settings have been finalized.
 
-In the **[Options]** menu, you can select the **[Advanced]** mode, which will allow tweaking all settings. In most normal use cases you will not need to change the advanced settings. The [settings are described in detail here](startup-settings-of-the-hive).
+In the **[Options]** menu, you can select the **[Advanced]** mode, which will allow tweaking advanced settings. The [settings are described in detail here](pydon-startup-settings). In most cases you will not need to use the advanced settings.
 
-By clicking **[START]** you start the communication with the Sense/Stage MiniBees and the OSC communication. At this point also the settings are stored to a file named `pydondefaults.ini` *in the directory from which you start `pydongui.py`*. The next time you start `pydongui.py` it will read the [settings from this file](startup-settings-of-the-hive) and use these as defaults. The program will look for the last used settings in the directory from which you start `pydongui.py`.
+By clicking **[START]** you start the communication between your computer and the Sense/Stage network, you will also begin to receive OSC messages. At this point your current settings are stored to a file named `pydondefaults.ini` *in the directory from which you start `pydongui.py`*. The next time you start `pydongui.py` it will read the [settings from this file](pydon-startup-settings) and use these as defaults. The program will look for the last used settings in the directory from which you start `pydongui.py`.
 
 ## Command line interface {#cli}
 
@@ -59,7 +61,7 @@ Alternatively you can use the command line interface:
 
     $ pydoncli.py
 
-[Options are taken from the file](startup-settings-of-the-hive) `pydondefaults.ini` that should be in the same folder as from where you call the script. If no `pydondefaults.ini` file is chosen, sensible default values are used instead.
+[Options are taken from the file](pydon-startup-settings) `pydondefaults.ini` that should be in the same folder as from where you call the script. If no `pydondefaults.ini` file is chosen, sensible default values are used instead.
 
 If you provide additional command line parameters, these will take precedence over the parameters defined as default and stored as the new defaults in `pydondefaults.ini`.
 
@@ -85,7 +87,6 @@ where `192.168.0.7` is the IP address of the other machine.
 If you need to figure out what is going on, there is a verbosity switch, which will print more output:
 
     $ pydoncli.py -c example_hiveconfig.xml -s /dev/ttyUSB0 -v True
-
 
 
 ### Available parameters on the command line interface {#cliargs}
@@ -153,7 +154,3 @@ Options:
   -Q, --quiet           do not log to console
   -C, --clean           remove old log file
 ```
-
-### TODO
-
-- update the image of the GUI with latest version

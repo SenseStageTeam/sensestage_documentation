@@ -7,6 +7,9 @@ type: guide
 guidestep: 0
 featured-image:
 
+level: basics
+priority: 10
+
 creation-date: 2018-02-06
 category: hardware
 subcategory: battery

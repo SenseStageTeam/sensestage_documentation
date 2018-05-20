@@ -3,6 +3,8 @@ title: MiniBee DIY - use your own Arduino and XBee
 summary: "This page describes how to make use of the MiniBee firmware with your own Arduino and XBee combination."
 layout: documentation
 type: guide
+level: advanced
+priority: 10
 creation-date: 2017-02-06
 category: hardware
 subcategory: minibee
@@ -38,7 +40,7 @@ Bee.setup(57600,'D');
 ```
 
 
-If you have  made the connection from **D7** to the sleep pin of the XBee, make sure that you use revision F in the firmware: 
+If you have  made the connection from **D7** to the sleep pin of the XBee, make sure that you use revision F in the firmware:
 
 ```
 Bee.setup(57600,'F');

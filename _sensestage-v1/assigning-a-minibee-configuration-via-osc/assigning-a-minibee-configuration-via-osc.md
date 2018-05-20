@@ -1,8 +1,13 @@
 ---
 title: Assigning a MiniBee Configuration via OSC
 summary: A guide on how to assign a configuration to a MiniBee by sending an OSC message
-layout: documentation
+layout: guide
+
 type: guide
+level: intermediate
+guidestep: 0
+priority: 10
+
 creation-date: 2017-02-06
 tags:
     - intermediate
@@ -72,7 +77,7 @@ You will also see a message in the logging window of the software saying somethi
 During this startup procedure the hive sends out a couple of messages to the user software. As the MiniBee connects, an information message (`/minibee/info`) is sent with the serial number of the MiniBee, the ID that is assigned and the number of inputs and outputs of the MiniBee. If the MiniBee is not configured yet, the number of inputs and outputs will be 0. Also, a status message is sent (`/minibee/status`), with the ID of the MiniBee and a string indicating the status - which will be `waiting`, as it is waiting for a new configuration.
 
 You can then send a message to the Hive to assign a configuration ID to the MiniBee. The configuration ID has to be one that is defined in the configuration file that is currently loaded. In our example configuration we have three possible configurations numbered 1, 2 and 3. So these are the numbers we can assign. If we send a message:
-    
+
     /minibee/configuration 1 1
 
 then MiniBee 1 is assigned configuration 1.
@@ -85,7 +90,7 @@ Now, communication between the coordinator and the MiniBee is happening again. T
     minibee 1 is configured
 
 And a new info-message is sent, indicating that the MiniBee has 3 inputs (the three axes of the accelerometer). And status updates are sent: first that the MiniBee is `configured`, then that we are `receiving` data from it.
-    
+
 Once you see this message, the OSC data will be sent out with `/minibee/data` messages.
 
 # Saving the configuration

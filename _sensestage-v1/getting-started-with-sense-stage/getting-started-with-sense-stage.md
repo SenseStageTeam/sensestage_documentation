@@ -1,11 +1,13 @@
 ---
 title: Getting Started with Sense/Stage
-summary: For first-time users - identifying the hardware and installation guide for the Sense/Stage software.
+summary: First-time users start here. This guide walks you through installing Pydon and then shows how to configure your first Sense/Stage network.
 
 layout: guide
 type: guide
 guidestep: 0
-featured-image: getting-started-th.jpg
+featured-image:
+level: basics
+priority: 1
 
 creation-date: 2017-02-06
 tags:

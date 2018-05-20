@@ -1,11 +1,11 @@
 ---
 title: Control over the MiniBee
-summary: 
+summary:
 layout: reference
 type: reference
-guidestep: 5
-featured-image: 
-parent: OSC interface
+guidestep: 6
+featured-image:
+parent: OSC Message Reference
 
 creation-date: 2017-02-06
 category: software
@@ -36,7 +36,7 @@ There are some options to control the behaviour of the MiniBee:
     /minibee/run - ii
 ```
 *Running / pausing a minibee*.
-    
+
 * `i` - the minibee id
 * `i` - whether to pause (0) or run (1) the minibee
 
@@ -45,7 +45,7 @@ This feature is useful if you want to save bandwidth in a network with a lot of 
 ```
     /minibee/loopback - ii
 ```
-    
+
 Getting a *loopback* message sent back from the minibee, i.e. a copy of each message sent to the minibee. This is useful for debugging.
 
 
@@ -55,10 +55,10 @@ Getting a *loopback* message sent back from the minibee, i.e. a copy of each mes
 ```
     /minibee/announce - i
 ```
-    
+
 *Re-initialize the MiniBee firmware*
 
-If you want to re-initialize the firmware (without resetting it), you can send a message to do so. This can be useful if a MiniBee was already on, when you started the software. 
+If you want to re-initialize the firmware (without resetting it), you can send a message to do so. This can be useful if a MiniBee was already on, when you started the software.
 
 * `i` - the minibee id
 
@@ -92,6 +92,5 @@ This will reset the Atmega328 chip, so effectively restart the firmware. This ca
 ```
     /minihive/ids/save
 ```
-    
-To save the IDs on all minibees that are turned on:
 
+To save the IDs on all minibees that are turned on:

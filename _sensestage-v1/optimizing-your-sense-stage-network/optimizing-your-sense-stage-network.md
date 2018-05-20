@@ -6,6 +6,8 @@ layout: guide
 type: guide
 guidestep: 0
 featured-image:
+level: intermediate
+priority: 10
 
 creation-date: 2018-04-28
 category: hardware

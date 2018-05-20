@@ -1,10 +1,11 @@
 ---
 layout: grid
-title: references
+title: References
 heading: All References
 type: mainpage
 permalink: /sensestage-v1/references
 ---
+
 
 {% assign collname = "sensestage-v1" %}
 
@@ -13,11 +14,12 @@ permalink: /sensestage-v1/references
     {% if coll.docs.size > 0 %}
       {% for page in coll.docs %}
         {% if page.type == "reference" and page.parent == nil %}
-<div class="grid-item">
-<a class="grid-title" href="{{page.url}}">{{ page.title }}</a>
-<div class="grid-text">{{ page.summary }}</div>
-<img class="thumb" src="{{ site.data.v1-site.imgdir }}{% if page.featured-image == nil %}missing-featured-image.png{% else %}{{ page.featured-image }}{% endif %}" />
-</div>
+        <!-- div class="grid-item" -->
+        <div class="grid-item-small">
+        <a class="grid-title" href="{{page.url}}">{{ page.title }}</a>
+        <div class="grid-text">{{ page.summary }}</div>
+        <!-- img class="thumb" src="{{ site.data.v1-site.imgdir }}{% if page.featured-image == nil %}missing-featured-image.png{% else %}{{ page.featured-image }}{% endif %}" /-->
+        </div>
         {% endif %}
       {% endfor %}
     {% endif %}

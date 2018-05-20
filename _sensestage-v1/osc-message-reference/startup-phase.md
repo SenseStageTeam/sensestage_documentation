@@ -1,12 +1,7 @@
 ---
 title: Startup phase
 summary: The messages that as a MiniBee is getting connected
-layout: reference
-type: reference
-guidestep: 1
-featured-image: 
-parent: OSC interface
-
+ 
 creation-date: 2017-02-06
 category: software
 subcategory: interfaces
@@ -56,4 +51,3 @@ Status information of the MiniBee.
     - `active` - the minibee is active, but its configuration is such that it does not send sensor data
     - `off` - the minibee is off, this status message is sent out after no data has been received for a while from the minibee
     - `paused` - the minibee has been paused
-

@@ -1,9 +1,12 @@
 ---
-title: Startup settings of the Hive
-summary: This page describes the settings file of the hive
+title: Pydon Startup Settings File
+summary: This page describes the settings file of Pydon, and what you can change in it.
 
-layout: documentation
+layout: reference
 type: reference
+guidestep: 1
+featured-image:
+parent: Pydon Software Reference
 
 creation-date: 2017-02-06
 category: software

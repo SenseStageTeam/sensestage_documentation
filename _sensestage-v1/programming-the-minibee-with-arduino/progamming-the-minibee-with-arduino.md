@@ -6,6 +6,8 @@ layout: guide
 type: guide
 guidestep: 0
 creation-date: 2017-02-06
+level: intermediate
+priority: 5
 featured-image:
 tags:
     - expert

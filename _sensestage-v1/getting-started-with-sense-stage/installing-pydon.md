@@ -1,6 +1,6 @@
 ---
-title: Install the Communications Software
-summary: A guide on how to install the Sense/Stage communication software
+title: Installing Pydon
+summary: A guide on how to install Pydon, the Sense/Stage OSC communication software.
 layout: guide
 type: guide
 parent: Getting Started with Sense/Stage

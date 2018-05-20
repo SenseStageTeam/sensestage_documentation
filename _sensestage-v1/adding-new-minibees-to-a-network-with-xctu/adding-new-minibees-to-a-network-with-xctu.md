@@ -7,6 +7,7 @@ layout: guide
 type: guide
 guidestep: 0
 featured-image:
+level: intermediate
 
 creation-date: 2017-02-06
 tags:

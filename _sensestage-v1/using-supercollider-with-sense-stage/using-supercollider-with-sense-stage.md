@@ -5,7 +5,9 @@ summary: This page describes how to get Sense/Stage data into SuperCollider
 layout: guide
 type: guide
 guidestep: 0
-featured-image: 
+featured-image:
+level: intermediate
+priority: 5
 
 creation-date: 2017-02-06
 category: software

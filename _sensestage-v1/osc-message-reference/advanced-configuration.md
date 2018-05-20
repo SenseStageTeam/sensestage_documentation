@@ -1,11 +1,11 @@
 ---
 title: Advanced configuration
-summary: 
+summary:
 layout: reference
 type: reference
-guidestep: 6
-featured-image: 
-parent: OSC interface
+guidestep: 7
+featured-image:
+parent: OSC Message Reference
 
 creation-date: 2017-02-06
 category: software
@@ -27,7 +27,7 @@ It is also possible to create completely new configuration elements via OSC. Aft
 ```
 
 *From user software to communication software*
-    
+
 Format:
 
 * `i`: configuration ID
@@ -87,7 +87,7 @@ Configuration per twi device
 * `s` or `i`: twi function (e.g. 10, or 'ADXL345')
 
 ```
-    /minihive/configuration/query i 
+    /minihive/configuration/query i
 ```
 
 *From user software to communication software*

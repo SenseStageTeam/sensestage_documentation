@@ -6,6 +6,8 @@ summary: Advanced guide on configuring XBee radios from the command line instead
 layout: guide
 type: guide
 guidestep: 0
+level: advanced
+priority: 10
 
 creation-date: 2017-02-06
 featured-image:

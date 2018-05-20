@@ -1,18 +1,34 @@
 ---
-layout: grid
-title: guides
+layout: base
+title: Guides
 heading: All Guides
 type: mainpage
 permalink: /sensestage-v1/guides
 ---
+
+<div class="wrapper-wide">
+  <h1 class="page-title">{{ page.heading | escape }}</h1>
+  <ul class="breadcrumb">
+    <li><a href="/sensestage-v1">Sense/Stage v1</a></li>
+    <li>{{ page.heading }}</li>
+  </ul>
+
+
+<h2>Beginner Guides</h2>
+
+  <div class="grid-container">
+
+
 
 {% assign collname = "sensestage-v1" %}
 
 {% for coll in site.collections %}
   {% if coll.label == collname %}
     {% if coll.docs.size > 0 %}
-      {% for page in coll.docs %}
-        {% if page.type == "guide" and page.parent == nil %}
+
+    {% assign sorted_docs = coll.docs | sort: 'priority' %}
+      {% for page in sorted_docs %}
+        {% if page.type == "guide" and page.parent == nil and page.level == "basics" %}
 <div class="grid-item">
 <a class="grid-title" href="{{page.url}}">{{ page.title }}</a>
 <div class="grid-text">{{ page.summary }}</div>
@@ -20,6 +36,46 @@ permalink: /sensestage-v1/guides
 </div>
         {% endif %}
       {% endfor %}
+
+</div>
+
+<br />
+<h2>Intermediate Guides</h2>
+
+<div class="grid-container">
+
+      {% for page in sorted_docs %}
+        {% if page.type == "guide" and page.parent == nil and page.level == "intermediate" %}
+<div class="grid-item">
+<a class="grid-title" href="{{page.url}}">{{ page.title }}</a>
+<div class="grid-text">{{ page.summary }}</div>
+<img class="thumb" src="{{ site.data.v1-site.imgdir }}{% if page.featured-image == nil %}missing-featured-image.png{% else %}{{ page.featured-image }}{% endif %}" />
+</div>
+        {% endif %}
+      {% endfor %}
+</div>
+
+<br />
+<h2>Advanced Guides</h2>
+
+<div class="grid-container">
+
+      {% for page in sorted_docs %}
+        {% if page.type == "guide" and page.parent == nil and page.level == "advanced" %}
+<div class="grid-item">
+<a class="grid-title" href="{{page.url}}">{{ page.title }}</a>
+<div class="grid-text">{{ page.summary }}</div>
+<img class="thumb" src="{{ site.data.v1-site.imgdir }}{% if page.featured-image == nil %}missing-featured-image.png{% else %}{{ page.featured-image }}{% endif %}" />
+</div>
+        {% endif %}
+      {% endfor %}
+
+</div>
+
+
+
     {% endif %}
   {% endif %}
 {% endfor %}
+
+</div>
