@@ -10,6 +10,8 @@ featured-image:
 level: basics
 priority: 10
 
+permalink: /sensestage-v1/embedding-the-battery-charger/
+
 creation-date: 2018-02-06
 category: hardware
 subcategory: battery

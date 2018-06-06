@@ -1,6 +1,6 @@
 ---
 title: Guide to Batteries
-summary: An overview of the different types of batteries that can be used with the Minibees, including how to use LiPo batteries. Importantly, this guide includes safety advice for using LiPo batteries in your projects.
+summary: An overview of the kinds of batteries that can be used with your sensor nodes, including how to charge and care for the most popular battery type, Lithium Polymer (LiPo) batteries. Importantly, this guide includes safety advice for using LiPo batteries in your projects.
 
 layout: guide
 type: guide
@@ -19,96 +19,32 @@ status: complete
 permalink: /sensestage-v1/guide-to-batteries/
 ---
 
-There is an obvious compromise to be made between battery size and battery capacity, and so we decided to consider two configurations:
+What kind of battery to use to power your sensor nodes (MiniBees)?
 
-  * for usage cases where size is not a concern, e.g. when the board is used for fixed environmental sensing, a large, high-capacity battery is best; and
-  * for situations where size is important (mounted on a performer's body or a handheld instrument, for example) and the battery should be as small as possible.
+Lithium Ion Polymer batteries, also known as LiPo and Li-Poly batteries, are the battery type we recommend. Most commonly used in mobile phones, these batteries are flat, rechargeable, and pack a lot of energy into a small package. We recommend using the single-cell variety.
 
-For logistical and ecological reasons, the battery should be rechargeable and last at least as long as one rehearsal, i.e. approximately 5 to 6 hours. Our board draws about 70 mA of current, when used with a regular XBee, transmitting data every 50 ms, without activating a sleep mode. Depending on what sensors you have attached, you may consume more current.
-
-The batteries we have tested include:
-
-## Li-Ion Poly 500 mAh
-
-*Lithium Ion Polymer Battery - 3.7v 500mAh from Floris.cc*
-
-Battery is about as large as, though a bit wider than the board, very flat.
-
-## Li-Poly Sparkfun 400mAh
-
-*Polymer Lithium Ion Batteries &#8211; 400mAh; Sparkfun no: PRT-13851*
-
-<!-- Long battery life (almost 6 hours). -->
-
-<!-- Recharge time ca. 2.5 hours (Using the LiPo Charger Basic; SparkFun no: PRT-10401). -->
-
-Battery is about as large as the board, very flat.
+Each Minibee includes a standard JST-PH 2-pin male connector for attaching a battery. [The male equivalent of this connector can be found at Adafruit](https://www.adafruit.com/product/261), amongst other vendors). LiPo batteries come in many varieties, so when choosing one you should make sure that it has the JST-PH 2-pin 2mm pin spacing connector.
 
 
-## Li-Poly Sparkfun 860mAh
-
-*Polymer Lithium Ion Batteries &#8211; 860mAh; Sparkfun no: PRT-00341*
-
-- measurements made with revision A of the MiniBee in 2010
-
-Long battery life (almost 10 hours).
-
-Recharge time ca. 2.5 hours (Using the LiPoly Fast Charger; SparkFun no: PRT-08293).
-
-Battery is slightly larger than the board, very flat.
+![](/img/battery/minibee-lipo-connect-04.jpg)
+*Minibee with a 400mAh LiPo battery attached (the XBee is removed so you can see the connector)*
 
 
+Both [Sparkfun](https://www.sparkfun.com/categories/54) and [Adafruit](https://www.adafruit.com/category/574) (and their distributors) carry batteries with the appropriate connectors.
 
-## Li-Ion coin cell Sparkfun 200mAh
+## Note! Be careful when removing the battery!
 
-*Coin Cell Battery Rechargeable &#8211; 24.5mm; Sparkfun no: PRT-08818* <br />
-together with *Protection circuit Module (PCB) for 3.6V(3.7V) Li-ion (18650/18500) cell Battery*
+The connectors on these LiPo batteries are not really designed to be disconnected and reconnected repeatedly, but that's likely what you'll be doing when you're building your wireless sensing projects. Because of this, you should be especially careful when removing the battery from a MiniBee. __Never__ pull out the battery by the cable, __always__ pull it out by the connector. It can help to use a pair of pliers or flush cutters (held gently) to disconnect the battery.
 
-- measurements made with revision A of the MiniBee in 2010
+![](/img/battery/minibee-battery-removal.gif)
+*Gently wiggling out the battery by the connector with a pair of flush cutters*
 
-Short battery life (almost 2 hours).
+For more tips on adding strain relief to your battery, see the step on [strain relief](batter-strain-relief) in this guide.
 
-Recharge time ca. 30 minutes using the LiPoly Fast Charger; SparkFun no: PRT-08293.
+## How much capacity do you need?
 
-This coin cell fits within the footprint of the PCB so a battery clip has been added from revision B of the board.
+The capacity of LiPo batteries is usually measured in milliamp-hours. This is the number of milliamps of current the battery should be capable of delivering consistently for one hour. So, if you had a battery that was rated 400mAh, and you have it connected to a circuit that draws 400mA of current, then you can expect the battery to last for 1 hour.
 
+When purchasing a LiPo battery, it's good to consider the needs of your project. There is always a compromise to be made between battery size and battery capacity.
 
-
-## AA-sized Li-Ion 900 mAh
-
-*Protected UltraFire 14500 AA sized 3.6V Li-Ion Rechargeable Battery 900 mAh CR14500*
-
-- measurements made with revision A of the MiniBee in 2010
-
-Long battery life (almost 10 hours).
-
-Recharge time ca 3 hours (with *Ultrafire WF-138 3.6 volt Lithium-Ion AA / AAA battery charger*).
-
-Usable with a standard AA-battery holder.
-
-Towards the end of the battery life, the battery turns off at intervals of about 10 seconds and turns on again, rather than just turn off completely.
-
-
-## 18650 Li-Ion 2400 mAh
-
-*Protected UltraFire 18650 3.6V Li-Ion rechargeable Battery 2400 mAh*
-
-- measurements made with revision A of the MiniBee in 2010
-
-Very long battery life (ca. 24 hours).
-
-Recharge time ca. 12 hours.
-
-Large battery, but useful for installations where size is not a constraint and recharging is part of the design, e.g. solar powered recharging.
-
-
-
-
-## AAA-sized Li-Ion 500 mAh
-
-*UltraFire 10440 AAA Li-Ion 3.6V Rechargeable Battery 500 mAh CR10440* <br />
-together with *Protection circuit Module (PCB) for 3.6V(3.7V) Li-ion (18650/18500) cell Battery*
-
-Unfortunately, we found that a majority of these batteries would not recharge after using them only a few times.
-
->Our advice: don't use batteries that don't come with their own protection circuit built-in.
+The Minibee board draws about 70 mA of current when used with a regular XBee, transmitting data every 50 ms. So, assuming you have a 400mAh LiPo battery, you could expect roughly 5.7 hours (400 divided by 70) of operation on a single charge with this battery. Although, depending on what sensors you have attached, you may consume more current.
