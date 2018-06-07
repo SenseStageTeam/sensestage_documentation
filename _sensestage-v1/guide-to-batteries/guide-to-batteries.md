@@ -39,7 +39,7 @@ The connectors on these LiPo batteries are not really designed to be disconnecte
 ![](/img/battery/minibee-battery-removal.gif)
 *Gently wiggling out the battery by the connector with a pair of flush cutters*
 
-For more tips on adding strain relief to your battery, see the step on [strain relief](batter-strain-relief) in this guide.
+For more tips on adding strain relief to your battery, see the step on [strain relief](battery-strain-relief) in this guide.
 
 ## How much capacity do you need?
 
