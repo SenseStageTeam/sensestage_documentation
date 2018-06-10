@@ -21,61 +21,66 @@ related:
     - Configuration file
 ---
 
-Once you have installed the software, you can connect a MiniBee for the first time:
+Once you have installed Pydon and any drivers necessary to detect the coordinator, the next step is to set up your first sensor network configuration. At this point it may be worthwhile refreshing yourself on the different components of a [Sense/Stage wireless setup](/sensestage-v1/overview-of-the-system).
 
-# Start the software
+You will need to create a Pydon configuration file with information about each of the nodes (MiniBees) in your network. This configuration file includes which sensors and input/output pins are active on each node.
 
-The software can be started in the following ways:
+This process can be a bit confusing for first-time users. If you have trouble following the process outlined below then you may want to follow one of our video tutorials on making your first network configuration.
+* [Creating your first Configuration on Windows](https://vimeo.com/272595238)
+* [Creating your first Configuration on OS X]() 
 
-- On Linux and OSX from the commandline with `pydongui.py`
+# 1. Start Pydon
+
+Pydon can be started in the following ways:
+
+- On Linux and OSX from the command line with `pydongui.py`
 - On Windows you can start it by double clicking on the file `start_pydon.bat`
 
 In the window you have to configure a few settings:
 
-* select mode (OSC)
+* select mode (OSC or Junxion)
 * select usb port
     * on Linux: something like: `/dev/ttyUSB0` or `/dev/ttyACM0`
-    * on OSX: something like: `/dev/tty-usb.serialAACC6789`
+    * on OSX: something like: `/dev/tty-usbserial-AACC6789`
     * on Windows: something like: `COM1`
-* select a configuration file: from the folder `ssdn_python-master`: `examples/configuration/example_hiveconfig.xml`
-* select the IP address and port to send OSC to
+* select a configuration file: a good starting point is to use the `example_hiveconfig.xml` from the examples folder in the Pydon package: `examples/configuration/example_hiveconfig.xml`
+* select the IP address and port of the program that Pydon should send OSC data to
 
-> [More details on the settings](using-the-hive)
+> [More details on the settings](/sensestage-v1/pydon-software-reference)
 
-# Plug in the battery
+# 2. Plug in the batteries to your MiniBees
 
-The first step is to plug in the battery to the MiniBee. The battery is connected with the JST connector.
+Plug in the battery to your MiniBees. Most likely you are using a rechargeable 3.7 volt LiPo battery, with a JST-PH 2mm connector on it that will fit the connector on the MiniBee.
 
-> *insert pictures here to show the battery plugin procedure*
+![](minibee-lipo-connect-05.jpg)
+*MiniBee with LiPo battery connected*
 
-> [More details on powering the MiniBee](power-supply)
+> [Guide to safe battery handling](/sensestage-v1/guide-to-batteries)
+> [More details on powering the MiniBee](/sensestage-v1/power-supply)
 
-# Turn the minibee on
+# 3. Turn the MiniBee on
 
 Turn on the minibee, by moving the small switch which is next to the JST connector.
 
-A green LED, the middle one in the row of three next to the power switch will light up. After a few seconds, an orange LED will start blinking, indicating that the radio is active. After a while a red LED will turn on momentarily, indicating that the MiniBee is receiving data from the coordinator node. The software sends a message to assign the MiniBee an ID. At the coordinator node, you will notice that the RX/TX LEDs start blinking as well.
+A green LED, the middle one in the row of three next to the power switch will light up. After a few seconds, an orange LED will start blinking, indicating that the radio is active. After a while a red LED will turn on momentarily, indicating that the MiniBee is receiving data from the coordinator. The software sends a message to assign the MiniBee an ID. At the coordinator node, you will notice that the RX/TX LEDs start blinking as well.
+
+> [More details on the Minibee's LEDs](/sensestage-v1/led-blinking-codes)
 
 
-> *insert pictures here to show the blinking lights*
-
-> [More details on the LEDs](led-blinking-codes)
-
-
-You will also see a message in the logging window of the software saying something like:
+You will also see a message in Pydon's feedback window saying something like:
 
     ('no configuration defined for minibee', '0013A20040AA4ECC', 1, '')
     configuration saved to newconfig_2017_Jan_19_18-03-55.xml. Please adapt (at least define a config id other than -1 for the node), save to a new name, and restart the program with that configuration file. Alternatively send a message with a new configuration (via osc, or via the datanetwork).
     Check documentation for details.
 
 
-# Configuring the minibee
+# 4. Create a Configuration Entry for the MiniBee
 
 The software has created a new configuration file in the directory from which you started the software. In our example the file has the name `newconfig_2017_Jan_19_18-03-55.xml`. The filename is automatically generated from the date and time of the computer. If you open the file with a plain text editor, it will look like this:
 
-> *give suggestions for programs to open the file with on different platforms!*
+> On OS X and Windows, two good free options for basic text editors are [Sublime Text](https://www.sublimetext.com/) and [Atom](https://atom.io/).
 
-> On Linux use a plain text editor like MousePad, gedit or kwrite for reading the file.
+> On Linux you can use a plain text editor like MousePad, gedit or kwrite for reading the file.
 
 
 ```
@@ -112,10 +117,10 @@ So instead of `configuration="-1"` we have `configuration="1"`. This means that 
 
 We can now save the file to a new filename, e.g. `myfirstminibee.xml`.
 
-> [More details on the configuration file](configuration-file)
+> [More details on the configuration file](/sensestage-v1/configuration-file)
 
 
-# Stop and restart the software
+# 5. Stop and Restart Pydon with your New Configuration File
 
 Now stop the communication of the software by hitting the `[STOP]` button. Then change the configuration file to use to the file you just saved. Then press the button `[START]` again.
 
@@ -125,8 +130,3 @@ Now, after a short time, the MiniBee will be detected again. The red light on th
     minibee 1 is configured
 
 Once you see this message, the OSC data will be sent out to the IP-address and port that you defined in the startup settings.
-
-
-# TODO
-
-- insert pictures

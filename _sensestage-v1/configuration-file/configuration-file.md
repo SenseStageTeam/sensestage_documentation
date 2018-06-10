@@ -4,7 +4,9 @@ summary: An overview of configuration file that the communication software uses
 layout: reference
 type: reference
 guidestep: 0
-featured-image: 
+featured-image:
+
+permalink: /sensestage-v1/configuration-file/
 
 creation-date: 2017-02-06
 category: software
@@ -43,4 +45,3 @@ Each XML element is enclosed in `<` and `>`. If an element has child elements, t
 # Comments
 
 Comments in XML start with `<!--` and end with `-->`. What is in between is ignored by the software that reads the XML, but can be useful for the human that reads the XML.
-

@@ -14,7 +14,10 @@ tags:
     - basics
 ---
 
-# Installation
+<iframe src="https://player.vimeo.com/video/273863480" width="800" height="500" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<p><a href="https://vimeo.com/273863480">Sense/Stage: Installing on Mac</a> from <a href="https://vimeo.com/sensestage">Sense/Stage</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+
+# Quick Installation
 
 * Download the source: [Python client download](https://github.com/sensestage/ssdn_python) (choose the zip option, or use [this direct link](https://github.com/sensestage/ssdn_python/archive/master.zip))
 * Unpack the package. In Finder find the file you just downloaded and double-click it to unzip it.

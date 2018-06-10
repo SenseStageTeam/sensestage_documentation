@@ -14,7 +14,10 @@ tags:
     - basics
 ---
 
-# Installation
+<iframe src="https://player.vimeo.com/video/271677672" width="800" height="450" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<p><a href="https://vimeo.com/271677672">Sense/Stage: installing on Windows</a> from <a href="https://vimeo.com/sensestage">Sense/Stage</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+
+# Quick Installation
 
 1. Download the Pydon package for Windows from the [Downloads page](/sensestage-v1/downloads)
 2. Download and install the FTDI Virtual Com Port drivers for Windows, also from the [Downloads page](/sensestage-v1/downloads). You'll need these for your computer to recognize your coordinator node.
