@@ -27,7 +27,7 @@ You will need to create a Pydon configuration file with information about each o
 
 This process can be a bit confusing for first-time users. If you have trouble following the process outlined below then you may want to follow one of our video tutorials on making your first network configuration.
 * [Creating your first Configuration on Windows](https://vimeo.com/272595238)
-* [Creating your first Configuration on OS X]() 
+* [Creating your first Configuration on OS X]()
 
 # 1. Start Pydon
 
@@ -56,6 +56,7 @@ Plug in the battery to your MiniBees. Most likely you are using a rechargeable 3
 *MiniBee with LiPo battery connected*
 
 > [Guide to safe battery handling](/sensestage-v1/guide-to-batteries)
+
 > [More details on powering the MiniBee](/sensestage-v1/power-supply)
 
 # 3. Turn the MiniBee on

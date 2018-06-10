@@ -1,7 +1,7 @@
 ---
 title: LED blinking codes
 summary: The four LEDs on the MiniBee give information about the status of the MiniBee. This reference explains what each LED means.
-layout: documentation
+layout: reference
 type: reference
 creation-date: 2017-02-06
 category: introduction

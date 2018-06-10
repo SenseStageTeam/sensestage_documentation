@@ -14,7 +14,7 @@ tags:
 status: complete
 ---
 
-![]({{ base_url }}/img/v1/SenseStage-System.png)
+![](/img/v1/System-Overview-Large.png)
 
 The Sense/Stage MiniBee system has a number of components that are all interacting with each other.
 
