@@ -6,7 +6,7 @@ type: guide
 parent: Programming the MiniBee with Arduino
 guidestep: 2
 creation-date: 2017-02-06
-tags: 
+tags:
     - expert
     - todo
 category: firmware
@@ -37,7 +37,7 @@ To program the Sense/Stage MiniBee you have to use the Arduino IDE and prepare i
     * If there is a `hardware` folder there, copy the folder `ssdn_minibee/minibee` to it
     * If there is no `libraries` folder there, just copy the folder `ssdn_minibee/libraries` to the sketchbook folder
     * If there is a `libraries` folder there, copy the folders in `ssdn_minibee/libraries` to it
-    
+
 * You should now have the following folders in your sketchbook folder:
 
 ```
@@ -91,7 +91,7 @@ The MiniBee Firmware examples will show up in `File -> Examples -> MiniBeeAPIn`,
 
 * In the `[TOOLS]` menu, choose `[Sense Stage MiniBee]`
 * The default processor is `ATmega328p revB/D/F (3.3V, 12 MHz)`
-* Only for [revision A](minibee-types/revision-a#programmingfirmware) and [particular versions of revision D](minibee-types/revision-d#subversions) you need to choose a different processor.
+* Only for [particular versions of revision D](/sensestage-v1/minibee-board-reference/revision-d#subversions) and [revision A](/sensestage-v1/minibee-board-reference/revision-a#programmingfirmware) do you need to choose a different processor.
 
 
 

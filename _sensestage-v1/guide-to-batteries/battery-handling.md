@@ -21,7 +21,7 @@ LiPo batteries are potentially fire hazards and you should take caution when usi
 
 ## Avoid Piercing the batteries.
 
-Pins and other sharp edges can potentially puncture the wrapping of the LiPo battery and start a fire. This is especially good to keep in mind if you package the battery against the MiniBee, where the soldered pins on the bottom of the board could potentially puncture the batter. Make sure that none of the pins of the MiniBee can pierce the battery. Add a protective coat around the battery with e.g. electrical tape or by placing a small plastic plate between the MiniBee board and the battery, so that it cannot be pierced.
+Pins and other sharp edges can potentially puncture the wrapping of the LiPo battery and start a fire. This is especially good to keep in mind if you package the battery against the MiniBee, where the soldered pins on the bottom of the board could potentially puncture the battery. Make sure that none of the pins of the MiniBee can pierce the battery. Add a protective coat around the battery with e.g. electrical tape or by placing a small plastic plate between the MiniBee board and the battery, so that it cannot be pierced.
 
 ![](/img/battery/minibee-battery-sandwich-03.jpg)
 *A MiniBee-Battery sandwich with some electrical tape in between to protect the battery from being punctured*

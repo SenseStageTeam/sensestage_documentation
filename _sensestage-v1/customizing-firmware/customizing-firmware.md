@@ -1,7 +1,8 @@
 ---
 title: Customizing firmware
-permalink: /sensestage-v1/customizing-firmware/index.html
+permalink: /sensestage-v1/customizing-firmware/
 summary: Advanced guide explaining how to use the Arduino IDE to reprogram and customize the firmware on the Minibees. For example, to support special I2C sensors.
+
 layout: guide
 type: guide
 guidestep: 0
@@ -17,65 +18,77 @@ category: firmware
 subcategory: minibee
 ---
 
-While the [default firmware supports a lot of common sensors and actuators](basic-features-of-the-firmware), in some cases you may want to customize the firmware to do something specific, e.g. when you have a sensor that is not covered by the default firmware, or when you want to perform some data parsing on the board. This guide will show you how you can customize the firmware to your needs.
+While the [default firmware supports a lot of common sensors and actuators](/sensestage-v1/basic-features-of-the-firmware) out of the box, in some cases you may need to customize the firmware to do something special. For example, you might have a specific I2C sensor, which requires that a certain library be included in the firmware. You may want to do some data manipulation on the board before sending it off into the network, or you might want to program some complex actuator behaviors on the board to be triggered by incoming network messages.
 
-## General approach
+This guide will show you how you can customize the firmware to fit your needs.
 
-The firmware based on Arduino. To customize the firmware you have to:
+## Summary
 
-If you want to send custom data from the MiniBee, you have to:
+The MiniBee firmware is based on the Arduino framework, and the easiest way to adjust and upload new firmware code is to use the Arduino IDE. This guide assumes that you are already familiar with Arduino-based microcontroller programming to write your own customizations to the default firmware sketch.
 
-- [prepare the Arduino IDE](prepare-the-arduino-ide-for-use-with-sense-stage)
-- adjust the `setup()` function
-- adjust the `loop()` function
-- [upload the customized firmware to your MiniBee](uploading-firmware-to-a-minibee)
-- adapt the [configuration file](#adaptconfig)
+If you want to send custom data __from__ the MiniBee out to the network, where "custom data" could be data from a special sensor, or data that has been manipulated in some way, you have to do the following:
 
-## The starting point
+- 1. [prepare the Arduino IDE for programming the MiniBee](/sensestage-v1/programming-the-minibee-with-arduino/)
+- 2. Use the default firmware as a starting point for your new firmware, the default firmware is available in the [ssdn_minibee github repository](https://github.com/sensestage/ssdn_minibee)
+- 3. Adjust the `setup()` function to include any setup code you need
+- 4. Adjust the `loop()` function to include any code you need that will run on each loop
+- 5. [Upload your customized firmware to your MiniBee](http://127.0.0.1:4000/sensestage-v1/programming-the-minibee-with-arduino/uploading-firmware)
+- 6. Adapt the [configuration file](#adaptconfig) of your sensor network to include entries for your custom data
 
-The default firmware looks like this (see the [`MiniBee_F` example](https://github.com/sensestage/ssdn_minibee/tree/master/libraries/MiniBee_APIn/examples/minibee_F)):
+## Overview of the Default Firmware
+
+The default firmware, along with important code libraries and Arduino IDE configuration files, can be found in the [ssdn_minibee github repository](https://github.com/sensestage/ssdn_minibee). You'll find the core Sense/Stage library in []/ssdn_minibee/libraries/MiniBee_APIn](https://github.com/sensestage/ssdn_minibee/tree/master/libraries/MiniBee_APIn) and a a number of useful examples of customized firmware inside the directory []/ssdn_minibee/libraries/MiniBee_APIn/examples](https://github.com/sensestage/ssdn_minibee/tree/master/libraries/MiniBee_APIn/examples).
+
+A good starting sketch for customizing the firmware of [revision F MiniBees](/sensestage-v1/minibee-board-reference/) can be [found in the 'minibee_F' example](https://github.com/sensestage/ssdn_minibee/tree/master/libraries/MiniBee_APIn/examples/minibee_).
+
+It should look something like this (comments added):
+
 
 ```
-// needed for ADXL:
+// needed for the ADXL library!
 #include <Wire.h>
 
+// this is the library for the on-board 3-axis accelerometer
 #include <ADXL345.h>
 
-// needed for communication:
+// libraries for other popular sensors, you can safely comment these out
+// if you would like to save space in the sketch
+#include <LIS302DL.h>
+#include <TMP102.h>
+#include <BMP085.h>
+#include <HMC5843.h>
+
+// the core XBee library for radio communication
 #include <XBee.h>
 
-// our library:
+// the core Sense/Stage library that provides all MiniBee firmware functionality
 #include <MiniBee_APIn.h>
 
-// instantiate a minibee:
-MiniBee_API Bee = MiniBee_API();
+// Create an instance of the MiniBee class
+MiniBee_API mbee = MiniBee_API();
 
 void setup() {
-  // setup at baudrate 57600 (default) for board revision 'F'
-  Bee.setup( 57600, 'F' );
+  // set up communication at 57600 baud (default) and board revision F
+  mbee.setup( 57600, 'F' );
 }
 
 void loop() {
-  // perform all the actions that need to be taken in a loop step:
-  Bee.loopStep();
+  // perform all the actions necessary to communicate sensor data each loop iteration
+  mbee.loopStep();
 }
 ```
 
 
 
+## Custom firmware examples
 
-
-
-[Custom firmware examples](https://docs.sensestage.eu/customizing-the-minibee-firmware)
+ Inside the [examples directory](https://github.com/sensestage/ssdn_minibee/tree/master/libraries/MiniBee_APIn/examples) you'll find a number of custom firmwares that you can review to help with making your own custom firmware. These include:
 ------------------------
 
-* Custom I2C Sensor
-* Impossible SPI communication (not really possible; SPI pins are not broken out)
-* Smooth PWM control
+* Adding a Custom I2C Sensor (bno055)
+* Smooth PWM control (ledfades)
 * Timing-critical digital output (strobing a LED)
 * Custom OSC messages
 * Additional sensors
-
-
 * Firmware with fixed configuration (configuration cannot be changed via Hive config file or OSC)
 * Communicating from MiniBee to MiniBee

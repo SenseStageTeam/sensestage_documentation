@@ -4,7 +4,7 @@ layout: landing
 
 We are currently in the process of updating the documentation pages for Sense/Stage.
 <br />
-To view the documentation pages visit <a href="/sensestage-v1/">Sense/Stage v1 documentation pages</a>.
+To view the current documentation pages visit <a href="/sensestage-v1/">Sense/Stage v1 documentation pages</a>.
 
 
 <div class="row">

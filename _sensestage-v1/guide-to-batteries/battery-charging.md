@@ -29,4 +29,4 @@ Each charger model works a little differently, so you should check the instructi
 
 The Sparkfun LiPo battery charger is especially nice because it can be embedded into your project, so that you can leave the battery attached to your MiniBee and only recharge it by connecting it to a USB power source. See the guide on [embedding the battery charger](/sensestage-v1/embedding-the-battery-charger/) for instructions on how to do this.
 
-Otherwise, move on to the [next section](battery-handling) to read about safe battery handling!
+Otherwise, move on to the [next section](battery-strain-relief) to read about adding strain relief to your battery!

@@ -1,7 +1,9 @@
 ---
 title: Creating MiniBee configurations via OSC
-summary: A guide on how to create a configuration from scratch via OSC
-layout: documentation
+summary: A guide on how to create a configuration from scratch via OSC.
+layout: guide
+
+permalink: /sensestage-v1/creating-minibee-configurations-via-osc/
 
 type: guide
 level: intermediate
@@ -48,8 +50,4 @@ We can then save the configuration we made to file, so we can load it again late
 
 to save it to a file name `myoscconfig.xml`
 
-> [More details on the OSC interface](osc-interface)
-
-# TODO
-
-- rewrite this page
+> For more details on creating a configuration from scratch, see [the advanced OSC configuration reference](/sensestage-v1/osc-message-reference/advanced-configuration)

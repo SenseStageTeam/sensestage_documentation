@@ -1,8 +1,10 @@
 ---
 title: Basic features of the firmware
-summary: This page describes the basic functionality of the firmware
-layout: documentation
+summary: This page describes the functionality of the default firmware that comes shipped with your MiniBees.
+
+layout: reference
 type: reference
+
 creation-date: 2017-02-06
 tags:
     - configuration
@@ -30,7 +32,7 @@ The sensor and actuation options supported by the library are:
 
 ## Configuration
 
-Configuration is currently done through the XML configuration file (see [documentation on the hive client](configuration-file)) or [interactively via OSC](assigning-a-minibee-configuration-via-osc).
+Configuration is currently done through the XML configuration file (see [documentation on the hive client](/sensestage-v1/configuration-file)) or [interactively via OSC](/sensestage-v1/assigning-a-minibee-configuration-via-osc).
 
 ## What happens during the wireless configuration
 

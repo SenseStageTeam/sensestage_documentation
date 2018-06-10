@@ -6,7 +6,7 @@ type: reference
 guidestep: 0
 featured-image:
 
-permalink: sensestage-v1/osc-message-reference
+permalink: sensestage-v1/osc-message-reference/
 
 creation-date: 2017-02-06
 category: software
