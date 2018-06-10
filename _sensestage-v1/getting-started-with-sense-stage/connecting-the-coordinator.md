@@ -22,7 +22,7 @@ related:
 
 There are two types of nodes in the Sense/Stage world: end-points, and coordinators. The coordinator is the node that connects to your computer and is responsible for routing data between all the sensor nodes in your network. All of your sensor nodes are usually end-points - they gather sensor data and communicate it back to the coordinator so that you can do something with it.
 
-The coordinator node consists of two parts: 1. an [XBee radio chip](#xbee) and 2. an XBee interface board like the [Sparkfun XBee Explorer USB](https://www.sparkfun.com/products/11812). The interface board has a USB connection which you connect to your computer, the coordinator will then show up as a USB device that you can select in Pydon before starting your network.
+The coordinator node consists of two parts: 1. an [XBee radio chip](https://www.sparkfun.com/products/11215) and 2. an XBee interface board like the [Sparkfun XBee Explorer USB](https://www.sparkfun.com/products/11812). The interface board has a USB connection which you connect to your computer, the coordinator will then show up as a USB device that you can select in Pydon before starting your network.
 
 Before getting started, make sure your XBee is seated properly on your interface board.
 
