@@ -15,15 +15,22 @@ subcategory: getting-started
 ---
 
 
-To begin with, you should inspect the contents of your kit. Be able to identify the various parts of the Sense/Stage MiniBee hardware setup. Your starter kit should include the following:
+To begin with, you should make sure you have all the necessary hardware for running a Sense/Stage network. If you purchased a kit, this is the time to inspect the contents of your kit and be able to identify the various parts of the Sense/Stage hardware setup.
 
-1. 2 MiniBee boards including headers
+Your starter kit should include the following:
+
+1. 2 MiniBee boards including female angled headers
 2. 3 XBee radios (all but one connected to MiniBees)
 3. a red coordinator board
-4. 2 green Xpee expansion boards including headers
-5. 2 green Xpree expansion boards including headers
+4. 2 green Xpee expansion boards including male angled headers
+5. 2 green Xpree expansion boards including male angled headers
 
-You may have also purchased a battery kit, which should include 2 LiPo batteries and a red USB charging board.
+There are a few things not included in the kit that you will need to purchase separately:
+1. A USB mini cable to connect the coordinator board to your computer
+2. LiPo batteries to power the MiniBee boards (one for each)
+3. A battery charger to charge your LiPo batteries
+
+> See [Battery and Charger](#battery) for more information on the battery requirements of the MiniBees
 
 ![](/img/sensestagekit_annotated.png)
 
@@ -88,14 +95,19 @@ You should have one XPree and one XPee for each MiniBee in your kit.
 > [More information about the expansion boards](/sensestage-v1/expansion-boards)
 
 
-# Battery and Charger
+# Battery and Charger {#battery}
 
-If you also purchased a battery kit, you should find included two or five LiIon batteries and a red charger with a USB connector.
+You will need a [3.7 volt LiPo battery with a JST-PH 2mm connector](https://www.floris.cc/shop/en/lithium-ion-polymer-battery-extra-s/1168-lithium-ion-polymer-battery-37v-500mah.html) to power each MiniBee, as well as a charger board to charge these batteries. The batteries and charger are not included in the standard Sense/Stage starter kit, so you will have to purchase them separately.
 
-![](/img/usb-battery-charger-batteries.jpg)
+We recommend the [Sparkfun LiPo charger basic](https://www.floris.cc/shop/en/lithium-ion-polymer-battery-extra-s/484-lipo-charger-basic-micro-usb-.html), but other LiPo chargers with the JST-PH 2mm connector will work just as well. You also will need to purchase an appropriate USB cable to connect the charger to a power source.
 
-> NOTE Make sure to fully charge your batteries before the first use.
 
-> WARNING! LiIon batteries require special handling care. For more information see [this useful link](https://www.sparkfun.com/tutorials/241) from Sparkfun.com.
+![](/img/lipo-polymer-battery-37v-500mah.jpg)
+*LiPo battery with JST-PH 2mm connector*
 
-> [More information about the batteries](/sensestage-v1/guide-to-batteries/)
+![](/img/lipo-charger-basic-micro-usb.jpg)
+*Sparkfun LiPo charger basic (USB cable not included)*
+
+> NOTE! Make sure to fully charge your batteries before the first use.
+
+> WARNING! LiIon batteries require special handling care. For more information see [this guide on using LiPo batteries with Sense/Stage](/sensestage-v1/guide-to-batteries/)

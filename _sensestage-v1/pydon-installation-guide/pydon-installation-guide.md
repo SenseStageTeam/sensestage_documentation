@@ -25,8 +25,16 @@ related:
 
 **Pydon** is a piece of software written in python that translates data coming in from your sensor network into OpenSoundControl (OSC). OSC is supported by virtually all interactive design software including PureData, SuperCollider, TouchDesigner, Processing, Max/MSP, vvvv, Isadora, and Max for Live.
 
-In order to use Sense/Stage you'll need to first install pydon. The installation procedure varies depending on your operating system, but, in general, it's the same python code.
+In order to use Sense/Stage you'll need to first install pydon. The installation procedure varies depending on your operating system, but, in general, it's the same python code running on each platform.
+
+
 
 The installation procedure is very similar on [Linux](installing-pydon-on-linux) and [OSX](installing-pydon-on-osx), helped by the fact that these operating systems have python already installed.
 
 [Installation on Windows](installing-pydon-on-windows) is a bit different, and Windows users may have to install python2.7 as a prerequisite before installing Pydon.
+
+Jump directly to:
+
+* [Installation on Linux](installing-pydon-on-linux)
+* [Installation on OSX](installing-pydon-on-osx)
+* [Installation on Windows](installing-pydon-on-windows)
