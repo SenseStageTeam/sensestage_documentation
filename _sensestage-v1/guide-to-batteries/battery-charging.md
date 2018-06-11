@@ -23,7 +23,7 @@ To charge your LiPo batteries you'll need a special charger. We recommend [Spark
 1. unplug your battery from the MiniBee
 2. connect the charger to a USB power source using an appropriate USB cable
 3. connect your battery to the charger, the red LED will turn on while the battery is charging
-4. once the LED turns on, your battery is charged
+4. once the LED turns __off__, your battery is charged
 
 Each charger model works a little differently, so you should check the instructions for your specific brand.
 
