@@ -16,3 +16,5 @@ Currently there are three expansion boards available.
 * The [Xpee](xpee), a small expansion board useful for resistive sensors and simple actuators like LEDs.
 * The [XPree](xpree), a larger expansion board that breaks out all the pins of the Minibee on to a general purpose prototyping board.
 * The [MiniLily](minilily), an expansion board designed to be used in wearable projects, featuring pin-breakouts that can be sewn to using conductive thread.
+
+![](/img/expansion_kit.jpg)
