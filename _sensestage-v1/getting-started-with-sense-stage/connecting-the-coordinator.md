@@ -24,8 +24,6 @@ There are two types of nodes in the Sense/Stage world: end-points, and coordinat
 
 The coordinator node consists of two parts: 1. an [XBee radio chip](https://www.sparkfun.com/products/11215) and 2. an XBee interface board like the [Sparkfun XBee Explorer USB](https://www.sparkfun.com/products/11812). The interface board has a USB connection which you connect to your computer, the coordinator will then show up as a USB device that you can select in Pydon before starting your network.
 
-Before getting started, make sure your XBee is seated properly on your interface board.
-
 ![](/img/coordinator-Sparkfun-XBee-Explorer-USB-reset.jpg)
 *Sparkfun's XBee Explorer interface board*
 
@@ -41,8 +39,13 @@ You can [download the VCP drivers directly from the FTDI website](http://www.ftd
 
 # Connecting the Coordinator
 
+Once you have installed the approrpriate FTDI drivers, you can connect the coordinator board and have it be recognized as a USB device by your computer. Before connecting your coordinator to your computer, make sure the XBee is seated properly on your interface board. On the Sparkfun XBee Explorer the angled side of the XBee should be pointing __away__ from the USB conenctor.
+
+
 ![](/img/coordinator-XBee-Explorer-Connected.jpg)
 *The coordinator node with the XBee seated in the correct direction on top*
+
+Connect the coordinator to your computer using a USB cable. You should see the red power light turn on.
 
 > Note!: The XBee radios are specially configured to behave as an end-point or a coordinator. If you purchased a Sense/Stage kit, these XBees are already configured for you. Just make sure you put the coordinator-configured XBee on your interface board! For more information on configuring XBees in a Sense/Stage network see the [guide on configuring XBees for use with Sense/Stage](/sensestage-v1/adding-new-minibees-to-a-network-with-xctu/).
 
@@ -53,7 +56,7 @@ Once you've connected the coordinator, assuming you've correctly installed the F
 
 ## USB device on Mac
 
-On OSX the serial port will have a name with the word 'usbserial' in it.
+On OSX the serial port will have a name with the word `usbserial` in it.
 
 ![](/img/coordinator-pydon-usbdevice-OSX.png)
 
@@ -83,6 +86,6 @@ On Windows the serial port will have the word `COM` followed by a number. There 
 
 ![](/img/coordinator-pydon-usbdevice-windows.png)
 
-Select the serial com port and click the `start` button to start your wireless network. If everything goes well the Pydon feedback window should display some text including a message that the serial port was opened.
+Select the serial com port and click the `start` button to start your wireless network. If everything goes well the Pydon feedback window should display some text including a message that `the serial port was opened`.
 
 If you have issues, try selecting a different serial port (if there is more than one). You can also try shutting down Pydon and reconnecting your coordinator node. Then start Pydon again and reselect the serial port.
