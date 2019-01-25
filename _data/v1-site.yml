@@ -6,6 +6,9 @@ sitenav:
   - title: References
     type: reference
     url: /sensestage-v1/references
+  - title: Video
+    type: downloads
+    url: https://vimeo.com/sensestage/
   - title: Downloads
     type: downloads
     url: /sensestage-v1/downloads

@@ -17,6 +17,11 @@ tags:
 <iframe src="https://player.vimeo.com/video/271677672" width="800" height="450" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 <p><a href="https://vimeo.com/271677672">Sense/Stage: installing on Windows</a> from <a href="https://vimeo.com/sensestage">Sense/Stage</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
 
+<iframe src="https://player.vimeo.com/video/272595238" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<p><a href="https://vimeo.com/272595238">Sense/Stage on Windows - connecting MiniBees</a> from <a href="https://vimeo.com/sensestage">Sense/Stage</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+
+---
+
 # Quick Installation
 
 1. Download the Pydon package for Windows from the [Downloads page](/sensestage-v1/downloads)

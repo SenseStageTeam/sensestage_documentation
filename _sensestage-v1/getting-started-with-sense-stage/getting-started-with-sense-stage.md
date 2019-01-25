@@ -19,6 +19,13 @@ subcategory: getting-started
 
 You want to start working on a wireless sensing project and you've got some Sense/Stage hardware. This guide is intended to help you get familiar enough with the system to begin getting data into your computer from the various wireless nodes (we call them MiniBees) in your network.
 
+---
+
+<iframe src="https://player.vimeo.com/video/274911631" width="640" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<p><a href="https://vimeo.com/274911631">Sense/Stage: First Network Configuration</a> from <a href="https://vimeo.com/sensestage">Sense/Stage</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+
+---
+
 To start with, you should make sure you have all the hardware necessary to get started. If you bought a starter kit then you should already have everything. Although it's important you be able to identify the different pieces of hardware, because we will be referencing them in later steps of the guide.
 
 Once you have identified all the hardware and are sure you have a complete setup, we'll go into how to install the Sense/Stage communications software (we call it pydon). This is a small program written in the python programming language that will translate all the incoming data from your network of sensors into Open Sound Control (OSC) messages that are much easier to work with.
@@ -34,3 +41,6 @@ If you haven't already, familiarize yourself with the [overview of the different
 If you're already set up and want to know how to parse the OSC messages coming from Sense/Stage, see [this overview of Sense/Stage's OSC messages](/sensestage-v1/osc-message-reference)
 
 When you're ready, go to the next step of this guide by clicking next below.
+
+
+
