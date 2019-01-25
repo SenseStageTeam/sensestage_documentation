@@ -41,7 +41,7 @@ In the window you have to configure a few settings:
 * select mode (OSC or Junxion)
 * select usb port
     * on Linux: something like: `/dev/ttyUSB0` or `/dev/ttyACM0`
-    * on OSX: something like: `/dev/tty-usbserial-AACC6789`
+    * on OSX: something like: `/dev/tty-usbserial-AACC6789` or `/dev/cu.usbmodem14211`
     * on Windows: something like: `COM1`
 * select a configuration file: a good starting point is to use the `example_hiveconfig.xml` from the examples folder in the Pydon package: `examples/configuration/example_hiveconfig.xml`
 * select the IP address and port of the program that Pydon should send OSC data to

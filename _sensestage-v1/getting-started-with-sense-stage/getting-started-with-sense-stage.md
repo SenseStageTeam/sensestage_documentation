@@ -9,6 +9,8 @@ featured-image:
 level: basics
 priority: 1
 
+permalink: /sensestage-v1/getting-started-with-sense-stage/
+
 creation-date: 2017-02-06
 tags:
     - basics

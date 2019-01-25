@@ -1,13 +1,17 @@
 ---
 title: Connecting a light resistor to a MiniBee
 summary: A simple tutorial on how to connect a light sensor to a MiniBee and get the data from it into your software.
-layout: documentation
+
+permalink: /sensestage-v1/connecting-a-light-resistor-to-a-minibee/
+
+layout: guide
+guidestep: 0
 
 type: guide
 level: basics
 priority: 20
 
-featured-image: 
+featured-image:
 creation-date: 2018-02-06
 category: introduction
 subcategory: tutorials
@@ -43,7 +47,7 @@ As an example, for our light sensor, we measure 35kOhm for full brightness, and 
 
 In order to connect it to a MiniBee, we need to connect to one of the analog inputs of the MiniBee, i.e. A0, A1, A2, A3, A6 or A7.
 
-For this, we can make use of one of the expansion boards of the MiniBee, the [XPree](xpree), or [XPee](xpee).
+For this, we can make use of one of the expansion boards of the MiniBee, the [XPree](/sensestage-v1/expansion-boards/xpree), or [XPee](/sensestage-v1/expansion-boards/xpee).
 
 
 ## With the XPree board
