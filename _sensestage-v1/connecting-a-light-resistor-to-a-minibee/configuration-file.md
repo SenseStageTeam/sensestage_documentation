@@ -1,11 +1,10 @@
 ---
-title: Connecting a light resistor to a MiniBee
+title: Configuration file
 summary: A simple tutorial on how to connect a light sensor to a MiniBee and get the data from it into your software.
 
-permalink: /sensestage-v1/connecting-a-light-resistor-to-a-minibee/
-
+parent: Connecting a light resistor to a MiniBee
 layout: guide
-guidestep: 0
+guidestep: 3
 
 type: guide
 level: basics
@@ -21,57 +20,9 @@ related:
 tags:
     - basics
     - sensors
+
+status: complete
 ---
-
-
-# The electronics
-
-A light sensor is a variable resistor. In order to connect it to the MiniBee, you need to make a [voltage divider](http://en.wikipedia.org/wiki/Voltage_divider):
-
-![](/img/voltagedivider.png){:height="220px"}
-
-
-In this picture, RVAR (VARiable Resistor) is the light sensor, and R is another resistor with which you are creating the voltage divider. In this setup, the current will flow from Vcc to GND, and the voltage will be *divided* over RVAR and R. The voltage is measured by the MiniBee at A0. The voltage will vary, as RVAR will vary – in the case of our light sensor, it depends on the amount of light that is falling onto the sensor.
-
-To calculate the best (i.e. the value that results in the widest range of voltage) value for the resistor R, you can do the following:
-
-* Measure the value of the resistance of the light sensor in full darkness – Rdark
-* Measure the value of the resistance of the light sensor in full brightness – Rlight
-* Multiply the two values measured (Rdark * Rlight)
-* Take the square root of this
-* Take a resistor that has a resistance value close to this calculated value
-
-As an example, for our light sensor, we measure 35kOhm for full brightness, and 3.5 kOhm for full darkness. 35 * 3.5 = 122.5 kOhm. The square root is: 11.068 kOhm. In our resistor box we have resistors of 10kOhm and 15kOhm. We choose the 10kOhm resistor for R.
-
-![](/img/measuring_resistance.jpg)
-
-In order to connect it to a MiniBee, we need to connect to one of the analog inputs of the MiniBee, i.e. A0, A1, A2, A3, A6 or A7.
-
-For this, we can make use of one of the expansion boards of the MiniBee, the [XPree](/sensestage-v1/expansion-boards/xpree), or [XPee](/sensestage-v1/expansion-boards/xpee).
-
-
-## With the XPree board
-
-So we first need to solder a header to the expansion board, and then, with the XPree board, we can solder headers to the XPree board, to mount it on a breadboard, and then put it on a breadboard, and make the connections to the light sensor:
-
-![](/img/lightsensor_xpree_01.jpg)
-![](/img/lightsensor_xpree_02.jpg)
-![](/img/lightsensor_xpree_03.jpg)
-![](/img/lightsensor_xpree_04.jpg)
-![](/img/lightsensor_xpree_05.jpg)
-![](/img/lightsensor_xpree_06.jpg)
-![](/img/lightsensor_xpree_07.jpg)
-
-## With the XPee board
-
-On the XPee board, it is easy to connect the resistor and the light sensor:
-
-![](/img/lightsensor_xpee_01.jpg)
-![](/img/lightsensor_xpee_02.jpg)
-![](/img/lightsensor_xpee_03.jpg)
-![](/img/lightsensor_xpee_04.jpg)
-
-# Configuration file
 
 Now that we have our electronics set up, we need to adapt the configuration file for our minibee. Let’s assume that we already have a configuration file that we used with our MiniBee, before we had attached any sensors to it.
 
