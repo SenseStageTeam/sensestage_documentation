@@ -38,12 +38,13 @@ Also, make sure that the values you send correspond to how you interpret the dat
 
 
 ```
-    /minibee/private   - iff..f
+    /minibee/private   - iii..i
 ```
 *from MiniBee to user software*
 
 * `i` - the ID of the MiniBee
-* `ff..f` - a number of floating point data values that correspond to the sensors that are attached. The order of these values is always:
+* `ii..i` - a number of integer data values that correspond to the private message that was sent.
+
 
 ```
     /minibee/trigger   - iff..f
