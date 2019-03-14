@@ -17,6 +17,8 @@ The unsorted list is generated from those pages that have 'todo' in their tags.
 
 *manual list of what we need guides on*
 
+- firmware lib: note of how to save space (disabling defines in header and commenting out headers)
+
 - guide: connecting to TouchDesigner
 - guide: connecting to Wekinator
 - guide: connecting 9 dof sensor
