@@ -19,7 +19,7 @@ tags:
     - basics
     - actuators
 
-status: fixmesoon
+status: complete
 ---
 
 To connect the haptic motor, you will need the following components:

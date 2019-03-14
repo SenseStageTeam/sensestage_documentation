@@ -20,7 +20,7 @@ tags:
     - basics
     - actuators
 
-status: fixmesoon
+status: complete
 ---
 
 The next step is to solder the electronics together, for example on an XPree board. In the images on this page you will see an example of what that can look like.

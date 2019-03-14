@@ -20,7 +20,7 @@ tags:
     - basics
     - actuators
 
-status: fixmesoon
+status: complete
 ---
 
 You can now send an OSC message from your software to control the motor:

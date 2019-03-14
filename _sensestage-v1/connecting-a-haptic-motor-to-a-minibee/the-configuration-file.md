@@ -20,7 +20,7 @@ tags:
     - basics
     - actuators
 
-status: fixmesoon
+status: complete
 ---
 
 If you use the default firmware for the MiniBee, you can then define the pin you use to control the motor as an `AnalogOut`.

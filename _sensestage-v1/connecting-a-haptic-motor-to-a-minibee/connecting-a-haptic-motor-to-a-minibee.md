@@ -21,7 +21,7 @@ tags:
     - basics
     - actuators
 
-status: fixmesoon
+status: complete
 ---
 
 In this tutorial we will show how to connect a haptic vibration motor to a MiniBee.
