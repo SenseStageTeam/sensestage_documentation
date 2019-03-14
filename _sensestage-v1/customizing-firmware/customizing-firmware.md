@@ -28,12 +28,12 @@ The MiniBee firmware is based on the Arduino framework, and the easiest way to a
 
 If you want to send custom data __from__ the MiniBee out to the network, where "custom data" could be data from a special sensor, or data that has been manipulated in some way, you have to do the following:
 
-- 1. [prepare the Arduino IDE for programming the MiniBee](/sensestage-v1/programming-the-minibee-with-arduino/)
-- 2. Use the default firmware as a starting point for your new firmware, the default firmware is available in the [ssdn_minibee github repository](https://github.com/sensestage/ssdn_minibee)
-- 3. Adjust the `setup()` function to include any setup code you need
-- 4. Adjust the `loop()` function to include any code you need that will run on each loop
-- 5. [Upload your customized firmware to your MiniBee](http://127.0.0.1:4000/sensestage-v1/programming-the-minibee-with-arduino/uploading-firmware)
-- 6. Adapt the [configuration file](#adaptconfig) of your sensor network to include entries for your custom data
+1.  [prepare the Arduino IDE for programming the MiniBee](/sensestage-v1/programming-the-minibee-with-arduino/)
+2.  Use the default firmware as a starting point for your new firmware, the default firmware is available in the [ssdn_minibee github repository](https://github.com/sensestage/ssdn_minibee)
+3.  Adjust the `setup()` function to include any setup code you need
+4.  Adjust the `loop()` function to include any code you need that will run on each loop
+5.  [Upload your customized firmware to your MiniBee](http://127.0.0.1:4000/sensestage-v1/programming-the-minibee-with-arduino/uploading-firmware)
+6.  Adapt the [configuration file](#adaptconfig) of your sensor network to include entries for your custom data
 
 ## Overview of the Default Firmware
 
@@ -82,7 +82,8 @@ void loop() {
 
 ## Custom firmware examples
 
- Inside the [examples directory](https://github.com/sensestage/ssdn_minibee/tree/master/libraries/MiniBee_APIn/examples) you'll find a number of custom firmwares that you can review to help with making your own custom firmware. These include:
+Inside the [examples directory](https://github.com/sensestage/ssdn_minibee/tree/master/libraries/MiniBee_APIn/examples) you'll find a number of custom firmwares that you can review to help with making your own custom firmware. These include:
+
 ------------------------
 
 * Adding a Custom I2C Sensor (bno055)
