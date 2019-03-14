@@ -38,4 +38,4 @@ In this tutorial we will show
 
 - the electronics needed and how to connect them
 - how to create a configuration file to control the motor
-- how to create custom firmware to improve the reliability to control the motor
+- how to control the motor via OSC
