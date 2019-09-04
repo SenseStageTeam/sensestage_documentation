@@ -45,7 +45,7 @@ The schematic for connecting these components is shown below:
     - the emitter - in the schematic the pin pointing down and connected to ground,
     - the collector - in the schematic the pin pointing up and connected to the diode, capacitor and vibration motor.
 
-Which physical pins these are on the device can vary per transistor, so you will have to look up the datasheet of your transistor (if you type in a search engine the type number (e.g. 2N3904) and 'datasheet', you will normally find the PDF of the datasheet easily). On the datasheet there will be a diagram like below, with the schematic symbol and an image of the component indicating which pin is which.
+Which physical pins these are on the device can vary per transistor, so you will have to look up the datasheet of your transistor (if you type in a search engine the type number (e.g. 2N3904) and 'datasheet', you will normally find the PDF of the datasheet easily). On the datasheet there will be a diagram like below, with the schematic symbol and an image of the component indicating which pin is which, or describing which pin is which in a list of pin number (indicated in the image which pin has which number) and what is the collector (C), base (B) and emitter (E).
 
 ![](/img/haptic/2N3904_pinout.png)
 
