@@ -1,6 +1,5 @@
 ---
 title: Using X-CTU
-permalink: /sensestage-v1/using-x-ctu/index.html
 summary: A guide on how to configure the XBee
 
 layout: guide
